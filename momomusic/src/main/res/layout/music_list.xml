@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.momomusic.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/albumPhoto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gedan5" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/albumPhoto"
+            android:text="@string/danqu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tag"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tag"
+            android:text="@string/zhangxin" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/author"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/tag"
+            android:layout_alignLeft="@id/tag"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gedan2" />
+
+        <TextView
+            android:id="@+id/authorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/author"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/author"
+            android:text="@string/wuyinliangpin"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/pinglun"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/author"
+            android:layout_alignLeft="@id/tag"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_pinglun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/authorName"
+            android:layout_alignTop="@id/pinglun"
+            android:text="@string/pinglunshuliang"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_bofang1" />
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"></View>
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/albumPhoto1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gedan5" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/albumPhoto1"
+            android:text="@string/danqu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tag1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tag1"
+            android:text="@string/zhangxin" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/author1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/tag1"
+            android:layout_alignLeft="@id/tag1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gedan2" />
+
+        <TextView
+            android:id="@+id/authorName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/author1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/author1"
+            android:text="@string/wuyinliangpin"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/pinglun1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/author1"
+            android:layout_alignLeft="@id/tag1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_pinglun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/authorName1"
+            android:layout_alignTop="@id/pinglun1"
+            android:text="@string/pinglunshuliang"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_bofang1" />
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"></View>
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/albumPhoto2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gedan5" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/albumPhoto2"
+            android:text="@string/danqu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tag2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tag2"
+            android:text="@string/zhangxin" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/author2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/tag2"
+            android:layout_alignLeft="@id/tag2"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gedan2" />
+
+        <TextView
+            android:id="@+id/authorName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/author2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/author2"
+            android:text="@string/wuyinliangpin"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/pinglun2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/author2"
+            android:layout_alignLeft="@id/tag2"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_pinglun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/authorName2"
+            android:layout_alignTop="@id/pinglun2"
+            android:text="@string/pinglunshuliang"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_bofang1" />
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"></View>
+</com.example.momomusic.view.PercentLinearLayout>

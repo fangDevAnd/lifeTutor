@@ -1,0 +1,19 @@
+<div id="cprIndex" class="container">
+    <div class="InCenterMain">
+        <div class="InCenterBlock">
+            <div class="InModulBG">
+                <div class="InModulImage"><img src="cpr/css/image/indexpic.jpg "/> </div>
+            </div>
+            <div class="InBlock fontMiddleW" style="opacity: 0.7; margin-top: -40px;">{{vm.selected_menu.description}}</div>
+            <div class="InBlockBottom">
+                <div class="InTabLine fontMaxW">
+                    <div ng-class="{true: 'InTabLineModule InTabLineModuleS', false: 'InTabLineModule'}[menu.selected]" ng-repeat="menu in vm.menus" ng-click="vm.onMenuSelected(menu)"><a>{{menu.title}}</a></div>
+                </div>
+                <div class="InEnterBtn fontMaxW" ng-click="vm.onStartModel()">进入</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css"  href="cpr/css/index.css">
+<script src="cpr/controllers/cprIndexController.js"></script>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.rcs.nchumanity.view.CommandBar
+        toolbar:title="反馈"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.rcs.nchumanity.view.CommandBar>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/smssdk_white"
+            android:gravity="left"
+            android:hint="请填写您的意见："
+            android:padding="5dp"
+            android:id="@+id/content"
+            android:textColor="#333333"
+            android:textColorHint="#ff999999"
+            android:textSize="15sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/radius_all_reg_bg"
+        android:text="提交反馈"
+        android:id="@+id/submit"
+        android:textColor="#ffffffff"
+        android:textSize="15sp" />
+
+    <ListView
+        android:divider="@null"
+        android:id="@+id/feedList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>

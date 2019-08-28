@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.rcs.nchumanity.view.BannerFlip
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"></com.rcs.nchumanity.view.BannerFlip>
+
+
+        <com.rcs.nchumanity.view.PercentLinearLayout
+            android:id="@+id/funcArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <com.rcs.nchumanity.view.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                app:layout_widthPercent="96%">
+
+                <!--
+                   里面的子节点代表的是布局中的每一个元素
+                   由于前两个元素是默认的，所以在这里直接添加
+                -->
+                <com.rcs.nchumanity.view.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_aspectRatio="100%"
+                    app:layout_widthPercent="25%">
+
+
+                    <ImageButton
+                        android:id="@+id/jhypx"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_06" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/jhypx"
+                        android:textColor="@color/icon_menu"
+                        android:textSize="@dimen/dimen_34" />
+
+
+                </com.rcs.nchumanity.view.PercentLinearLayout>
+
+                <com.rcs.nchumanity.view.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_aspectRatio="100%"
+                    app:layout_widthPercent="25%">
+
+
+                    <ImageButton
+                        android:id="@+id/aedfb"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_07" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/aedfb"
+                        android:textColor="@color/icon_menu"
+                        android:textSize="@dimen/dimen_34" />
+
+
+                </com.rcs.nchumanity.view.PercentLinearLayout>
+
+                <com.rcs.nchumanity.view.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_aspectRatio="100%"
+                    app:layout_widthPercent="25%">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <ImageButton
+                            android:id="@+id/jhyjy"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@color/smssdk_white"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_08" />
+
+
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/smssdk_white"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/bg_frame_red_circle"
+                            android:gravity="center"
+                            android:text="0"
+                            android:visibility="gone" />
+
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/jhyjy"
+                        android:textColor="@color/icon_menu"
+                        android:textSize="@dimen/dimen_34" />
+
+                </com.rcs.nchumanity.view.PercentLinearLayout>
+
+
+                <com.rcs.nchumanity.view.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_aspectRatio="100%"
+                    app:layout_widthPercent="25%">
+
+
+                    <ImageButton
+                        android:id="@+id/hjjhy"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_09" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/hjjhy"
+                        android:textColor="@color/icon_menu"
+                        android:textSize="@dimen/dimen_34" />
+
+                </com.rcs.nchumanity.view.PercentLinearLayout>
+
+            </com.rcs.nchumanity.view.PercentLinearLayout>
+
+
+        </com.rcs.nchumanity.view.PercentLinearLayout>
+
+
+        <!--
+        下面是基本信息模块的实现
+         -->
+
+        <LinearLayout
+            android:id="@+id/basicInfoArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

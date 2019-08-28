@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.xiaofangfang.rice2_verssion.view.CommandBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.xiaofangfang.rice2_verssion.view.CommandBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+
+            <!--通话部分-->
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_call_mana"
+                android:drawablePadding="20dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="16dp"
+                android:text="通话"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="Q1.通话时长"
+                    android:textColor="#585858"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/flog1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question1"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="(即在本月内拨打的通话时长)"
+                    android:textColor="#818181"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/callDis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/flog1"
+                    android:layout_marginRight="20dp"
+                    android:text=" 分钟/月"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <SeekBar
+                    android:id="@+id/seekbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/callDis1"
+                    android:layout_marginTop="10dp"
+                    android:max="10000"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:thumb="@drawable/ic_call_seek" />
+
+
+            </RelativeLayout>
+
+
+            <!--流量部分-->
+
+            <TextView
+                android:id="@+id/flow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_call_mana"
+                android:drawablePadding="20dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="16dp"
+                android:text="流量"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/question1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="Q2.月使用流量"
+                    android:textColor="#585858"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/flog1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question1_1"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="(即在本月以内使用的流量总量)"
+                    android:textColor="#818181"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/flowDis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/flog1_1"
+                    android:layout_marginRight="20dp"
+                    android:text=" GB/月"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <SeekBar
+                    android:id="@+id/seekbar9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flowDis1"
+                    android:layout_marginTop="10dp"
+                    android:max="20"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:thumb="@drawable/ic_flow" />
+
+
+            </RelativeLayout>
+
+            <!--短信部分-->
+
+            <TextView
+                android:id="@+id/shortMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_short_mess"
+                android:drawablePadding="20dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="16dp"
+                android:text="短信"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/question1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="Q1.月使用短信"
+                    android:textColor="#585858"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/flog1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question1_2"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="(即在本月以内使用的短信总量)"
+                    android:textColor="#818181"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/messDis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/flog1_2"
+                    android:layout_marginRight="20dp"
+                    android:text=" 条/月"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <SeekBar
+                    android:id="@+id/seekbar10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/messDis1"
+                    android:layout_marginTop="10dp"
+                    android:max="20"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:thumb="@drawable/ic_short_mess" />
+
+
+            </RelativeLayout>
+
+
+            <!--下面是注明-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="温馨提示:"
+                android:textColor="@color/themecolor"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:paddingRight="10dp"
+                android:text="经多家运营商内部分析，80%的客户消费习惯是平均市话1分钟/次，长途2分钟。"
+                android:textColor="#818181"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/queryInfoEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5sp"
+                android:paddingRight="10dp"
+                android:text="不知道使用情况？"
+                android:textColor="@color/themecolor"
+                android:textSize="11sp" />
+
+
+            <Button
+                android:id="@+id/downStepDisPlayResult"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/publish_phone_button_bg"
+                android:gravity="center"
+                android:text="进入"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
+

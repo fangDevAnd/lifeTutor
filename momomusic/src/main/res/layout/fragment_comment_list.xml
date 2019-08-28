@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <com.example.momomusic.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.example.momomusic.view.CommandBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.momomusic.view.CommandBar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingBottom="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/album"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/gedan2" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/geming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/album"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/album"
+                    android:text="@string/weizhaung" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/geming"
+                    android:layout_alignBottom="@id/album"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/danqu" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/ic_downstep" />
+
+            </RelativeLayout>
+        </com.example.momomusic.view.PercentLinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/splitLine_little"></View>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="5dp"
+            android:text="@string/mifenreping"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/line"
+            android:layout_width="match_parent"></View>
+
+
+        <com.example.momomusic.view.HotCommentList
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.example.momomusic.view.HotCommentList>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/splitLine_little"></View>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="5dp"
+            android:text="@string/zuixinpinlun"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/line"
+            android:layout_width="match_parent"></View>
+
+        <com.example.momomusic.view.HotCommentList
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.example.momomusic.view.HotCommentList>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/line"
+            android:layout_width="match_parent"></View>
+
+        <EditText
+            android:id="@+id/huifuContent"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edittext_corner5_bg"
+            app:layout_widthPercent="85%" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/huifuContent"
+            android:backgroundTint="@color/gray_dark"
+            android:text="@string/pinglun"
+            android:textColor="@android:color/white"
+            app:layout_widthPercent="15%" />
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+</LinearLayout>

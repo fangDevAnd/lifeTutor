@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/quxiao" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/yixuanze"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/allSelect"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="@string/quanxuan"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:divider="@null"></ListView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:stretchColumns="0,5">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View />
+
+            <TextView
+                android:id="@+id/addGeDan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:drawableTop="@drawable/ic_add1"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/gray_dark1"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/gedan"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:drawableTop="@drawable/ic_shanchu"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/gray_dark1"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/shanchu"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:drawableTop="@drawable/ic_shoucang1"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/gray_dark1"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/shoucang"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/ic_fenxiang1"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/gray_dark1"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/fenxiang"
+                android:textSize="13sp" />
+
+            <View />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

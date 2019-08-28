@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用颜色 -->
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="red">#CC0000</drawable>
+
+    <!-- 特定颜色 -->
+    <drawable name="nav_bg">#006699</drawable>
+    <drawable name="nav_text">#FFFFFF</drawable>
+    <drawable name="nav_info">#999999</drawable>
+    <drawable name="student_table_bg">#CCCCCC</drawable>
+    <drawable name="student_table_changetext">#006699</drawable>
+
+    <!-- 行选择 -->
+    <color name="row_selected">#DCDCDC</color>
+
+    <!-- 二维码用颜色 -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+ <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+ <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+ <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#00000000</color>
+    <color name="capture_text_cover_bg">#99535353</color>
+    <color name="seek_bar_text">#fff6f6f6</color>
+
+    <!-- AlertView -->
+    <!-- 覆盖颜色 -->
+    <color name="bgColor_overlay">#60000000</color>
+    <!-- 窗口背景颜色 -->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <!-- 标题颜色 -->
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!-- 消息颜色 -->
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!-- 线条颜色 -->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!-- 取消按钮颜色 -->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!-- 高亮按钮颜色 -->
+    <color name="textColor_alert_button_destructive">#ff3b30</color>
+    <!-- 普通按钮文字颜色 -->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!-- 点击颜色 -->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!-- actionsheet模式的取消按钮背景颜色 -->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+
+    <!-- hybird用 -->
+    <color name="lightblue">#5eb8da</color>
+    <color name="darkblue">#53a7c1</color>
+    <color name="TitleColor">#343647</color>
+    <color name="TextColor">#333333</color>
+
+    <!-- studnet考站 -->
+    <color name="text_gray">#999999</color>
+    <color name="line_gray">#bbbbbb</color>
+    <color name="line_light">#979aa3</color>
+    <color name="text_oriage">#d28b5d</color>
+    <color name="text_light_blue">#5fb9de</color>
+    <color name="text_dark_blue">#343547</color>
+    <color name="text_white">#FFFF</color>
+
+</resources>

@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">筛米</string>
+    <string name="alert_user_register_vip">本软件属于付费软件,请注册会员后再使用</string>
+    <string name="alert_user_register_vip_title">温馨提示</string>
+    <string name="hand_phone_destribute">正常开机，屏幕特别的清楚。闲置处理，不退不换
+    详情百度 。k900拥有6.9mm超薄精钢擦材质机身，并且装载了5.5英寸全高清灵敏触控屏，支持FHD分分辨率和超敏感超控技术
+        即使通过手套也能，支架等也能实现触摸操控
+
+    </string>
+    <string name="identity">提供身份信息，授权码信息进行核验是否通过， 然后携带证件到任何电信公司网点带原号转网</string>
+    <string name="operate_step">
+        如果你目前使用套餐与该套餐不是一个运营商，请尝试携号转网，之后才能进行更改套餐
+        如果是同一家运营商，可以直接更改套餐
+    </string>
+    <string name="adddes">用心过滤用户的需求</string>
+    <string name="app_name_eng">Filter Rice</string>
+    <string name="input_hint">请输入你宝贵的意见或建议</string>
+    <string name="tip_addvance">欢迎你为我们提供宝贵的意见或建议,你留下的任何信息都将用来改善我们的软件</string>
+    <string name="flow_count">上网流量</string>
+    <string name="call_count">通话时长</string>
+    <string name="oprators">运营商</string>
+    <string name="code_tip">将官方的二维码保存过后,通过二维码的照片识别就能添加我们的微信和qq,快点行动吧,更会有更多的活动等邀请你的参与</string>
+    <string name="tip_info">好东西记得分享奥!</string>
+    <string name="outlinetip">退出登录后你将无法使用软件的一些核心服务,是否继续操作?</string>
+    <string name="noti_tip">小主,你有一个新的宝贝进账.</string>
+    <string name="card_des">月最低消费19元，拨打长途需加拨190，可选省内漫游包，功能费6元/月，             省内漫游主叫0.4元，被叫免费，赠送手机上网2小时/月，超出后0.1元/分钟，500元封顶，2元彩信包。</string>
+
+
+    <string-array name="myroll">
+        <item>获得最新的通话导购方案</item>
+        <item>降低你的月消费水平</item>
+        <item>选择最适合你的通讯方案</item>
+        <item>用心服务,公平公正比较差异</item>
+    </string-array>
+
+    <!--strings1.add("100分钟以下");
+    strings1.add("100分钟-199分钟");
+    strings1.add("200分钟-399分钟");
+    strings1.add("400分钟-599分钟");
+    strings1.add("600分钟以上");
+
+    -->
+    <string-array name="cardCall">
+        <item>100分钟以下</item>
+        <item>100分钟-199分钟</item>
+        <item>200分钟-399分钟</item>
+        <item>400分钟-599分钟</item>
+        <item>600分钟以上</item>
+    </string-array>
+
+    <!--
+
+     strings2.add("1GB以下");
+        strings2.add("1GB-2GB之间");
+        strings2.add("2GB-4GB之间");
+        strings2.add("4GB-7GB之间");
+        strings2.add("7GB-10GB之间");
+        strings2.add("10GB以上");
+    -->
+
+    <string-array name="flow">
+        <item>1GB以下</item>
+        <item>1GB-2GB之间</item>
+        <item>2GB-4GB之间</item>
+        <item>4GB-7GB之间</item>
+        <item>7GB-10GB之间</item>
+        <item>10GB以上</item>
+    </string-array>
+
+
+    <!--
+    opraotr
+    -->
+
+    <string-array name="oprator">
+        <item>中国电信</item>
+        <item>中国移动</item>
+        <item>中国联通</item>
+    </string-array>
+
+
+</resources>

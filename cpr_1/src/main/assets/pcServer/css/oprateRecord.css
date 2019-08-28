@@ -1,0 +1,140 @@
+
+body{
+	background: #2d2e33 ;/* 2d2e33 */
+	width: 100%;
+	margin: 0;
+}
+
+#oprateRecord .edit{
+	margin-top: 2px;
+	font-size: 15px;
+}
+.RCenterMain{
+	width: 100%;
+}
+.RCenterBlock{
+	margin:0 auto;
+}
+.RBlock{
+	background:#141517;
+	line-height: 40px;
+	height:40px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.RtitleLine{
+	width: 100%;
+}
+
+.RtitleName{
+	width: 100%;
+	line-height: 35px;
+	min-height:35px;
+	margin-bottom: 5px;
+}
+.RtitleStuInfo{
+	float: left;
+	margin-left:40px;
+	margin-top:-34px;
+	line-height: 35px;
+}
+.RtitleClassNum{
+	float: left;
+	margin-left:  40px;
+	margin-bottom: 5px;
+}
+.RtitleStuName{
+	float: left;
+	margin-left:  40px;
+	margin-bottom: 5px;
+}
+.RlistLine{
+	height: 35px;
+	background: #323d52;
+	text-align: center;
+}
+
+.RTabLineModuleName{
+	width: 50%;
+	line-height: 35px;
+	float: left;
+}
+.RModulBG ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	line-height: 39px;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	border-bottom: 1px solid #ededed;
+}
+.RModulBG li:nth-child(odd){
+	list-style: none;
+	height: 39px;
+	background: #f5f7f9;
+}
+.RModulBG li:nth-child(even){
+	list-style: none;
+	height: 39px;
+	background: #e9eff6;
+}
+.RModulBG ul li a{
+	width: 50%;
+	display: inline-block;
+}
+.RTabLinebg{
+	width: 100%;
+	height: 39px;
+	display: inline-block;
+	background: #323d52;
+}
+.RTabLine{
+	display: table;
+	height: 39px;
+	margin: 0 auto;
+	text-align:center;
+}
+.RTabLine ul{
+	padding: 0;
+	margin: 0;
+	height: 39px;
+}
+.RTabLine ul li{
+	list-style: none;
+	float: left;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #141517 ;
+	margin: 15.5px 8px;
+}
+.RTabLine .checked{
+	background: #6e7488 ;
+}
+
+
+.RTabLineBtn{
+	margin-top: -40px;
+	line-height: 35px;
+	text-align: center;
+}
+.RSaveScoreBtn{
+	width: 110px;
+	border-radius: 3px;
+	background: #458c6b;
+	box-shadow: 0px 2px 0px #2e5a4b,0px 2px 0px #52a57f inset;
+	float: right;
+	overflow: hidden;
+	margin: 2.5px 15px;
+}
+.RPrintScoreBtn{
+	width: 110px;
+	border-radius: 3px;
+	background: #6e7488;
+	box-shadow: 0px 2px 0px #434b5c,0px 2px 0px #858ca1 inset;
+	float: right;
+	overflow: hidden;
+	margin: 2.5px 15px;
+}

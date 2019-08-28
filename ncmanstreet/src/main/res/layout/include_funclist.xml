@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+
+  这个代表的是单个的功能模块列表
+  其中下面几个部分的内容会被修改
+
+  1.ImageButton 的src
+  2.TextView    的text
+
+
+-->
+
+
+<com.rcs.nchumanity.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/jhypx"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/menuIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/smssdk_white"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/iconText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/icon_menu"
+        android:textSize="@dimen/dimen_34" />
+
+
+</com.rcs.nchumanity.view.PercentLinearLayout>

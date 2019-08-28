@@ -1,0 +1,304 @@
+
+*, *::before, *::after {
+    /**
+    所以的标签和伪元素都选中
+    */
+    margin: 0;
+    padding: 0;
+    /*
+       移动端以流式布局为主(百分百布局)
+       非固定像素布局,无法准确计算容器的尺寸
+       通过下面的设置,可以防止内容的溢出,出现滚动条的情况,提高了用户的体验
+       box-sizing:代表的是元素大小的计算方式,通过设置border-box,那么就意味着元素的大小是border+content的和
+    */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*点击高亮效果的清除*/
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/**
+设置全局的字体的大小,颜色,字体
+*/
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/**
+清除ol和ul的固定的list-style
+*/
+ul, ol {
+    list-style: none;
+}
+
+/**
+清除a的标记属性,和颜色
+*/
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/**
+由于input存在阴影部分,我们通过这些设置
+textarea设置不能从新设置大小,既不能拖拽
+*/
+input, textarea {
+    border: none;
+    outline: none;
+    /*不能重新设置大小*/
+    resize: none;
+    /**元素的外观 none没有任何样式(浏览器的差异性)*/
+    -webkit-appearance: none;
+}
+
+/**
+    下面是一个公用的样式,实现的是对整个界面的简化操作
+*/
+/*------------common css--------------------*/
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+/**
+通过在元素之前或之后插入生成的内容来清除浮动带来的界面布局乱掉的效果
+ */
+.clearFix::before,
+.clearFix::after {
+
+    /**
+    与 :before 以及 :after 伪元素配合使用，来插入生成内容。
+     */
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.m_l10 {
+    margin-left: 10px;
+}
+
+.m_r10 {
+    margin-right: 10px;
+}
+
+.m_t10 {
+    margin-top: 10px;
+}
+
+.m_b10 {
+    margin-bottom: 10px;
+}
+
+/**
+
+下面的内容是实际的编写
+ */
+
+.container {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .searchBox {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+}
+
+.container .searchBox .menu {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 15px;
+    left: 10px;
+}
+
+.container .searchBox .searchDiv {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 40px;
+    padding-top: 5px;
+    position: relative;
+    line-height: 40px;
+    border-radius: 20px;
+}
+
+.container .searchBox .searchDiv .inputRadius {
+    height: 40px;
+    width: 100%;
+    background: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+.container .searchBox .searchJD {
+    width: 30px;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.container .searchBox .searchIccon {
+    height: 20px;
+    display: inline-block;
+    width: 20px;
+    background: url("../imgs/jd-sprites.png") no-repeat;
+    background-position: -80px 5px;
+    background-size: 200px;
+}
+
+.container .searchBox .inputSearch {
+    height: 38px;
+    width: 70%;
+}
+
+.container .searchBox .searchDiv .login {
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: PingHei, Lucida Grande, Lucida Sans Unicode, STHeiti, Helvetica, Arial, Verdana, "sans-serif";
+}
+
+/**
+下面是处理banner的部分
+ */
+
+.bannerBox {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerBox ul.bannerBoxList {
+    width: 1000%;
+    overflow: hidden;
+}
+
+.bannerBoxList .banner {
+    float: left;
+    width: 10%;
+}
+
+.bannerBoxList .banner img {
+    width: 100%;
+    display: block;
+}
+
+.bannerBox .intercept {
+    left: 44%;
+    position: absolute;
+    bottom: 25px;
+}
+
+.bannerBox .intercept li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #dddddd;
+
+}
+
+.bannerBox .intercept li:first-child {
+    background: #111111;
+}
+
+/**
+下面是导航的实现
+ */
+
+.navBox {
+    background: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    top: -20px;
+    padding-top: 20px;
+}
+
+.navBox ul {
+    width: 100%;
+    min-height: 100px;
+}
+
+.navBox ul li {
+    text-align: center;
+    float: left;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.navBox ul li img {
+    width: 50px;
+}
+
+.navBox ul li p {
+    color: #666;
+    font-size: 15px;
+}
+
+/**
+京东快报
+ */
+.quickBaoBox {
+    width: 100%;
+}
+
+.quickBaoBox .boxRight {
+    float: left;
+}
+
+.quickBaoBox div:first-child img {
+    width: 103px;
+    margin-left: 10px;
+    float: left;
+}
+
+.quickBaoBox div:first-child div span:first-child {
+    color: #e43130;
+    font-size: 15px;
+}
+
+.quickBaoBox div:first-child div span:last-child {
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/**
+下面是秒杀的部分
+ */
+.moreKill::after {
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-left: 2px;
+    background: url("../imgs/arrow_rt.png") no-repeat;
+    background-size: 12px;
+}
+

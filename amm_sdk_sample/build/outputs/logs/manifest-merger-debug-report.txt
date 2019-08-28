@@ -1,0 +1,147 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:2:1-71:12
+	package
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:9:22-78
+application
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:11:5-69:19
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:13:9-41
+	android:icon
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:12:9-45
+activity#net.sourceforge.simcpux.wxapi.WXEntryActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:15:9-30:20
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:17:13-45
+	android:launchMode
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:19:13-43
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:18:13-36
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:16:13-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:22:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:scheme:wxd930ea5d5a258f4f
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:25:13-29:29
+action#android.intent.action.VIEW
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:26:17-68
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.DEFAULT
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:27:17-75
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:27:27-73
+data
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:28:17-60
+	android:scheme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:28:23-58
+activity#net.sourceforge.simcpux.wxapi.WXPayEntryActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:32:9-35:45
+	android:launchMode
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:35:13-43
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:34:13-36
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:33:13-53
+activity#net.sourceforge.simcpux.SendToWXActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:37:9-40:51
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:39:13-45
+	android:theme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:40:13-49
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:38:13-45
+activity#net.sourceforge.simcpux.AddFavoriteToWXActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:42:9-45:51
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:44:13-45
+	android:theme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:45:13-49
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:43:13-52
+activity#net.sourceforge.simcpux.GetFromWXActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:47:9-50:51
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:49:13-45
+	android:theme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:50:13-49
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:48:13-46
+activity#net.sourceforge.simcpux.ShowFromWXActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:52:9-55:51
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:54:13-45
+	android:theme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:55:13-49
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:53:13-47
+activity#net.sourceforge.simcpux.PayActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:57:9-60:51
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:59:13-45
+	android:theme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:60:13-49
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:58:13-40
+receiver#net.sourceforge.simcpux.AppRegister
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:62:9-67:20
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:63:13-40
+intent-filter#action:name:com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:64:13-66:29
+action#com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:65:17-100
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml:65:25-97
+uses-sdk
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/amm_sdk_sample/src/main/AndroidManifest.xml

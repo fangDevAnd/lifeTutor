@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_complete" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/selected"
+        android:text="方志月"
+        android:textColor="#2b2b2b"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="13077995907"
+        android:textColor="#2b2b2b"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@id/name"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="6sp"
+        android:maxLines="2"
+        android:text="安徽省 六安市 霍邱县 长集镇学府商业街"
+        android:textColor="#2b2b2b" />
+
+    <View
+        android:id="@+id/splitLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/address"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/splitLine"></View>
+
+    <TextView
+        android:id="@+id/del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/splitLine"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:text="删除"
+        android:textColor="#262626" />
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/del"
+        android:layout_toLeftOf="@+id/del"
+        android:text="编辑"
+        android:textColor="#262626" />
+
+
+</RelativeLayout>

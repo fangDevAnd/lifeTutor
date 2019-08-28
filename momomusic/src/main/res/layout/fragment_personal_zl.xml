@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_qiandao"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/wodefenshi"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:drawableRight="@drawable/ic_downstep"
+            android:text="@string/lingren" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/gerenxinxi"></TextView>
+
+    <!--<ListView-->
+    <!---->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"></ListView>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/nicheng"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/heibaixiangpian" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/fangjianhao"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/zanwu" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/yonghuid"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/siqi" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/xingbie"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/baomi" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/xingzuo"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/baomi" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/tizhong"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/baomi" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/shengao"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/baomi" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/sanwei"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/baomi" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/caifudengji"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/xinren" />
+    </FrameLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@drawable/ic_shoucang8"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/wodefenshi"
+            android:textColor="@color/lightMainTextColor" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<div class="selectDialog" ng-style="selector.selectorStyle">
+    <div class="icon" ></div>
+    <div class="buttons borderline">
+        <div class="item borderColor" ng-repeat="item in selector.items" ng-click="selector.onItemSelected(item)">{{item.name}}</div>
+    </div>
+</div>

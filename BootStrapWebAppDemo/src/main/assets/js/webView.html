@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+    </style>
+
+    <script>
+        /**
+         * android调用js
+         * @param message
+         */
+        function demo1(message) {
+
+             console.log("接收到消息" + message);
+
+            alert("接收到android的消息" + message);
+        }
+
+        function demo1_1(message){
+
+            return "你也好啊，我是js";
+        }
+
+
+
+        /**
+         * android调用js同时返回
+         * @param message
+         */
+        function demo2(message) {
+
+            var result = prompt(message, "fang");
+            alert("你输入的数据是" + result);
+        }
+
+        /**
+         * js调用android
+         */
+        function demo3() {
+            document.location = "js://webview?1=1&info=傻逼玩意";
+        }
+
+
+        /**
+         * js 调用android
+         */
+        function demo4() {
+            var result = prompt("js://webview?1=1");
+        }
+
+        /**
+         * 被demo4的android端调用的结果返回
+         * @param message
+         */
+        function result(message) {
+
+            console.log("接收到返回的结果" + message);
+        }
+
+
+        function demo5(){
+
+           HostApp.testA("你好啊 java，我是js，一个你的小弟");
+
+        }
+
+        function demo6(){
+
+           HostApp.delayJsCallBack(3,"你好消息回调",function(message){
+
+                  console.log("接收到返回的结果" + message);
+
+           });
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+<a href="http://www.baidu.com">
+    百度一下
+</a>
+
+<form action="http://www.taobao.com">
+    <input name="user" value="用户名">
+    <input name="password" value="密码">
+    <input type="submit" value="提交">
+</form>
+
+<button onclick="demo5(this)">调用android</button>
+<button onclick="demo6(this)">调用android能回调</button>
+
+</body>
+</html>

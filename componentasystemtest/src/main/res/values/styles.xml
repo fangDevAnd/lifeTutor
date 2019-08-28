@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="window_anim" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/window_enter</item>
+        <item name="android:windowExitAnimation">@anim/window_exit</item>
+    </style>
+
+
+    <!--<style name="myMaterial" parent="android:Theme.Material">-->
+    <!--<item name="android:colorPrimary">#BEBEBE</item>-->
+    <!--<item name="android:colorPrimaryDark">#FF5AEBFF</item>-->
+    <!--<item name="android:navigationBarColor">#FFFF4130</item>-->
+    <!--</style>-->
+
+    <declare-styleable name="additionView">
+        <attr name="centerX" format="integer|reference"></attr>
+        <attr name="centerY" format="integer|reference"></attr>
+        <attr name="circleColor" format="color|reference"></attr>
+        <attr name="radius" format="integer"></attr>
+        <attr name="display" format="string"></attr>
+    </declare-styleable>
+
+
+    <style name="MyAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:padding">-10dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="CardDialogStyle" parent="@android:style/Theme.Dialog"> <!-- 背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">@null</item> <!-- 边框 -->
+        <item name="android:windowFrame">@null</item> <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true
+        </item> <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <!--<item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>-->
+    </style>
+
+
+    <!--底部弹框属性设置-->
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--键盘状态-->
+        <item name="android:windowSoftInputMode">stateUnspecified</item>
+        <!--dialog弹出时activity的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+
+</resources>

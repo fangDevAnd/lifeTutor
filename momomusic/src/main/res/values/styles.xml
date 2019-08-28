@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppDarkThemen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bgColor">@color/darkBgColor</item>
+    </style>
+
+
+    <style name="windowanim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+
+    <style name="window_anim" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/window_enter</item>
+        <item name="android:windowExitAnimation">@anim/window_exit</item>
+    </style>
+
+
+    <style name="line" parent="Base.TextAppearance.AppCompat">
+        <item name="android:background">@color/splitLine</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lightColorPrimay</item>
+        <item name="colorPrimaryDark">@color/lightColorPrimaryDark</item>
+        <item name="colorAccent">@color/lightColorAccent</item>
+        <item name="bgColor">@color/lightBgColor</item>
+
+        <item name="mainTextSize">@dimen/lightMainTextSize</item>
+
+        <item name="mainTextColor">@color/lightMainTextColor</item>
+
+        <item name="minBoldTextSize">@dimen/lightMinBoldTextSize</item>
+
+        <item name="minBoldTextColor">@color/lightMainBoldTextColor</item>
+
+
+        <item name="titleTextSelectColor">@color/lightTitleTextSelectColor</item>
+
+        <item name="titleTextColor">@color/lightTitleTextColor</item>
+
+        <item name="listTitleColor">@color/lightListTitleColor</item>
+
+        <item name="tipTextColor">@color/lightTipTextColor</item>
+
+        <item name="secondTextColor">@color/lightSecondTextColor</item>
+
+        <item name="threeTextColor">@color/lightThreeTextColor</item>
+
+    </style>
+
+    <attr name="bgColor"></attr>
+
+    <!--系统主要字体的尺寸-->
+    <attr name="mainTextSize" format="dimension"></attr>
+    <!--系统主要字体的颜色-->
+    <attr name="mainTextColor" format="color|reference"></attr>
+
+    <!--加粗小体-->
+    <attr name="minBoldTextSize" format="dimension"></attr>
+    <attr name="minBoldTextColor" format="color|reference"></attr>
+
+    <!--标题的文本被选中的颜色-->
+    <attr name="titleTextSelectColor" format="color|reference"></attr>
+    <!--标题的文本普通颜色-->
+    <attr name="titleTextColor" format="color|reference"></attr>
+
+    <!--列表标题的文本颜色-->
+    <attr name="listTitleColor" format="color|reference"></attr>
+
+    <!--提示性文字的显示颜色-->
+    <attr name="tipTextColor" format="color|reference"></attr>
+
+    <!--次标题样式的形式，颜色比提示文字深，但是颜色较浅-->
+    <attr name="secondTextColor" format="color|reference"></attr>
+
+    <!--
+    三号标题的显示效果
+    -->
+    <attr name="threeTextColor" format="color|reference"></attr>
+
+    <color name="splitLine">#DFDFDF</color>
+</resources>

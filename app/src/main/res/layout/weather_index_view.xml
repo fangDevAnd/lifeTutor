@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/kongqi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonpres"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_kongqi_1"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/diver" />
+
+        <Button
+            android:id="@+id/shushidu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonpres"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_shushiduzhishu"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/diver" />
+
+        <Button
+            android:id="@+id/wash_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonpres"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_local_car_wash_px"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/diver" />
+
+        <Button
+            android:id="@+id/chuanyi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonpres"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_chuanyizhishu"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/diver" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ganmao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonpres"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_ganmaozhishu"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/diver" />
+
+        <Button
+            android:id="@+id/yundong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonpres"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_yundongzhishu"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/diver" />
+
+        <Button
+            android:id="@+id/lvyou"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonpres"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_lvyouzhishu"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/diver" />
+
+        <Button
+            android:id="@+id/ziwaixian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonpres"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_ziwaixian"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/diver" />
+</LinearLayout>

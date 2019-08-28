@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.rcs.nchumanity.view.CommandBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        toolbar:title="邮寄信息"></com.rcs.nchumanity.view.CommandBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/realName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名："
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/realName"
+            android:background="@color/smssdk_white"
+            android:inputType="textPersonName"
+            android:maxLength="5"
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/ic_22"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码："
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mobilePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/phone"
+            android:background="@color/smssdk_white"
+            android:inputType="phone"
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/ic_22"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/detailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址："
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/detailAddress"
+            android:background="@color/smssdk_white"
+            android:inputType="text"
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/ic_22"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/expressNoTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递单号："
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/expressNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/expressNoTag"
+            android:background="@color/smssdk_white"
+            android:inputType="text"
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/ic_22"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/expressCompanyTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递公司："
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/expressCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/expressCompanyTag"
+            android:background="@color/smssdk_white"
+            android:inputType="text"
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/ic_22"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/expressStatusTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮寄状态："
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/expressStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/expressStatusTag"
+            android:background="@color/smssdk_white"
+            android:inputType="text"
+            android:textColor="#ff0c0c0c"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

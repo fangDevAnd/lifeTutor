@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.xiaofangfang.consumeview.autoRollViewGroup.MyView
+        android:layout_width="match_parent"
+        android:id="@+id/myview"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/colorAccent" />
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/colorAccent" />
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/colorAccent" />
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/colorAccent" />
+
+
+    </com.xiaofangfang.consumeview.autoRollViewGroup.MyView>
+
+</LinearLayout>

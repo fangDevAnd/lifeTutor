@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="selected">#ccc</color>
+    <color name="splitLine">#c2bebe</color>
+    <color name="mainbgcolor">#f1eeee</color>
+    <color name="hot_city_button_no_press">#9ca9f2</color>
+    <color name="button_press">#6c79c6</color>
+    <color name="question_title_color">#b5c0ff</color>
+    <color name="blue">#2776af</color>
+    <color name="press_blue">#186196</color>
+    <color name="buttonborder">#b1b4ae</color>
+    <color name="location_change_match">#cfcfcf</color>
+    <color name="orangle">#e68f1f</color>
+    <color name="red">#ca2727</color>
+    <color name="border_gray">#bababa</color>
+    <color name="menu_press">#9b9b9b</color>
+    <color name="violet">#6a26a6</color>
+    <color name="violet_deep">#7932B9</color>
+    <color name="blue_dark">#ff0099cc</color>
+    <color name="blue1">#3C8AE3</color>
+    <color name="blue2">#D3E8E5</color>
+    <color name="phone_sale_list_bg">#E1DFDF</color>
+    <color name="orangle_bark">#FF911B</color>
+    <color name="orangle_dark">#ffb453</color>
+    <color name="splitLine_dark">#afafaf</color>
+    <color name="splitLine_little">#e2e2e2</color>
+    <color name="red_little">#ffb4a9</color>
+</resources>

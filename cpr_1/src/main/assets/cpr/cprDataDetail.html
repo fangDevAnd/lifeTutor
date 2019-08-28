@@ -1,0 +1,185 @@
+﻿<div id="cprDataDetail" class="container">
+    <!--<div ng-show="vm.showCpr" id="number" style="font-size:10px">-->
+    <div id="number" style="font-size:10px">
+
+        <div style="width: 2000px;" ng-swipe-right="vm.showLeft()"  ng-swipe-left="vm.hideLeft()" >
+
+            <table class="item" id="leftTb" >
+                <tr>
+                    <td rowspan="4"   class="shupai ctitle" ng-bind-html="vm.lang.hejicaozuo|HTML"></td>
+                    <td rowspan="2" class="shupai ctitle2" ng-bind-html="vm.lang.chuiqi|HTML"></td>
+                    <td class="ctitle2">{{vm.lang.zongshu}}</td>
+                    <td class="ctitle2"  id="ttd3" style="color:green"> {{vm.lang.zhengque}}</td>
+                    <td class="ctitle2"   id="ttd4" style="color:red"> {{vm.lang.cuowu}}</td>
+
+                </tr>
+
+                <tr>
+                    <td class="ctitle2"> {{vm.tdata.blow_zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.tdata.blow_zhengque}}</td>
+                    <td class="ctitle2"  style="color:red">  {{vm.tdata.blow_cuowu}}</td>
+
+
+                </tr>
+                <tr>
+
+                    <td rowspan="2" class="shupai ctitle2"ng-bind-html="vm.lang.anya|HTML"></td>
+                    <td class="ctitle2"> {{vm.lang.zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.lang.zhengque}}</td>
+                    <td class="ctitle2"  style="color:red"> {{vm.lang.cuowu}}</td>
+
+                </tr>
+                <tr>
+                    <td class="ctitle2"> {{vm.tdata.press_zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.tdata.press_zhengque}}</td>
+                    <td class="ctitle2"  style="color:red"> {{vm.tdata.press_cuowu}}</td>
+
+                </tr>
+
+            </table>
+            <table  class="item" id="autoTb">
+                <tr>
+
+                    <td class="ctitle2"> {{vm.lang.guoda}}   </td>
+                    <td class="ctitle2"> {{vm.lang.guoxiao}} </td>
+                    <td class="ctitle2"> {{vm.lang.duochui}} </td>
+                    <td class="ctitle2"> {{vm.lang.shaochui}}</td>
+                    <td class="ctitle2" ng-bind-html="vm.lang.chuiqijinwei|HTML"></td>
+                    <td class="ctitle2" ng-bind-html="vm.lang.qidaoweikai|HTML"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="ctitle2"> {{vm.tdata.blow_guoda}}</td>
+                    <td class="ctitle2"> {{vm.tdata.blow_guoxiao}}</td>
+                    <td class="ctitle2"> {{vm.tdata.blow_duochui}}</td>
+                    <td class="ctitle2"> {{vm.tdata.blow_shaochui}}</td>
+                    <td class="ctitle2">{{vm.tdata.blow_jinwei}}</td>
+                    <td class="ctitle2">{{vm.tdata.blow_qidaoweidakai}}</td>
+
+
+                </tr>
+                <tr>
+
+
+                    <td class="ctitle2">{{vm.lang.guoda}}   </td>
+                    <td class="ctitle2">{{vm.lang.guoxiao}} </td>
+                    <td class="ctitle2">{{vm.lang.duoan}} </td>
+                    <td class="ctitle2">{{vm.lang.shaoan}}</td>
+                    <td class="ctitle2" ng-bind-html="vm.lang.pinlvcuowu|HTML"> </td>
+                    <td class="ctitle2" ng-bind-html="vm.lang.huitanbuzu|HTML"></td>
+
+                </tr>
+                <tr>
+
+                    <td class="ctitle2"> {{vm.tdata.press_guoda}}</td>
+                    <td class="ctitle2"> {{vm.tdata.press_guoxiao}}</td>
+                    <td class="ctitle2"> {{vm.tdata.press_duoan}}</td>
+                    <td class="ctitle2"> {{vm.tdata.press_shaoan}}</td>
+                    <td class="ctitle2"> {{vm.tdata.press_pinlv}}</td>
+                    <td class="ctitle2">{{vm.tdata.press_huitanbuzu}}</td>
+
+                </tr>
+            </table>
+
+            <table class="item" id="rightTb" style="width: 50%">
+                <tr>
+                    <td rowspan="4" class="shupai ctitle" ng-bind-html="vm.lang.dangqiancaozuo+'<br>('+ vm.cycle+')'|HTML"></td>
+                    <td rowspan="2" class="shupai ctitle2" ng-bind-html="vm.lang.chuiqi|HTML"></td>
+                    <td class="ctitle2">{{vm.lang.zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.lang.zhengque}}</td>
+                    <td class="ctitle2"  style="color:red"> {{vm.lang.cuowu}}</td>
+
+                </tr>
+
+                <tr>
+                    <td class="ctitle2"> {{vm.cdata.blow_zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.cdata.blow_zhengque}}</td>
+                    <td class="ctitle2"  style="color:red">  {{vm.cdata.blow_cuowu}}</td>
+
+                </tr>
+                <tr>
+
+                    <td rowspan="2" class="shupai ctitle2" ng-bind-html="vm.lang.anya|HTML"></td>
+                    <td class="ctitle2"> {{vm.lang.zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.lang.zhengque}}</td>
+                    <td class="ctitle2"  style="color:red"> {{vm.lang.cuowu}}</td>
+
+                </tr>
+                <tr>
+                    <td class="ctitle2"> {{vm.cdata.press_zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.cdata.press_zhengque}}</td>
+                    <td class="ctitle2"  style="color:red"> {{vm.cdata.press_cuowu}}</td>
+
+                </tr>
+
+            </table>
+            <table class="item" id="rightAutoTb" style="width: 50%">
+                <tr>
+
+                    <td class="ctitle2"> {{vm.lang.guoda}}   </td>
+                    <td class="ctitle2"> {{vm.lang.guoxiao}} </td>
+                    <td class="ctitle2"> {{vm.lang.duochui}} </td>
+                    <td class="ctitle2"> {{vm.lang.shaochui}}</td>
+                    <td class="ctitle2" style="font-size:11px" ng-bind-html="vm.lang.chuiqijinwei|HTML"></td>
+                    <td class="ctitle2" style="font-size:11px" ng-bind-html="vm.lang.qidaoweikai|HTML"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="ctitle2"> {{vm.cdata.blow_guoda}}</td>
+                    <td class="ctitle2"> {{vm.cdata.blow_guoxiao}}</td>
+                    <td class="ctitle2"> {{vm.cdata.blow_duochui}}</td>
+                    <td class="ctitle2"> {{vm.cdata.blow_shaochui}}</td>
+                    <td class="ctitle2">{{vm.cdata.blow_jinwei}}</td>
+                    <td class="ctitle2">{{vm.cdata.blow_qidaoweidakai}}</td>
+
+                </tr>
+                <tr>
+
+
+                    <td class="ctitle2">{{vm.lang.guoda}}   </td>
+                    <td class="ctitle2">{{vm.lang.guoxiao}} </td>
+                    <td class="ctitle2">{{vm.lang.duoan}} </td>
+                    <td class="ctitle2">{{vm.lang.shaoan}}</td>
+                    <td class="ctitle2"style="font-size:11px" ng-bind-html="vm.lang.pinlvcuowu|HTML"> </td>
+                    <td class="ctitle2" style="font-size:11px"ng-bind-html="vm.lang.huitanbuzu|HTML"></td>
+
+                </tr>
+                <tr>
+
+                    <td class="ctitle2"> {{vm.cdata.press_guoda}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_guoxiao}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_duoan}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_shaoan}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_pinlv}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_huitanbuzu}}</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div  ng-show="!vm.showCpr&&false">
+        <table style="width:100%">
+            <tr>
+                <td class="ctitle2">{{vm.lang.qingchuyiwu}}:<span style="color:{{ !vm.flow.yiwu?'red':'green'}}; padding-left: 20px">{{ !vm.flow.yiwu?vm.lang.weicaozuo:vm.lang.hege}}</span></td>
+                <td class="ctitle2">{{vm.lang.maibojiancha}}:<span style="color:{{ !vm.flow.maibo?'red':'green'}}; padding-left: 20px">{{ !vm.flow.maibo?vm.lang.weicaozuo:vm.lang.hege}}</span></td>
+                <td class="ctitle2">{{vm.lang.jijiuhujiao}}:<span style="color:{{ !vm.flow.hujiao?'red':'green'}}; padding-left: 20px">{{ !vm.flow.hujiao?vm.lang.weicaozuo:vm.lang.hege}}</span></td>
+            </tr>
+            <tr>
+                <td class="ctitle2"> {{vm.lang.huxijiancha}}:<span style="color:{{ !vm.flow.huxi?'red':'green'}}; padding-left: 20px">{{ !vm.flow.huxi?vm.lang.weicaozuo:vm.lang.hege}}</span></td>
+                <td class="ctitle2">{{vm.lang.yishipanduan}}:<span style="color:{{ !vm.flow.yishi?'red':'green'}}; padding-left: 20px">{{ !vm.flow.yishi?vm.lang.weicaozuo:vm.lang.hege}}</span></td>
+                <td class="ctitle2"></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<link rel="stylesheet" type="text/css"  href="cpr/css/cprDataDetail.css">
+<script src="cpr/controllers/cprDataDetailController.js"></script>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:id="@+id/playContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_aspectRatio="170%"
+        app:layout_widthPercent="100%">
+
+        <!--
+        会照成界面的卡顿
+        下面我们提出新的实现方案
+
+         如果用户点击了里面的项，就动态的替换里面的video，并播放，因为在播放的情况下，用户一般不会滑动，当然也是存在滑动的
+         当在播放的情况下，如果产生了滑动，同时当前播放的界面的视频不可见的情况下，就去释放掉内存
+        -->
+
+        <!--<VideoView-->
+        <!--android:id="@+id/video"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gedan6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/zhangyunhan"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_bofang"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/duoshaoren"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/shijian"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/playContainer"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/gedan5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/user"
+        android:text="@string/yanggezuocai" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/user"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_yuandiancaidan"
+        android:tint="@color/gray_dark" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/menu"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/menu"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_pinglun_20"
+        android:text="@string/rensuo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/menu"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/info"
+        android:drawableLeft="@drawable/ic_icon_good_20"
+        android:gravity="center"
+        android:text="@string/qishiqi" />
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

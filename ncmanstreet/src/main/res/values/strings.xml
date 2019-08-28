@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">南昌人道</string>
+    <string name="title_activity_validate_code">ValidateCodeActivity</string>
+    <string name="nchszh">南昌市红十字会</string>
+    <string name="rdbafx">人道、博爱、奉献</string>
+    <string name="wyyd">我已阅读并同意</string>
+    <string name="yonghuxieyi">用户协议</string>
+    <string name="yhxy">用户协议</string>
+    <string name="h">和</string>
+    <string name="yszc">隐私政策</string>
+    <string name="sjhm">手机号码</string>
+    <string name="yfsyzm">已发送验证码至</string>
+    <string name="sjhm_1">13077995907</string>
+    <string name="cxfs">重新发送</string>
+    <string name="ydwt">遇到问题</string>
+    <string name="sjyzm">手机验证码</string>
+    <string name="sy">首页</string>
+    <string name="jhpx">救护培训</string>
+    <string name="wd">我的</string>
+    <string name="jhypx">救护员培训</string>
+    <string name="aedfb">AED分布</string>
+    <string name="zyzjy">志愿者救援</string>
+    <string name="zajz">正在加载...</string>
+    <string name="gd">更多</string>
+    <string name="wdl">登录注册</string>
+    <string name="cswb">\u3000\u3000南昌市红十字会是从事人道主义工作的社会救助团体，以发扬人道、博爱、奉献精神，保护人的生命和健康，促进人类和进步事业为宗旨。以改善最易受损害群体生活境况为工作目标。</string>
+    <string name="result">共有12个结果</string>
+    <string name="step_1">第一步:培训报名</string>
+    <string name="step_2">第二步:线上必修课</string>
+    <string name="step_3">第三步:线上选修课</string>
+    <string name="step_4">第四步:线上考核</string>
+    <string name="step_5">第五步:线下心肺复苏实操培训</string>
+    <string name="bm">报名</string>
+    <string name="cx">查询</string>
+    <string name="step_6">第六步:线下创伤救护实操培训</string>
+    <string name="wscxry">我是初训人员</string>
+    <string name="wsfxry">我是复训人员</string>
+    <string name="tip">提示</string>
+    <string name="qsrjhyzspxbh">请输入救护员培训证书编号</string>
+    <string name="cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="scyczjz">上传一寸免冠证件照</string>
+    <string name="name">姓名:</string>
+    <string name="bt">必填</string>
+    <string name="phone">手机号码:</string>
+    <string name="six">性别:</string>
+    <string name="sfzh">身份证号:</string>
+    <string name="gzdw">工作单位:</string>
+    <string name="whcd">文化程度:</string>
+    <string name="gznx">工作年限</string>
+    <string name="xt">选填</string>
+    <string name="zwzc">职务职称</string>
+    <string name="jtzz">家庭住址</string>
+    <string name="qd">确定</string>
+    <string name="mzsm">免责申明:你应该保证你填写的信息和上传的头像与你本人真实信息保持一致，由于你的个人信息错误导致的一切后果，由你自己承担。</string>
+    <string name="srmm">输入密码</string>
+    <string name="qrmm">确认密码</string>
+    <string name="hszhydjbzs">红十字会运动基本知识</string>
+    <string name="wxx">未学习</string>
+    <string name="ywc">已完成</string>
+    <string name="load">加载中...</string>
+    <string name="to">去这里</string>
+    <string name="jhyjy">救护员救援</string>
+    <string name="need">必填</string>
+    <string name="hjjhy">呼叫救护员</string>
+
+
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="message_update">暂无更新</string>
+    <string name="cancel_signup">确定取消报名吗，将会清除你的报名信息</string>
+
+
+    <string-array name="sixs">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="degEduca">
+        <item>选填</item>
+        <item>小学</item>
+        <item>初中</item>
+        <item>高中</item>
+        <item>中专</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>硕士</item>
+        <item>博士</item>
+    </string-array>
+
+
+</resources>

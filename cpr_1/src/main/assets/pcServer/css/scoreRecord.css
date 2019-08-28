@@ -1,0 +1,121 @@
+
+body{
+	background: #2d2e33 ;/* 2d2e33 */
+	width: 100%;
+	margin: 0;
+	position: relative;
+}
+
+
+.SCenterMain{
+	width: 100%;
+}
+.SCenterBlock{
+	margin:0 auto;
+}
+.SBlock{
+	background:#141517;
+	line-height: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.STabLine{
+	width: 100%;
+
+}
+
+.STabLineModule{
+	width: 16.66%;/*100/6*/
+	line-height: 35px;
+	float: left;
+
+}
+
+.STabLineModule a{
+	/*padding: 5px 7%;*/
+}
+.STabLineModuleS a{
+	/*padding: 5px 7%;*/
+	border-bottom: 2px solid #458c6b;
+}
+.STabLineModule input{
+	width: 90%;
+	border: 0;
+	background-color: transparent;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+}
+.STabLineModule:after{
+	content: "";
+	width: 2px;
+	height:20px;
+	margin: 10px auto;
+	background: #828387;
+	float: right;
+}
+.STabLineModule:last-child:after{
+	display: none;
+}
+.SsearchBg{
+	width: 80px;/*70/158*/
+	height: 22px;
+	border-radius: 8px;
+	background: -moz-linear-gradient( top,#fefdff,#a5a5a5);
+	background: -webkit-linear-gradient(#fefdff, #a5a5a5);
+	background: -o-linear-gradient(#fefdff, #a5a5a5);
+	background: linear-gradient(#fefdff, #a5a5a5);
+	margin: 9px auto 9px auto;
+	line-height: 28px;
+}
+
+
+.SsearchIcon{
+	height: 25px;
+	background: url(image/searchIcon.png) no-repeat left;
+	margin-left: 12%;
+	margin-right: 12%;
+	line-height: 25px;
+	text-align:right;
+	color: #3c3c3c;
+}
+.SlistLine{
+	height: 35px;
+	background: #323d52;
+	text-align: center;
+}
+
+.STabLineModuleName{
+	width:20%;
+	line-height: 35px;
+	float: left;
+}
+.SModulBG ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	line-height: 39px;
+	float: left;
+	display: inline-block;
+	text-align: center;
+}
+.SModulBG ul li{
+	list-style: none;
+}
+
+.SModulBG ul li a{
+	width: 20%;
+	display:inline-block
+}
+
+.SInput{
+	margin-top: 5px;
+}
+.ulData{
+	background: #e9eff6;;
+}
+.ulData:nth-of-type(odd){
+	background: #f5f7f9;
+}

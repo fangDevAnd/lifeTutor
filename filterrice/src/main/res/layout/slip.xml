@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaofangfang.filterrice.consumeView.ScrollViewInner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.xiaofangfang.filterrice.consumeView.MyInnerLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="#242"></View>
+
+        <!--<ListView-->
+            <!--android:id="@+id/listView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="400dp"></ListView>-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="#749"></View>
+
+
+    </com.xiaofangfang.filterrice.consumeView.MyInnerLinearLayout>
+
+    <!--<com.xiaofangfang.filterrice.consumeView.ButtonInter-->
+    <!--android:layout_width="200dp"-->
+    <!--android:background="#527"-->
+    <!--android:layout_height="200dp" />-->
+
+
+</com.xiaofangfang.filterrice.consumeView.ScrollViewInner>

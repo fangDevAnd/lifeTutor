@@ -1,0 +1,51 @@
+<div id="oprateRecord" class="container">
+
+    <div class="RCenterMain">
+        <div class="RCenterBlock">
+            <div class="RBlock">
+                <div class="RtitleLine fontMaxW">
+                    <div class="RtitleName"><a>{{vm.data.tables[vm.currentIndex].title}} - <span style="font-size:15px">{{vm.data.exam_type}}</span></a></div>
+                    <div class="RtitleStuInfo" ng-show="vm.module!='history'">
+                        <a class="RtitleClassNum"><input class="edit" type="text" ng-model="vm.data.stu_class" style="width:100px"  placeholder="请输入班级" /></a>
+                        <a class="RtitleStuName" ><input type="text" class="edit" ng-model="vm.data.stu_name"  style="width:100px" placeholder="请输入姓名" ></a></div>
+                    <div class="RtitleStuInfo" style="margin-top:-40px" ng-show="vm.module=='history'"><a class="RtitleClassNum">{{ vm.data.stu_class}}</a><a class="RtitleStuName">{{ vm.data.stu_name}}</a></div>
+                </div>
+            </div>
+            <div class="RlistLine fontMiddleW">
+                <div ng-show="vm.data.tables[vm.currentIndex].type==0" class="RTabLineModuleName" style="width: 100%;">评语</div>
+                <div ng-show="vm.data.tables[vm.currentIndex].type!=0"  class="RTabLineModuleName"><a>项目</a></div>
+                <div ng-show="vm.data.tables[vm.currentIndex].type!=0"  class="RTabLineModuleName"><a>{{ vm.data.tables[vm.currentIndex].type==1?"次数":"分数"}}</a></div>
+            </div>
+            <div class="RModulBG fontMiddleG" ng-swipe-left="vm.onSwipeLeft()" ng-swipe-right="vm.onSwipeRight()" >
+                <div style="height: 100%">
+
+
+                <div ng-show="vm.data.tables[vm.currentIndex].type==0" style="padding:20px">{{vm.data.tables[vm.currentIndex].pingyu}}</div>
+                <ul ng-show="vm.data.tables[vm.currentIndex].type!=0" ng-repeat="record in vm.data.tables[vm.currentIndex].records">
+                    <li><a>{{record.name}}</a><a>{{record.count}}</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="RTabLinebg">
+                <div class="RTabLine">
+                    <ul>
+                        <li class="{{$index==vm.currentIndex?'checked':''}}" ng-repeat="group in vm.data.tables"></li>
+                    </ul>
+                </div>
+                <div class="RTabLineBtn">
+
+                    <div class="RSaveScoreBtn fontMaxW" ng-click="vm.onPrintRecordPic()">打印波形图</div>
+                    <div class="RSaveScoreBtn fontMaxW" ng-click="vm.onPrintRecord()">打印成绩</div>
+
+                    <div ng-show="vm.module!='history'" class="RSaveScoreBtn fontMaxW" ng-click="vm.save()">保存成绩</div>
+                    <div class="RSaveScoreBtn fontMaxW" ng-click="vm.onPlayBack()">回放成绩</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<link rel="stylesheet" type="text/css"  href="cpr/css/oprateRecord.css">
+<script src="cpr/controllers/oprateRecordController.js"></script>

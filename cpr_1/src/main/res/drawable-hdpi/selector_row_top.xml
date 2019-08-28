@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 头部圆角白灰切换背景色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_top_corner" android:state_pressed="false"/>
+    <item android:drawable="@drawable/shape_top_corner_gray" android:state_pressed="true"/>
+    <item android:drawable="@drawable/shape_top_corner"></item>
+
+</selector>

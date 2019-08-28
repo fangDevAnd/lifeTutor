@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.componentasystemtest">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:ignore="ProtectedPermissions"></uses-permission>
+
+
+    <!--<permission-->
+    <!--android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"-->
+    <!--android:protectionLevel="signatureOrSystem" />-->
+
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TabedActivity.TabedActivity"
+            android:label="@string/title_activity_tabed"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MediaPlayer.MediaPlayerActivity">
+
+
+        </activity>
+        <activity android:name=".photoZip.PhotoZipActivity">
+
+
+        </activity>
+        <activity android:name=".ScreenTest.ScreenTestActivity">
+
+
+        </activity>
+        <activity android:name=".asyncTask.LoaderActivity">
+
+
+        </activity>
+        <activity android:name=".asyncTask.AsyncActivity">
+
+        </activity>
+        <activity android:name=".surface.Demo3Activity" />
+        <activity android:name=".viewDragHelper.MyActivity" />
+        <activity android:name=".xml.MainActivity" />
+        <activity android:name=".Annomation.MyActivityDemo7" />
+        <activity android:name=".scrollview.viewGroup.MyActivity" />
+        <activity android:name=".ColorMetrix.MyActivity" />
+        <activity android:name=".scrollview.Activity.ScrollViewDemo1Activity" />
+        <activity android:name=".scrollview.Activity.HerizontalScrollViewGroupActivity" />
+        <activity android:name=".palette.MyPaletteActivity" />
+        <activity android:name=".notification.MyNotificationActivity"></activity>
+        <activity android:name=".moveLinearViewDisplay.LinearActivity" />
+        <activity android:name=".downloadService.activity.EnvirnmentFilePathTestActivity" />
+        <activity android:name=".downloadService.activity.DownloadFileTestActivity" />
+        <activity android:name=".density.Density" />
+        <activity android:name=".DecorView.DectorActivity" />
+        <activity android:name=".consumeViewAttribute.AttrActivity" />
+        <activity android:name=".circular.MyCircularReveal" />
+        <activity android:name=".canvas.MainActivity.MyViewGroupTestActivity" />
+        <activity android:name=".canvas.MainActivity.Activity" />
+
+        <service android:name=".downloadService.service.DownloadService" />
+
+        <receiver android:name=".broadcastTest.baseUse.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.example.componentasystemtest.broadcastTest" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".broadcastTest.baseUse.MainActivity">
+
+
+        </activity>
+        <activity android:name=".view.ViewBgActivity">
+
+
+        </activity>
+        <activity android:name=".JobScheduler.simple2.JobSchedulerActivity" />
+        <activity android:name=".dialog.simple1.DialogActivity">
+
+
+        </activity>
+        <activity
+            android:name=".dialog.Simple2.DialogWidthTestActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+        </activity>
+        <activity android:name=".serializable.fragmentSerializableTest.FragmentSerizlizableActivity" />
+        <activity android:name=".musicPlay.simple2.MusicListActivity">
+
+        </activity>
+        <activity android:name=".musicPlay.simple3.MediaPlayerActivity">
+
+        </activity>
+        <activity android:name=".appProtectedAlive.doubleProcessProtected.AppProtectedActivity">
+
+        </activity>
+        <activity android:name=".appProtectedAlive.onePixelActivity.SinglePixelActivity" />
+        <activity android:name=".appProtectedAlive.onePixelActivity.OnePixelActivity">
+
+        </activity>
+        <activity android:name=".appProtectedAlive.nullNotification.NullNotificationActivity">
+
+        </activity>
+        <activity android:name=".appProtectedAlive.jobScheduler.JobActivity">
+
+        </activity>
+
+
+        <activity android:name=".sqlite.DaoOprateActivity">
+
+        </activity>
+        <activity android:name=".broadcastTest.netStatusChange.NetChangeActivity">
+
+        </activity>
+        <activity android:name=".AppEnabled.AppEnableActivity">
+
+        </activity>
+        <activity android:name=".AlarmManager.AlarmActivity">
+
+        </activity>
+        <activity android:name=".JobScheduler.simple3.JobScheActivity">
+
+        </activity>
+        <activity
+            android:name=".windowManager.WindowManagerActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".popupWindow.PopWindowActivity"></activity>
+
+
+        <activity android:name=".ProjectListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".handler.HandlerPrincipleActivity" />
+        <activity android:name=".MediaPlayer.VideoPlayerActivity" />
+        <activity android:name=".MediaPlayer.VideoPlayer1Activity" />
+        <activity
+            android:name=".editText_inputManager_trans.InputManager_Activity"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name=".net.NetRequestActivity" />
+
+
+        <!-- exported  这个地方必须是True，否则外界的应用无法启动该JobService -->
+        <!-- permission   必须定义这个权限，你懂得 -->
+        <service
+            android:name=".JobScheduler.simple1.DownloadJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".JobScheduler.simple2.MyJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name=".musicPlay.simple2.PlayService" />
+
+        <!--
+        本地系统服务
+        -->
+        <service android:name=".appProtectedAlive.doubleProcessProtected.LocalService" />
+
+        <!--
+        远程service
+        -->
+        <service
+            android:name=".appProtectedAlive.doubleProcessProtected.RemoteService"
+            android:process=":remote" />
+        <service android:name=".appProtectedAlive.nullNotification.KeepLiveService$InnerService" />
+        <service android:name=".appProtectedAlive.nullNotification.KeepLiveService" />
+
+
+        <service
+            android:name=".appProtectedAlive.jobScheduler.JobActivity$MyJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"></service>
+
+
+        <service
+            android:name=".broadcastTest.netStatusChange.MyJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name=".AlarmManager.service.OneShotAlarm" />
+
+
+        <service
+            android:name=".JobScheduler.simple3.JobSchedulerService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+
+        <receiver android:name=".broadcastTest.netStatusChange.NetChangeBroadcast">
+            <intent-filter>
+                <action android:name=" android.net.conn.CONNECTIVITY_CHANGE"></action>
+            </intent-filter>
+        </receiver>
+
+
+        <receiver android:name=".AlarmManager.broadcast.MyBroadcast">
+            <intent-filter>
+                <action android:name="MyBroadcast"></action>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+
+</manifest>

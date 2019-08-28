@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1、"
+        android:layout_marginLeft="13dp"
+        android:textColor="#ff0c0c0c"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/number"
+        android:text="现场心肺复苏肚饿核心是(  )"
+        android:textColor="#ff0c0c0c"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/options"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question">
+
+
+        <RadioButton
+            android:id="@+id/a"
+            android:tag="A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="A、打开气道、口对口吹气、胸外心脏按压"
+            android:textColor="#ff0c0c0c"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/b"
+            android:tag="B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="B、打开气道、口对口吹气、胸外心脏按压"
+            android:textColor="#ff0c0c0c"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/c"
+            android:tag="C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="C、打开气道、口对口吹气、胸外心脏按压"
+            android:textColor="#ff0c0c0c"
+            android:textSize="15sp" />
+
+
+        <RadioButton
+            android:id="@+id/d"
+            android:tag="D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="D、口对口吹气、胸外心脏按压、打开气道"
+            android:textColor="#ff0c0c0c"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+
+
+    <View
+        android:layout_below="@id/options"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_22"></View>
+
+
+</RelativeLayout>

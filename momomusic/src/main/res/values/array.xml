@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="zhibobiaoti">
+        <item>推荐</item>
+        <item>女神</item>
+        <item>男生</item>
+        <item>新秀</item>
+        <item>声音控</item>
+        <item>精舞门</item>
+        <item>独家</item>
+        <item>北京</item>
+        <item>PK</item>
+    </string-array>
+
+    <string-array name="shipinbiaoti">
+        <item>推荐</item>
+        <item>经典</item>
+        <item>广场舞曲</item>
+        <item>翻唱</item>
+        <item>现场</item>
+        <item>抖音神曲</item>
+        <item>动漫</item>
+        <item>舞蹈</item>
+        <item>流行</item>
+        <item>MV</item>
+        <item>影视</item>
+        <item>综艺</item>
+        <item>古风</item>
+        <item>明星独家</item>
+    </string-array>
+    <string-array name="zhuye">
+        <item>资料</item>
+        <item>相册</item>
+    </string-array>
+
+</resources>

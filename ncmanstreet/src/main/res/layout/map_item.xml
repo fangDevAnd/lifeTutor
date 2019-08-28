@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingLeft="13dp"
+    android:paddingTop="13dp"
+    android:paddingRight="10dp">
+
+
+    <TextView
+        android:id="@+id/pointName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pointName"
+        android:layout_alignLeft="@id/pointName"
+        android:text="@string/load"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/distance"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/nav"
+        android:layout_toRightOf="@+id/distance"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/load"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:drawableTop="@drawable/ic_nav"
+        android:text="@string/to"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/position"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/ic_22"></View>
+
+
+</RelativeLayout>

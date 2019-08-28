@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_17" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/logo"
+            android:text="东湖区"
+            android:textColor="#ff252525"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/timeTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="培训时间："
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/dateTime"
+            android:layout_toRightOf="@id/timeTag"
+            android:text="2019/10/11  8:00"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/addressTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="培训地址："
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeTag"
+            android:id="@+id/address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/addressTag"
+            android:text="南昌大学（前湖校区）培训基地（VR）"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/manCountTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="培训人数："
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/addressTag"
+            android:text="30人"
+            android:id="@+id/trainCount"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/remainCountTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manCountTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="剩余人数："
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manCountTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/remainCountTag"
+            android:text="10人"
+            android:id="@+id/leftCount"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/orgTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remainCountTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="培训机构："
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remainCountTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/orgTag"
+            android:text="南昌红十字会"
+            android:id="@+id/trainOrg"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/teacherTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orgTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="培训讲师："
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orgTag"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/orgTag"
+            android:text="李涛"
+            android:id="@+id/trainer"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_downstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@+id/teacherTag"
+        android:background="@drawable/ic_22"></View>
+
+</LinearLayout>

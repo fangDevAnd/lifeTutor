@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rcs.nchumanity.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f6f6f6"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.rcs.nchumanity.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            app:layout_widthPercent="90%">
+
+
+            <com.rcs.nchumanity.view.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_widthPercent="50%">
+
+
+                <ImageButton
+                    android:id="@+id/one"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_fff"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_26" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/step_1"
+                    android:textColor="#ff666666"
+                    android:textSize="11sp" />
+
+
+            </com.rcs.nchumanity.view.PercentLinearLayout>
+
+            <com.rcs.nchumanity.view.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_widthPercent="50%">
+
+                <ImageButton
+                    android:id="@+id/two"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_fff"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_38" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/step_2"
+                    android:textColor="#ff666666"
+                    android:textSize="11sp" />
+
+
+            </com.rcs.nchumanity.view.PercentLinearLayout>
+
+
+        </com.rcs.nchumanity.view.PercentLinearLayout>
+
+        <com.rcs.nchumanity.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            app:layout_widthPercent="90%">
+
+
+            <com.rcs.nchumanity.view.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_widthPercent="50%">
+
+
+                <ImageButton
+                    android:id="@+id/three"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_fff"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_37" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/step_3"
+                    android:textColor="#ff666666"
+                    android:textSize="11sp" />
+
+
+            </com.rcs.nchumanity.view.PercentLinearLayout>
+
+            <com.rcs.nchumanity.view.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_widthPercent="50%">
+
+
+                <ImageButton
+                    android:id="@+id/four"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_fff"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_36" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/step_4"
+                    android:textColor="#ff666666"
+                    android:textSize="11sp" />
+
+
+            </com.rcs.nchumanity.view.PercentLinearLayout>
+
+
+        </com.rcs.nchumanity.view.PercentLinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f6f6f6"></View>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="18dp"
+                android:text="第五步：线下心肺复苏实操培训"
+                android:textColor="#ff666666"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:columnCount="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/five_signUp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_29" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/five_signIn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_23" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/five_query"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_31" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="18dp"
+                android:text="第六步：线下创伤救护实操培训"
+                android:textColor="#ff666666"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:columnCount="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/six_signUp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_29" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/sixSignIn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_23" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/sixQuery"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@color/smssdk_white"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_31" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</com.rcs.nchumanity.view.PercentLinearLayout>

@@ -1,0 +1,123 @@
+﻿<!--
+
+系统的主界面  ，用来实现的功能是程序的调度实现
+
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+    <meta name="viewport"
+          content="width=device-width=460,target-densitydpi=high-dpi,initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>康人授权系统</title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <!--
+    iScroll是一个高性能，资源占用少，无依赖，多平台的javascript滚动插件
+    -->
+    <script src="Scripts/iscroll-probe.js"></script>
+    <!--
+    angular-1.39
+    -->
+    <script src="Scripts/angular-1.39.js"></script>
+    <!--
+              加载路由
+               -->
+    <script src="Scripts/angular-route.js"></script>
+    <!--
+
+    过度动画效果的库
+    -->
+    <script src="Scripts/jquery.transit.min.js"></script>
+    <script src="Scripts/app/config.js"></script>
+    <!--
+
+
+     ngRoute模块提供触摸事件，方便的应用于移动触摸设备。
+    它的实现是实现是基于jQuery移动触摸事件处理。
+    -->
+    <script src="Scripts/angular-touch.min.js"></script>
+
+    <link href="cpr/css/base.css" rel="stylesheet"/>
+    <link href="css/base.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/date.css" rel="stylesheet"/>
+    <link href="css/tabtree.css" rel="stylesheet"/>
+</head>
+
+<body class="fontMiddle" ng-app="app">
+
+<div id="fullView"></div>
+<div>
+    <!--
+      ng-controller 指令用于为你的应用添加控制器。
+      在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。
+
+    -->
+    <div ng-controller="cprController">
+        <div id="main">
+            <div class="right" id="right" style="width:100%">
+                <div ng-view id="ngView"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+返回管理
+-->
+<script src="Scripts/manager/BackManager.js"></script>
+<!--
+数据管理
+-->
+<script src="Scripts/manager/DBManager.js"></script>
+<!--
+
+相机的管理，用来调动系统的相机
+-->
+<script src="Scripts/manager/CameraManager.js"></script>
+
+<!--
+弹出框的管理
+-->
+<script src="Scripts/manager/DialogManager.js"></script>
+
+<!--
+
+滚动管理
+-->
+
+<script src="Scripts/manager/ScorllManager.js"></script>
+
+
+<!--
+
+加载框的管理
+-->
+
+<script src="Scripts/manager/LoadingManager.js"></script>
+<script src="Scripts/manager/RockManager.js"></script>
+<script src="Scripts/app/app.js"></script>
+<script src="Scripts/app/cprController.js"></script>
+<script src="Scripts/services/NetService.js"></script>
+<script src="Scripts/directive/adjustInput.js"></script>
+<script src="Scripts/directive/touchHold.js"></script>
+<script src="Scripts/directive/DialogDirective.js"></script>
+<script src="Scripts/directive/TabTreeDirective.js"></script>
+<script src="Scripts/directive/PopSelectorDirective.js"></script>
+<script src="Scripts/directive/confirmBtn.js"></script>
+<script src="Scripts/services/LanguageService.js"></script>
+<script src="Scripts/services/LoadService.js"></script>
+<script src="Scripts/services/FullScreenShowService.js"></script>
+<script src="Scripts/directive/DatePicker.js"></script>
+<script src="Scripts/directive/autograph.js"></script>
+<script src="Scripts/filter/filter.js"></script>
+<script src="Scripts/bower_components/signature_pad.min.js"></script>
+</body>
+</html>

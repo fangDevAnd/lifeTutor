@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--这个是商品过滤的界面的显示，里面的空间定义了实现的
+    过滤的条件列表，其中 priceSpce是一个价格区间，其他都是扩展的布局
+
+    -->
+
+
+    <com.xiaofangfang.rice2_verssion.view.ExpandableLayout
+        android:id="@+id/filterConditionOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></com.xiaofangfang.rice2_verssion.view.ExpandableLayout>
+
+    <!--价格过滤区间-->
+    <com.xiaofangfang.rice2_verssion.view.PriceSpace
+        android:id="@+id/filterPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.xiaofangfang.rice2_verssion.view.PriceSpace>
+
+
+    <com.xiaofangfang.rice2_verssion.view.ExpandableLayout
+        android:id="@+id/filterConditionTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></com.xiaofangfang.rice2_verssion.view.ExpandableLayout>
+
+
+    <com.xiaofangfang.rice2_verssion.view.ExpandableLayout
+        android:id="@+id/filterConditionThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></com.xiaofangfang.rice2_verssion.view.ExpandableLayout>
+
+
+    <com.xiaofangfang.rice2_verssion.view.ExpandableLayout
+        android:id="@+id/filterConditionFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></com.xiaofangfang.rice2_verssion.view.ExpandableLayout>
+</LinearLayout>

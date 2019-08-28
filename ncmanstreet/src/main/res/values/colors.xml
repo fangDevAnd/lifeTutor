@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="button_press">#6c79c6</color>
+
+    <color name="themecolor">#d53232</color>
+    <color name="black">#111</color>
+    <color name="gray">#DFDFDF</color>
+    <color name="btn_fade">#81FD3129</color>
+
+    <color name="gray_BEBEBE">#BEBEBE</color>
+
+
+    <color name="gray_DBDBDB">#DBDBDB</color>
+
+    <color name="red_FC0606">#FC0606</color>
+
+    <color name="black_181818">#181818</color>
+    <color name="icon_menu">#666666</color>
+    <color name="item_img_text_title">#333333</color>
+    <color name="item_img_text_des">#666666</color>
+
+
+    <integer name="index0">0</integer>
+    <integer name="index1">1</integer>
+    <integer name="index2">2</integer>
+    <integer name="index3">3</integer>
+
+
+    <color name="navpage">#FFE1E8EB</color>
+
+</resources>

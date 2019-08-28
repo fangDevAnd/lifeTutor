@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <books>
+    <book>
+        <author>小鸟</author>
+        <price>23.54</price>
+        <name>uml建模</name>
+        <class>计算机</class>
+    </book>
+    <book>
+        <author>小飞</author>
+        <price>34.76</price>
+        <name>java程序设计</name>
+        <class>计算机</class>
+    </book>
+    <book>
+        <author>小贱</author>
+        <price>32.78</price>
+        <name>红高粱</name>
+        <class>文学</class>
+    </book>
+    <book>
+        <author>简单</author>
+        <price>45.64</price>
+        <name>任性的代价</name>
+        <class>哲学</class>
+    </book>
+
+</books>

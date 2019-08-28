@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">consumeView</string>
+    <string name="aihen">爱很简单</string>
+    <string name="doo">DoooboiPoilot/NIMEONE</string>
+    <string name="huodegengduo">获得更多资讯</string>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <item name="id_stickynavlayout_topview" type="id" />
+    <item name="id_stickynavlayout_viewpager" type="id" />
+    <item name="id_stickynavlayout_indicator" type="id" />
+    <item name="id_stickynavlayout_innerscrollview" type="id" />
+
+
+    <string-array name="magic_effect">
+        <item>RotateDown</item>
+        <item>RotateUp</item>
+        <item>RotateY</item>
+        <item>Standard</item>
+        <item>Alpha</item>
+        <item>ScaleIn</item>
+        <item>RotateDown and Alpha</item>
+        <item>RotateDown and Alpha And ScaleIn</item>
+    </string-array>
+
+
+</resources>

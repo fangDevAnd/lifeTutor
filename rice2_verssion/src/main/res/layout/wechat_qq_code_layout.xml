@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaofangfang.rice2_verssion.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/codebg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <com.xiaofangfang.rice2_verssion.view.CommandBar
+        android:id="@+id/commandBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.xiaofangfang.rice2_verssion.view.CommandBar>
+
+
+    <ImageView
+        android:id="@+id/code_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/qq_code"
+        app:layout_aspectRatio="100%"
+        app:layout_widthPercent="60%" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="添加方式:"
+        android:textColor="#111"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_light"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:text="保存里面的二维码识别添加"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        app:layout_widthPercent="75%" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/code_tip"
+        android:textColor="#202020"
+        android:textSize="13sp" />
+
+
+    <com.xiaofangfang.rice2_verssion.view.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/all_radius_gray_transparent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="温馨提示:"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_info"
+            android:textColor="#fff" />
+
+
+    </com.xiaofangfang.rice2_verssion.view.PercentLinearLayout>
+
+
+</com.xiaofangfang.rice2_verssion.view.PercentLinearLayout>

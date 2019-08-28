@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/weather_swipereflush"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/weatherInfoScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <!--该view的高度需要动态确定,不能这样直接设置-->
+                <RelativeLayout
+                    android:id="@+id/weather_maindis"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/weatherbg"
+                    android:orientation="vertical">
+
+                    <!--当天信息的详细信息-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/newTemporary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="15dp"
+                            android:textSize="60sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/newTemporary"
+                            android:paddingTop="10dp"
+                            android:textColor="@android:color/black"
+                            android:text="℃" />
+
+                        <!--这里设置的是定位的位置显示，所以我我门需要将位置信息
+                        传递过来-->
+                        <TextView
+                            android:id="@+id/position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_below="@+id/newTemporary"
+                            android:paddingLeft="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/positionRoute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_below="@+id/newTemporary"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/position"
+                            />
+
+                        <TextView
+                            android:id="@+id/weatherStatus"
+                            android:layout_width="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/position"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="15dp"
+                           />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/airQualityAndScore"
+                            android:layout_width="0dp"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_kongqi"
+                            android:drawablePadding="10dp"
+                            android:paddingLeft="40dp"
+                            />
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:textColor="@android:color/black"
+                            android:layout_height="match_parent"
+                            android:background="@color/diver" />
+
+                        <TextView
+                            android:id="@+id/weatherStatus1"
+                            android:layout_width="0dp"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_shuidi"
+                            android:drawablePadding="10dp"
+                            android:paddingLeft="40dp"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--存放三天的天气信息  -->
+                    <ListView
+                        android:id="@+id/save_three_day_weather_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"></ListView>
+
+                    <!--详细信息
+                    这里存放的将会是其他两天信息的具体内容，我们-->　
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/detailInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/ic_bottom"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="50dp"
+                            android:background="@drawable/buttonpres"
+                            android:textColor="@android:color/black"
+                            android:paddingTop="5dp"
+                            android:text="显示详细信息"
+                            android:textAlignment="center" />
+
+                        <include layout="@layout/other_day_weather_info"></include>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:textColor="@android:color/black"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/listsplit" />
+
+
+                    <!--自定义视图以及风力  等-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--日出　日落　月出　　月落-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <!--one-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <!--显示-->
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/ic_richu" />
+
+                                <TextView
+                                    android:id="@+id/richuTime"
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                   />
+                            </LinearLayout>
+
+
+                            <!--two-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <!--显示-->
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/ic_riluo" />
+
+                                <TextView
+                                    android:id="@+id/riluoTime"
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                 />
+                            </LinearLayout>
+
+
+                            <!--three-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <!--显示-->
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/ic_yuesheng" />
+
+                                <TextView
+                                    android:textColor="@android:color/black"
+                                    android:id="@+id/yueshengTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                   />
+                            </LinearLayout>
+
+                            <!--four-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <!--显示-->
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/ic_richu" />
+
+                                <TextView
+                                    android:textColor="@android:color/black"
+                                    android:id="@+id/yueluoTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                     />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="@color/diver" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:textColor="@android:color/black"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/listsplit" />
+
+                        <!--常见天气信息-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <!--one-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <!--显示-->
+                                <TextView
+                                    android:id="@+id/windDir"
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                     />
+
+                                <TextView
+                                    android:id="@+id/windSC"
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="@color/diver" />
+                            <!--two-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <!--显示-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:text="湿度" />
+
+                                <TextView
+                                    android:id="@+id/hum"
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                   />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:textColor="@android:color/black"
+                                android:layout_height="match_parent"
+                                android:background="@color/diver" />
+                            <!--three-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <!--显示-->
+                                <TextView
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="降雨量" />
+
+                                <TextView
+                                    android:id="@+id/pcpn"
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                     />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:textColor="@android:color/black"
+                                android:background="@color/diver" />
+                            <!--four-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <!--显示-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:text="气压" />
+
+                                <TextView
+                                    android:id="@+id/pres"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                     />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="@color/diver" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:textColor="@android:color/black"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/listsplit" />
+
+                    <!--存放其他的数据　　紫外线　　能见度　　风速　　　降水概率-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <!--one-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <!--显示-->
+                            <TextView
+                                android:textColor="@android:color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="紫外线" />
+
+                            <TextView
+                                android:id="@+id/uv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/diver" />
+                        <!--two-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <!--显示-->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:text="能见度" />
+
+                            <TextView
+                                android:id="@+id/visible"
+                                android:layout_width="match_parent"
+                                android:textColor="@android:color/black"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/diver" />
+                        <!--three-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <!--显示-->
+                            <TextView
+                                android:textColor="@android:color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="风速" />
+
+                            <TextView
+                                android:id="@+id/windSpeed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                 />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/diver" />
+                        <!--four-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <!--显示-->
+                            <TextView
+                                android:id="@+id/pop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:text="降水率" />
+
+                            <TextView
+                                android:textColor="@android:color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                 />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/diver" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:textColor="@android:color/black"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/listsplit" />
+                    <!--各种指数的视图-->
+                    <include layout="@layout/weather_index_view"></include>
+
+
+                    <!--这个ViewLayout的作用是显示指数信息色详情信息-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/detailIndexInfo"
+                            android:layout_width="match_parent"
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

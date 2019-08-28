@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/ic_22"></View>
+
+    <Button
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/smssdk_white"
+        android:drawableRight="@drawable/ic_downstep"
+        android:drawableTint="#E5E5E5"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="使用须知"
+        android:textColor="#ff0c0c0c"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/ic_22"></View>
+
+
+</LinearLayout>

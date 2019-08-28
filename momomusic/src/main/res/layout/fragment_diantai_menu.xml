@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/paihangbang"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_white"
+        android:drawableTop="@drawable/ic_bofanglishi_huan"
+        android:drawablePadding="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/is_bofanglishi"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/jingxuan"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_white"
+        android:drawableTop="@drawable/ic_quanbufenlei_huan"
+        android:drawablePadding="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/is_quanbofenlei"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/fenlei"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_white"
+        android:drawableTop="@drawable/ic_guangbo_huan"
+        android:drawablePadding="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/is_guangbo"
+        android:textColor="@android:color/black" />
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_white"
+        android:drawableTop="@drawable/ic_xiaoshuo_huan"
+        android:drawablePadding="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/is_xiaoshuo"
+        android:textColor="@android:color/black" />
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_white"
+        android:drawableTop="@drawable/ic_ertong_huan"
+        android:drawablePadding="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/is_ertong"
+        android:textColor="@android:color/black" />
+
+
+</LinearLayout>

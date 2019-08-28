@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menu_tab_indicator_color">#f11409</color>
+    <color name="listsplit">#e2e2e2</color>
+    <color name="diver">#353334</color>
+    <color name="sun">#f9d300</color>
+    <color name="prescolor">#ccc</color>
+    <color name="orangle">#faff3305</color>
+</resources>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+   <com.rcs.nchumanity.view.CommandBar
+       android:visibility="gone"
+       toolbar:title="必修课"
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"></com.rcs.nchumanity.view.CommandBar>
+
+    <LinearLayout
+        android:id="@+id/disArea"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <fragment
+                android:id="@+id/videoFragment"
+                android:name="com.rcs.nchumanity.fragment.VideoPlayFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></fragment>
+
+            <ImageButton
+                android:onClick="clickBack"
+                android:background="@null"
+                android:foregroundTint="@color/smssdk_white"
+                android:src="@drawable/ic_fanhui"
+                android:layout_width="40dp"
+                android:id="@+id/backupPage"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/ic_17"
+                android:layout_width="3dp"
+                android:id="@+id/logo"
+                android:layout_marginLeft="13dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_toRightOf="@id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课后练习"
+                android:id="@+id/title"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffda251d"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:id="@+id/devider"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_below="@id/title"
+                android:background="@drawable/ic_22"
+                android:layout_width="match_parent"
+                android:layout_height="2px"></View>
+
+
+            <ListView
+                android:layout_below="@+id/devider"
+                android:id="@+id/subjectList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"></ListView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

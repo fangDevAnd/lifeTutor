@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Toolbar.ToolbarActivity">
+
+    <!--
+
+    <attr name="title" format="string"></attr>
+    <attr name="titleTextSize" format="dimension"></attr>
+    <attr name="titleTextColor" format="color"></attr>
+    <attr name="leftTextColor" format="color"></attr>
+    <attr name="leftBackground" format="color|reference"></attr>
+    <attr name="leftText" format="string"></attr>
+    <attr name="rightTextColor" format="color"></attr>
+    <attr name="rightBackground" format="reference|color"></attr>
+    <attr name="rightText" format="string"></attr>
+
+    -->
+
+    <com.xiaofangfang.consumeview.Toolbar.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        tool:rightTextColor="#111"
+        tool:titleTextColor="#ccc"
+        tool:leftTextColor="#111"
+        tool:leftText="返回"
+        tool:rightText="设置"
+        tool:title="首页"></com.xiaofangfang.consumeview.Toolbar.Toolbar>
+
+
+</LinearLayout>

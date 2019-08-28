@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="197dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="提 示"
+        android:textColor="#ffda251d"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="124dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="请连续点击三次或者长按5秒发送求救信息"
+        android:textColor="#ff737272"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_width="154dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_bg1"
+        android:text="确定"
+        android:textColor="@color/smssdk_white"
+        android:textSize="9sp" />
+
+
+</LinearLayout>

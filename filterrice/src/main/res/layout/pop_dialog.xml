@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/white_radius_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_weight="1"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                android:text="套餐参数"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <!--套餐类型-->
+                <TextView
+                    android:text="套餐类型"
+                    android:id="@+id/cardSetmealTypeFlag"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="电信天翼4G套餐"
+                    android:layout_toRightOf="@+id/cardSetmealTypeFlag"
+                    android:id="@+id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/cardSetmealType"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+
+                <!--运营商-->
+                <TextView
+                    android:text="运营商"
+                    android:id="@+id/opratorFlag"
+                    android:layout_below="@id/line1"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="中国电信"
+                    android:layout_below="@id/line1"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/opratorFlag"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+                <!--通话时长-->
+                <TextView
+                    android:text="通话时长"
+                    android:id="@+id/callCountFlag"
+                    android:layout_below="@id/line2"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="中国电信"
+                    android:layout_below="@id/line2"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/callCountFlag"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+
+                <!--流量-->
+                <TextView
+                    android:text="流量"
+                    android:id="@+id/flowCountFlag"
+                    android:layout_below="@id/line3"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="每月前10G提供4G网速，超过后上网速度降至最高256Kbps"
+                    android:layout_below="@id/line3"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/flowCount"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/flowCount"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+                <!--接听-->
+                <TextView
+                    android:text="接听"
+                    android:id="@+id/offhookFlag"
+                    android:layout_below="@id/line4"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="全国免费"
+                    android:layout_below="@id/line4"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/offhookFlag"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+
+                <!--增值业务-->
+                <TextView
+                    android:text="增值业务"
+                    android:id="@+id/addValueFlag"
+                    android:layout_below="@id/line5"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="来电显示"
+                    android:layout_below="@id/line5"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/addValueFlag"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+
+                <!--其他相关-->
+                <TextView
+                    android:text="其他相关"
+                    android:id="@+id/otherFlag"
+                    android:layout_below="@id/line6"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="可以办理副卡业务 ，具体细节请咨询当地营业厅"
+                    android:layout_below="@id/line6"
+                    android:id="@+id/other"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/other"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+                <!--宽带业务-->
+                <TextView
+                    android:text="宽带业务"
+                    android:id="@+id/broadBandFlag"
+                    android:layout_below="@id/line7"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="赠送一路宽带"
+                    android:layout_below="@id/line7"
+                    android:id="@+id/broadBand"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/broadBand"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+                <!--数据电视-->
+                <TextView
+                    android:text="itv数据电视"
+                    android:id="@+id/itvFlag"
+                    android:layout_below="@id/line8"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="每月15元itv业务"
+                    android:layout_below="@id/line8"
+                    android:id="@+id/itv"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/itvFlag"
+                    android:background="#f2f2f2"
+                    android:id="@+id/line9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+
+                <!--现金红包-->
+                <TextView
+                    android:text="现金红包"
+                    android:id="@+id/redPacketFlag"
+                    android:layout_below="@id/line9"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="翼支付红包30个月10元现金红包"
+                    android:layout_below="@id/line9"
+                    android:id="@+id/redPacket"
+                    android:layout_alignLeft="@id/cardSetmealType"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="关闭"
+            android:textColor="@android:color/white"
+            android:background="@drawable/gradient_orangle_bg_radius"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="35dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

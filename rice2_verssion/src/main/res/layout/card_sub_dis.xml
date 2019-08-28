@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setmeal"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    app:layout_widthPercent="33.3%">
+
+
+    <TextView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="中国电信商旅套餐"
+        android:textColor="@color/themecolor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/card_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:gravity="center"
+        android:text="20元"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/card_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_gray"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="1dp"
+        android:text="超低价"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/card_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/card_des"
+        android:scaleType="centerCrop"
+        android:src="@drawable/card2" />
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

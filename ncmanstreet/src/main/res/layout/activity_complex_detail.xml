@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rcs.nchumanity.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.rcs.nchumanity.view.CommandBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        toolbar:title="选修课"></com.rcs.nchumanity.view.CommandBar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/contentArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rcs.nchumanity.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <fragment
+                android:id="@+id/videoFragment"
+                android:name="com.rcs.nchumanity.fragment.VideoPlayFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></fragment>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="#111111"
+                android:textSize="20sp" />
+
+
+            <com.rcs.nchumanity.view.PercentLinearLayout
+                android:id="@+id/imgArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!--
+                 用来实现数据库中的img进行的填充
+                -->
+
+            </com.rcs.nchumanity.view.PercentLinearLayout>
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3sp"
+                android:padding="10dp"
+                android:textColor="#111" />
+
+
+        </com.rcs.nchumanity.view.PercentLinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</com.rcs.nchumanity.view.PercentLinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/themecolor">
+
+
+    <ImageButton
+        android:id="@+id/backupPage"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_upstep"
+        app:layout_marginLeftPercent="2%" />
+
+    <TextView
+        android:id="@+id/barTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxLength="10"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_marginRightPercent="5%" />
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

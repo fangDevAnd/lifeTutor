@@ -1,0 +1,38 @@
+<div class="tabTreeContainer">
+    <div class="toolTypeBtn fontMax ">
+        <div class="toolTypeBtnCancel btn " ng-click="ngModel.cancel()">取消</div>
+        <div class="toolTypeBtnEnter btn" ng-click="ngModel.enter()">确定</div>
+        <div class="clbth"></div>
+    </div>
+    <div class="toolTypeMain">
+        <div class="toolTypeBlock">
+            <div class="toolTypeRow fontMax">
+
+                <div class="toolTypeContent">
+<!-- ng-class="{true:'tooltypeLevel levelBottomSelected',false:'tooltypeLevel'}[title.selected]" -->
+                    <div class="toolTypeContent"  ng-repeat="title in ngModel.toList()" ng-click="ngModel.titleClick(title)" >
+                        <a class="tooltypeLevel"  ng-class="{true:'tooltypeLevel levelBottomSelected',false:'tooltypeLevel'}[title.name==ngModel.cNode.name]" >{{title.name}}</a>
+                        <div class="tooltypeArrowIcon"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="toolTypeBlock2 fontSmall" >
+                <div class="toolTypeColumn toolTypeContent">
+                    <div>
+
+                         <div ng-if=" ngModel.cNode.children==null">
+                        菜单加载中...
+                    </div>
+                         <div ng-show="ngModel.cNode.children!=null" ng-repeat="item in ngModel.cNode.children" >
+                        <a  ng-click="ngModel.itemClick(item)">{{item.name}}</a>
+                        <div ng-class="{true:'toolTypeselectedIcon toolTypeUnselected',false:'toolTypeUnselected'}[item.selected]" ></div>
+                    </div>
+                        <!-- 修复偏移-->
+                        <div style="height: 80px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

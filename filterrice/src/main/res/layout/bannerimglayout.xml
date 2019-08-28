@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--轮播图布局容器-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--轮播图控件-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--小点以及文字布局容器-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:background="#33000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!--轮播图文字-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="图片标题"
+            android:textColor="@color/white" />
+        <!--小点布局容易-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dot_0"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/dot_focused" />
+
+            <View
+                android:id="@+id/dot_1"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/dot_normal" />
+
+            <View
+                android:id="@+id/dot_2"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/dot_normal" />
+
+            <View
+                android:id="@+id/dot_3"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/dot_normal" />
+
+            <View
+                android:id="@+id/dot_4"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/dot_normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

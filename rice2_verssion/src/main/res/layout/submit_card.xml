@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splitLine_little"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <com.xiaofangfang.rice2_verssion.view.CommandBar
+        android:id="@+id/commandBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.xiaofangfang.rice2_verssion.view.CommandBar>
+
+
+    <RelativeLayout
+        android:id="@+id/positionSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/all_radius_white_bg"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/position"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_position" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/position"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/user"
+            android:text=""
+            android:textColor="#3b3b3b"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/positionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/user"
+            android:layout_below="@id/user"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/down"
+            android:maxLines="2"
+            android:tag="没有位置，请选择位置"
+            android:text="没有位置，请选择位置"
+            android:textColor="#363636"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/down"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_downstep" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/positionText"
+            android:layout_below="@id/positionText"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="这个是联系的地址，请认真选择"
+            android:textColor="@color/themecolor"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/all_radius_white_bg"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/oprators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/card"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/oprators"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/cardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/oprators"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/card"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/card_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/cardName"
+            android:layout_below="@id/cardName"
+            android:text=""
+            android:textColor="#363636"
+            android:textSize="13sp" />
+
+
+        <!--下面是基本的信息的显示-->
+        <TextView
+            android:id="@+id/callText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_des"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="45dp"
+            android:text="通话时长"
+            android:textColor="#111"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/callCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/callText"
+            android:layout_below="@+id/card_des"
+            android:layout_marginRight="25dp"
+            android:text=""
+            android:textColor="#363636"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/flowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/callText"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="流量总量"
+            android:textColor="#111"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/flowText"
+            android:layout_below="@+id/card_des"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/flowText"
+            android:text=""
+            android:textColor="#363636"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/flow"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="活动"
+            android:textColor="#111"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/actionT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/action"
+            android:layout_below="@+id/card_des"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/flowText"
+            android:text=""
+            android:textColor="#363636"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/xiaofei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/action"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="月消费"
+            android:textColor="#111"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/xiaofeiT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/xiaofei"
+            android:layout_below="@+id/card_des"
+            android:layout_marginRight="25dp"
+            android:text=""
+            android:textColor="#363636"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/right_bottom_radius"
+            android:text="提交订单"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+</LinearLayout>

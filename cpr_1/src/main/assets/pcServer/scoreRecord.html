@@ -1,0 +1,48 @@
+<div id="scoreRecord" class="container">
+
+    <select id="exam_type" style="  position:absolute; opacity: 0.0001" ng-model="vm.query.exam_type">
+        <option value="" selected="selected">考核类型</option>
+        <option>考核</option>
+        <option>实战</option>
+    </select>
+    <div class="SCenterMain">
+        <div class="SCenterBlock">
+            <div class="SBlock">
+                <div class="STabLine fontMaxW">
+                    <div class="STabLineModule" ><input ng-click="vm.onDateClick('begin')"  class="SInput"  readonly="readonly" ng-model="vm.query.begin_date"   placeholder="开始日期"/></div>
+                    <div class="STabLineModule" ><input  ng-click="vm.onDateClick('end')"  class="SInput"  readonly="readonly"  ng-model="vm.query.end_date"   placeholder="结束日期"/></div>
+                    <div class="STabLineModule"><input class="SInput" type="text" ng-model="vm.query.stu_name"  placeholder="请输入姓名"/></div>
+                    <div class="STabLineModule"><input class="SInput"  ng-model="vm.query.stu_class"   placeholder="请输入班级"/></div>
+                    <div class="STabLineModule"><input class="SInput" id="input_type" ng-click="vm.onSelectType()" type="text" ng-model="vm.query.exam_type"   readonly="readonly" placeholder="考核类型"/></a>
+                    </div>
+                    <div class="STabLineModule">
+                        <div class="SsearchBg fontMiddleW">
+                            <div class="SsearchIcon" ng-click="vm.onSearch()">搜索</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="SlistLine fontMiddleW">
+                <div class="STabLineModuleName"><a>姓名</a></div>
+                <div class="STabLineModuleName"><a>班级</a></div>
+                <div class="STabLineModuleName"><a>分数</a></div>
+                <div class="STabLineModuleName"><a>考核日期</a></div>
+                <div class="STabLineModuleName"><a>考核类型</a></div>
+            </div>
+            <div id="scoreList"  class="SModulBG fontMiddleG" >
+                <div>
+                <ul class="ulData" touch-hold="vm.gotoRemove()"  ng-repeat="record in vm.score_records">
+                    <li style="{{vm.removing?'color:red':''}}"   ng-click="vm.onRecordClick(record)"><a>{{record.stu_name}}</a><a>{{record.stu_class}}</a><a>{{record.score}}</a><a>{{record.exam_date}}</a><a>{{record.exam_type}}</a>
+                     </li>
+
+                    <!--<li class="fontColoR"><a>詹格新</a><a>3班</a><a>75</a><a>2016/01/01</a><a>考核模式</a></li>-->
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<link rel="stylesheet" type="text/css"  href="cpr/css/scoreRecord.css">
+<script src="cpr/controllers/scoreRecordController.js"></script>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaofangfang.rice2_verssion.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <com.xiaofangfang.rice2_verssion.view.CommandBar
+        android:id="@+id/commandBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.xiaofangfang.rice2_verssion.view.CommandBar>
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/advText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_addv_bac"
+            android:drawablePadding="15dp"
+            android:text="意见反馈"
+            android:textColor="#111"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addv_eidt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_gray"
+            android:gravity="start"
+            android:hint="@string/input_hint"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="8"
+            android:minLines="8"
+            android:padding="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/addv_tip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addv_eidt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/tip_addvance"
+            android:textColor="@color/splitLine_dark"
+            android:textSize="15dp"
+            app:layout_widthPercent="60%" />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/addv_tip"
+            android:background="@drawable/gradient_orangle_bg_radius"
+            android:text="提交"
+            android:textColor="@android:color/white" />
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+</com.xiaofangfang.rice2_verssion.view.PercentLinearLayout>

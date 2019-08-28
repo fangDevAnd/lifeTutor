@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@drawable/ic_downstep"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/xinrendiantai"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/gengduo_1" />
+
+    </FrameLayout>
+
+    <com.example.momomusic.view.HorizonalScrollMusicView
+        android:id="@+id/musicList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.momomusic.view.HorizonalScrollMusicView>
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+/**
+=============reset css=======**/
+
+*, *::before, *::after {
+    /**
+    所以的标签和伪元素都选中
+    */
+
+    margin: 0;
+    padding: 0;
+
+    /*
+       移动端以流式布局为主(百分百布局)
+       非固定像素布局,无法准确计算容器的尺寸
+       通过下面的设置,可以防止内容的溢出,出现滚动条的情况,提高了用户的体验
+       box-sizing:代表的是元素大小的计算方式,通过设置border-box,那么就意味着元素的大小是border+content的和
+    */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*点击高亮效果的清除*/
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    /*不能重新设置大小*/
+    resize: none;
+    /**元素的外观 none没有任何样式(浏览器的差异性)*/
+    -webkit-appearance: none;
+}
+
+/*------------common css--------------------*/
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+/**
+通过在元素之前或之后插入生成的内容来清除浮动带来的界面布局乱掉的效果
+ */
+.clearFix::before,
+.clearFix::after {
+
+    /**
+    与 :before 以及 :after 伪元素配合使用，来插入生成内容。
+     */
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.m_l10 {
+    margin-left: 10px;
+}
+
+.m_r10 {
+    margin-right: 10px;
+}
+
+.m_t10 {
+    margin-top: 10px;
+}
+
+.m_b10 {
+    margin-bottom: 10px;
+}
+
+/**
+
+使用精灵图的公用样式
+凡是使用了icon_*的都应该被选中
+ */
+[class^="icon_"], [class*=" icon_"] {
+    background-repeat: no-repeat;
+    background: url("images");
+    background-size: 200px 200px;
+}
+
+
+

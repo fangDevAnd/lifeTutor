@@ -1,0 +1,29 @@
+apply plugin: 'java-library'
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.belerweb:pinyin4j:2.5.1'
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    implementation 'com.squareup:javapoet:1.10.0'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/jiguang-common-1.1.5.jar')
+    implementation files('libs/jpush-client-3.3.11.jar')
+    implementation files('libs/slf4j-api-1.7.7.jar')
+}
+
+
+//publish {
+//    userOrg = 'yuweiguocn'//用户名
+//    groupId = 'io.github.yuweiguocn'//包名
+//    artifactId = 'custom-annotation-processor'//类库名
+//    publishVersion = '1.3.0'//版本号
+//    desc = 'custom annotation processor.'//描述
+//    website = 'https://github.com/yuweiguocn/CustomAnnotation'//对应的github网址
+//}
+
+
+
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

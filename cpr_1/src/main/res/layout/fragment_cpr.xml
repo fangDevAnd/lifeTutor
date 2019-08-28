@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2A3344"
+    android:orientation="vertical"
+    tools:context="com.kangren.cpr.CprFragment">
+
+    <!-- CPR -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <com.kangren.draw.DrawLineView
+                    android:id="@+id/press"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <com.kangren.draw.DrawBlowLineView
+                    android:id="@+id/blow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/moxingren"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/moxingren">
+
+                <com.kangren.draw.DrawRectView
+                    android:id="@+id/blowRect"
+                    android:layout_width="21px"
+                    android:layout_height="166px"
+                    android:layout_marginLeft="18px"
+                    android:layout_marginTop="23px"
+                    android:visibility="visible" />
+
+                <com.kangren.draw.DrawRectView
+                    android:id="@+id/pressRect"
+                    android:layout_width="21px"
+                    android:layout_height="166px"
+                    android:layout_marginLeft="300px"
+                    android:layout_marginTop="23px"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/pingyu"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|top"
+                    android:hint="请输入评语"
+                    android:inputType="textMultiLine"
+                    android:minLines="6"
+                    android:padding="10px"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#000">
+
+                    <TextView
+                        android:id="@+id/pinglv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="按压频率"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/anyapinlv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/pinglv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10px"
+                        android:text="0"
+                        android:textColor="#008000"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#323D51"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#000">
+
+            <com.lyc.hybird.ExtWebView
+                android:id="@+id/cprView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cprGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#1d212a"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <com.lyc.ui.ButtonEx
+                android:id="@+id/startBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btgreen"
+                android:gravity="center"
+                android:text="开始"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <com.lyc.ui.ButtonEx
+                android:id="@+id/flowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/startBtn"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/unactive"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="CPR详情"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <com.lyc.ui.ButtonEx
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flowBtn"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/unactive"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="保存成绩"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/playBackGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#1d212a"
+            android:visibility="gone">
+
+
+            <com.lyc.ui.ButtonEx
+                android:id="@+id/playBackStartBtn"
+                android:layout_width="110px"
+                android:layout_height="35px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="16px"
+                android:background="@drawable/btgreen"
+                android:gravity="center_horizontal"
+                android:text="开始"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <com.lyc.ui.ButtonEx
+                android:id="@+id/playBackPauseBtn"
+                android:layout_width="110px"
+                android:layout_height="35px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="68px"
+                android:background="@drawable/unactive"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:text="暂停"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <com.lyc.ui.ButtonEx
+                android:id="@+id/playBackFlowBtn"
+                android:layout_width="110px"
+                android:layout_height="35px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="120px"
+                android:background="@drawable/unactive"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:text="CPR详情"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

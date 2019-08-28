@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rcs.nchumanity.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.rcs.nchumanity.view.CommandBar
+        android:id="@+id/toolbar"
+        toolbar:title="首页"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.rcs.nchumanity.view.CommandBar>
+
+
+    <com.rcs.nchumanity.view.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.rcs.nchumanity.view.MyViewPager>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#111"></View>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:stretchColumns="1,3,5">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_shouye"
+                android:paddingTop="4dp"
+                android:tag="0"
+                android:text="@string/sy"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <View />
+
+            <Button
+                android:id="@+id/jhpx"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_jiuhuyuan"
+                android:paddingTop="4dp"
+                android:tag="1"
+                android:text="@string/jhpx"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <View />
+
+            <Button
+                android:id="@+id/zyjy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_qitayihurenyuan"
+                android:paddingTop="4dp"
+                android:tag="2"
+                android:text="@string/jhyjy"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <View />
+
+            <Button
+                android:id="@+id/me"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_icon_wode"
+                android:paddingTop="4dp"
+                android:tag="3"
+                android:text="@string/wd"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</com.rcs.nchumanity.view.PercentLinearLayout>

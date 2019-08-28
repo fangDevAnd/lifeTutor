@@ -1,0 +1,130 @@
+package com.example.momomusic.fragment.shiping;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.momomusic.R;
+import com.example.momomusic.activity.ui.ShiPinView;
+import com.example.momomusic.fragment.BaseFragment;
+import com.example.momomusic.precenter.ShiPinPresenter;
+import com.example.momomusic.view.Adapter.MyFragmentPageAdapter;
+import com.google.android.material.tabs.TabLayout;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import okhttp3.Response;
+
+public class ShiPinFragment extends BaseFragment<ShiPinView, ShiPinPresenter> {
+
+
+    private static final String TAG = "test";
+
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_shipin, null);
+        ButterKnife.bind(this, view);
+        return view;
+    }
+
+
+    private String[] tabTitle;
+
+    @BindView(R.id.viewPager)
+    ViewPager viewPager;
+
+    @BindView(R.id.tabLayout)
+    TabLayout tabLayout;
+
+    private List<Fragment> fragments;
+
+    private MyFragmentPageAdapter myPageAdapter;
+
+    private int defaultSelectIndex = 0;
+
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        fragments = new ArrayList<>();
+        fragments.add(new ShiPinTuiJianFragment());
+        fragments.add(new ShiPinJingdianFragment());//精选
+        fragments.add(new ShiPinGCWFragment());
+        fragments.add(new ShiPinFCFragment());
+        fragments.add(new ShiPinXCFragment());
+        fragments.add(new ShiPinDYFragment());
+        fragments.add(new ShiPinDMFragment());
+        fragments.add(new ShiPinWDFragment());
+        fragments.add(new ShiPinLXFragment());
+        fragments.add(new ShiPinMVFragment());
+        fragments.add(new ShiPinYSFragment());
+        fragments.add(new ShiPinZYFragment());
+        fragments.add(new ShiPinGFFragment());
+        fragments.add(new ShiPinMXDJFragment());
+
+        tabTitle = getResources().getStringArray(R.array.shipinbiaoti);
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        /**
+         * 记住，这里只能使用getChildFragmentManager()
+         */
+        myPageAdapter = new MyFragmentPageAdapter(getChildFragmentManager(), fragments);
+        viewPager.setAdapter(myPageAdapter);
+        viewPager.setCurrentItem(defaultSelectIndex);
+        for (int i = 0; i < tabTitle.length; i++) {
+            tabLayout.addTab(tabLayout.newTab());
+        }
+
+        tabLayout.setupWithViewPager(viewPager);
+        for (int i = 0; i < tabTitle.length; i++) {
+            TabLayout.Tab tab = tabLayout.getTabAt(i);
+            tab.setText(tabTitle[i]);
+        }
+
+
+    }
+
+
+    @Override
+    public ShiPinPresenter createPresenter() {
+        return null;
+    }
+
+    @Override
+    public ShiPinView createView() {
+        return null;
+    }
+
+    @Override
+    protected void loadData() {
+        Log.d(TAG, "loadData: ShiPinFragment");
+    }
+
+    @Override
+    public void onError(IOException e, String what) {
+
+    }
+
+    @Override
+    public void onSucess(Response response, String what, String... backData) throws IOException {
+
+    }
+
+    @Override
+    public Class getClassName() {
+        return null;
+    }
+}

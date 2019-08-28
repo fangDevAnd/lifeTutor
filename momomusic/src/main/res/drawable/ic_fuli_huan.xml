@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item>
+        <ripple
+            android:color="@color/gray"
+            tools:ignore="NewApi">
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#181818"></solid>
+                    <size
+                        android:width="60dp"
+                        android:height="60dp"></size>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+
+    <item
+        android:width="30dp"
+        android:height="30dp"
+        android:drawable="@drawable/ic_fuli"
+        android:gravity="center">
+
+    </item>
+</layer-list>

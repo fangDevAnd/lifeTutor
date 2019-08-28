@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:background="#262F40"
+    android:layout_height="fill_parent"  >  
+  
+       		<RelativeLayout 
+	            android:layout_height="95dp"
+	       		android:layout_width="41dp">
+	       		<TextView 
+			        android:textColor="#fff"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"	   
+			        android:layout_centerVertical="true"
+			        android:ems="1"
+			        android:textSize="24sp"
+			        android:text="吹气"/>
+	       	</RelativeLayout>
+       		<RelativeLayout 
+       		    android:layout_marginLeft="41dp"
+       		    android:layout_width="fill_parent"
+       		    android:layout_height="fill_parent">
+       		    <RelativeLayout 
+       		        android:id="@+id/table"
+	       		    android:layout_width="fill_parent"
+	       		    android:layout_height="fill_parent">
+	       		   
+       		    </RelativeLayout>
+       		   
+        </RelativeLayout>
+       
+        
+     
+ 　 </RelativeLayout>
+  
+

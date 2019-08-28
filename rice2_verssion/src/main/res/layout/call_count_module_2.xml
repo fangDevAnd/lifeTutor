@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:tag="@string/flow_count">
+
+
+    <TextView
+        android:id="@+id/flow1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:tag="1GB以下"
+        android:text="1GB以下"
+        android:textColor="#111" />
+
+    <TextView
+        android:id="@+id/flow2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:tag="1GB-2GB之间"
+        android:text="1GB-2GB"
+        android:textColor="#111" />
+
+    <TextView
+        android:id="@+id/flow3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:tag="2GB-4GB之间"
+        android:text="2GB-4GB"
+        android:textColor="#111" />
+
+    <TextView
+        android:id="@+id/flow4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:tag="4GB-7GB之间"
+        android:text="4GB-7GB"
+        android:textColor="#111" />
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xiaofangfang.rice2_verssion"
+    android:versionCode="1">
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.IndexActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.AddvanceBack"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.AboutSoftware"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.SelfDetailInfoActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.ProductSalePageActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.QuerySetmealUseInfoEntry"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.RegisterUserActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.Setting"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.CardDetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.FlowInfoRecordActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.ShortMessageTatour2"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.ShortMessageTatour1"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.MessageWork"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.ServerTatour"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.InternetManyou"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.AddAddress"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.AddressManager"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.WeChatAQQCode"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.SubmitCardProgress"
+            android:screenOrientation="portrait"></activity>
+
+
+    </application>
+
+    <!--添加网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

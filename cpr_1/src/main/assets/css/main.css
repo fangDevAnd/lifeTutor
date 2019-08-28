@@ -1,0 +1,69 @@
+﻿body {
+    margin:0;
+    overflow:hidden;
+    font-size:24px;
+    color: #333;
+    font-family:方正兰亭黑简体
+}
+
+
+.left {
+    height:100%;
+    width:160px;
+    background:#343647;
+    position:absolute;
+    top:0;
+    float:left;
+}
+.menu {
+    position:relative;
+    margin-top:90px;
+    text-align:center;
+    color:#ACBDDB;
+}
+    .menu a {
+        display:block;
+    }
+    .menu .item {
+       height:77px;
+       line-height:77px;
+    }
+    .menu .actived {
+        background:#262533;
+    }
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+.bubble { 
+    height: 28px;
+    min-width: 28px;
+    border-radius: 14px;
+    color: #fff;
+    float: right;
+    font-size: 18px;
+   
+    line-height: 28px;
+    margin-right: 15px;
+    margin-top: -70px;
+    position: relative;
+    background:#CC0000;
+}
+    .bubble span {
+        position:relative;
+        left:-1px;
+    }
+
+.right {
+    float:right;
+    width:1760px;
+    height:100%;
+    background:#D6D7DA;
+    position: relative;
+
+}
+#fullView{
+   position:absolute;
+   background:#d6d7da;
+}

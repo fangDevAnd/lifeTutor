@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:tag="@string/call_count">
+
+
+    <TextView
+        android:id="@+id/call1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:tag="100分钟以下"
+        android:text="100分钟以下"
+        android:textColor="#111" />
+
+    <TextView
+        android:id="@+id/call2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:tag="100分钟-199分钟"
+        android:text="100-199分钟"
+        android:textColor="#111" />
+
+    <TextView
+        android:id="@+id/call3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:tag="200分钟-399分钟"
+        android:textSize="14sp"
+        android:text="200-399分钟"
+        android:textColor="#111" />
+
+    <TextView
+        android:id="@+id/call4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:tag="400分钟-599分钟"
+        android:text="400-599分钟"
+        android:textColor="#111" />
+
+</LinearLayout>

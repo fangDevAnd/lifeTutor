@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--实现的是相片以及以上部分-->
+        <com.example.momomusic.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize">
+
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_arrow_down" />
+
+                <TextView
+                    android:id="@+id/musicName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/share"
+                    android:layout_toRightOf="@id/back"
+                    android:gravity="center"
+                    android:text="有何不可" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/musicName"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@drawable/ic_downstep"
+                    android:text="许嵩" />
+
+
+                <ImageButton
+                    android:id="@+id/share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_fenxiang" />
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:layout_aspectRatio="100%"
+                app:layout_widthPercent="70%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:src="@drawable/gedan6" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--播放列表的菜单显示-->
+
+            <com.example.momomusic.view.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                app:layout_widthPercent="70%">
+
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_aixin" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_xiazai" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_pinglun" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_yuandiancaidan" />
+
+
+            </com.example.momomusic.view.PercentLinearLayout>
+
+
+            <!--播放进度显示-->
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/lingling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lingling" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/end_minute"
+                    android:layout_toRightOf="@id/lingling" />
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/end_minute"
+                    android:layout_toRightOf="@id/lingling"
+                    android:paddingStart="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingEnd="6dp"
+                    android:paddingRight="0dp"
+                    android:progressBackgroundTint="@android:color/black"
+                    android:thumbTint="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/end_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/end_minute" />
+
+
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+            <!--播放显示按钮-->
+            <com.example.momomusic.view.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                app:layout_widthPercent="85%">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_danquxunhuan" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_fanhui" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_bofang2" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_xiayiqu101" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_caidan" />
+
+
+            </com.example.momomusic.view.PercentLinearLayout>
+
+
+            <!--
+            下面这个fragment我们作为显示播放菜单的比较点
+            通过监听NestedScrollView的滚动，我们动态的获得下面这个fragment的位置，也就是
+            通过 判断  NestedScrollView.getScrollY()与下面framelayout.getTop()的关系
+            如果NestedScrollView.getScrollY()的值大于framelayout.getTop()，就代表着滑动的距离>fragment距离上边的距离，
+            也就是不可见状态
+
+            -->
+
+            <FrameLayout
+                android:id="@+id/tuijian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawablePadding="10dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/jingpintuijian"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ripping_btn_xiepinglun"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="1dp"
+                    android:text="@string/is_xiepinglun"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"></View>
+
+
+            <com.example.momomusic.view.HotCommentList
+                android:id="@+id/commentList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.momomusic.view.HotCommentList>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <Button
+                    android:id="@+id/chakanpinglun"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/chakanpinglun" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/splitLine_little"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/xianguanshipin"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_ripple_no_corner"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/album"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_aspectRatio="160%"
+                    app:layout_widthPercent="33%">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gedan5" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/album"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/duanmeixiaoge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/title"
+                    android:layout_alignBottom="@id/album"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:text="@string/yongyinyue" />
+
+
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/splitLine_little"></View>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/xihuanzheshouge"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/ic_downstep"
+                    android:text="@string/gengduo" />
+            </FrameLayout>
+
+            <View
+                style="@style/line"
+                android:layout_width="match_parent"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_ripple_no_corner"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/music1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gedan6" />
+
+                <TextView
+                    android:id="@+id/music1tit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/music1"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/music1"
+                    android:text="@string/supperstar" />
+
+                <TextView
+                    android:id="@+id/hq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/music1tit"
+                    android:layout_alignLeft="@+id/music1tit"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="@string/hq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/music1tit"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/hq"
+                    android:text="@string/beatrich" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_yuandiancaidan" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_width="match_parent"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_ripple_no_corner"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/music2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gedan6" />
+
+                <TextView
+                    android:id="@+id/music2tit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/music2"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/music2"
+                    android:text="@string/supperstar" />
+
+                <TextView
+                    android:id="@+id/hq1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/music2tit"
+                    android:layout_alignLeft="@+id/music2tit"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="@string/hq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/music2tit"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/hq1"
+                    android:text="@string/beatrich" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_yuandiancaidan" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_width="match_parent"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_ripple_no_corner"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/music3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gedan6" />
+
+                <TextView
+                    android:id="@+id/music3tit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/music3"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/music3"
+                    android:text="@string/supperstar" />
+
+                <TextView
+                    android:id="@+id/hq2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/music3tit"
+                    android:layout_alignLeft="@+id/music3tit"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="@string/hq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/music3tit"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/hq2"
+                    android:text="@string/beatrich" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_yuandiancaidan" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/splitLine_little"></View>
+
+
+            <!--<include layout="@layout/fragment_tuijian_tuijiangedan"></include>-->
+            <com.example.momomusic.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableRight="@drawable/ic_downstep"
+                        android:drawablePadding="10dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/tuijiangedanliebiao"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/gengduo_1" />
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/album7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gedan1" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?android:attr/selectableItemBackground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:paddingRight="4dp"
+                                android:text="205万" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/ic_bofang1" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/album7"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="2dp"
+                            android:text="@string/buguanduoshao"
+                            android:textColor="@android:color/black" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"></View>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/album8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gedan3" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?android:attr/selectableItemBackground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="205万" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/ic_bofang1" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/album8"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="2dp"
+                            android:text="@string/buguanduoshao"
+                            android:textColor="@android:color/black" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"></View>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/album9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gedan2" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?android:attr/selectableItemBackground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="205万" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/ic_bofang1" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/album9"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="2dp"
+                            android:text="@string/buguanduoshao"
+                            android:textColor="@android:color/black" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/album4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gedan4" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?android:attr/selectableItemBackground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:paddingRight="4dp"
+                                android:text="205万" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/ic_bofang1" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/album4"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="2dp"
+                            android:text="@string/buguanduoshao"
+                            android:textColor="@android:color/black" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"></View>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/album5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gedan5" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?android:attr/selectableItemBackground" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="205万" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/ic_bofang1" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/album5"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="2dp"
+                            android:text="@string/buguanduoshao"
+                            android:textColor="@android:color/black" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"></View>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/album6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gedan6" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?android:attr/selectableItemBackground" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="205万" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/ic_bofang1" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/album6"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="2dp"
+                            android:text="@string/buguanduoshao"
+                            android:textColor="@android:color/black" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.example.momomusic.view.MyLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/splitLine_little"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+
+        </com.example.momomusic.view.PercentLinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.example.momomusic.view.MeasureProgressReleativeLayout
+        android:id="@+id/bofangmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp">
+
+        <View
+            style="@style/line"
+            android:layout_width="match_parent"></View>
+
+        <ImageView
+            android:id="@+id/album10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gedan2" />
+
+        <TextView
+            android:id="@+id/album10tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/album10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/album10"
+            android:text="@string/howlong" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/album10tit"
+            android:layout_alignBottom="@id/album10"
+            android:layout_marginBottom="2dp"
+            android:text="@string/charlie" />
+
+        <ImageButton
+            android:id="@+id/xiayiqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_xiayiqu101" />
+
+        <ImageButton
+            android:id="@+id/bofang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/xiayiqu"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_bofang" />
+
+
+    </com.example.momomusic.view.MeasureProgressReleativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,176 @@
+<div id="cprDataDetail" class="container">
+    <div ng-show="vm.showCpr">
+
+        <div style="width: 2000px;" ng-swipe-right="vm.showLeft()"  ng-swipe-left="vm.hideLeft()" >
+
+            <table class="item" id="leftTb" >
+               <tr>
+                    <td rowspan="4"  class="shupai ctitle">合<br>计<br>操<br>作</td>
+                    <td rowspan="2" class="shupai ctitle2">吹<br>气</td>
+                    <td class="ctitle2"> 总数</td>
+                    <td class="ctitle2"  id="ttd3" style="color:green"> 正确</td>
+                    <td class="ctitle2"   id="ttd4" style="color:red"> 错误</td>
+
+                </tr>
+
+                <tr>
+                    <td class="ctitle2"> {{vm.tdata.blow_zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.tdata.blow_zhengque}}</td>
+                    <td class="ctitle2"  style="color:red">  {{vm.tdata.blow_cuowu}}</td>
+
+
+                 </tr>
+                 <tr>
+
+                <td rowspan="2" class="shupai ctitle2">按<br>压</td>
+                <td class="ctitle2"> 总数</td>
+                <td class="ctitle2" style="color:green"> 正确</td>
+                <td class="ctitle2"  style="color:red"> 错误</td>
+
+            </tr>
+                <tr>
+                    <td class="ctitle2"> {{vm.tdata.press_zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.tdata.press_zhengque}}</td>
+                    <td class="ctitle2"  style="color:red"> {{vm.tdata.press_cuowu}}</td>
+
+                </tr>
+
+            </table>
+            <table  class="item" id="autoTb">
+                <tr>
+
+                    <td class="ctitle2"> 过大</td>
+                    <td class="ctitle2"> 过小</td>
+                    <td class="ctitle2"> 多吹</td>
+                    <td class="ctitle2"> 少吹</td>
+                    <td class="ctitle2">吹气<br>进胃</td>
+                    <td class="ctitle2">气道<br>未开</td>
+                </tr>
+
+                <tr>
+
+                    <td class="ctitle2"> {{vm.tdata.blow_guoda}}</td>
+                    <td class="ctitle2"> {{vm.tdata.blow_guoxiao}}</td>
+                    <td class="ctitle2"> {{vm.tdata.blow_duochui}}</td>
+                    <td class="ctitle2"> {{vm.tdata.blow_shaochui}}</td>
+                    <td class="ctitle2">{{vm.tdata.blow_jinwei}}</td>
+                    <td class="ctitle2">{{vm.tdata.blow_qidaoweidakai}}</td>
+
+                </tr>
+                <tr>
+
+
+                    <td class="ctitle2"> 过大</td>
+                    <td class="ctitle2"> 过小</td>
+                    <td class="ctitle2"> 多按</td>
+                    <td class="ctitle2"> 少按</td>
+                    <td class="ctitle2"> 频率<br>错误</td>
+                    <td class="ctitle2">回弹<br>不足</td>
+                </tr>
+                <tr>
+
+                    <td class="ctitle2"> {{vm.tdata.press_guoda}}</td>
+                    <td class="ctitle2"> {{vm.tdata.press_guoxiao}}</td>
+                    <td class="ctitle2"> {{vm.tdata.press_duoan}}</td>
+                    <td class="ctitle2"> {{vm.tdata.press_shaoan}}</td>
+                    <td class="ctitle2"> {{vm.tdata.press_pinlv}}</td>
+                    <td class="ctitle2">{{vm.tdata.press_huitanbuzu}}</td>
+                </tr>
+            </table>
+
+            <table class="item" id="rightTb" style="width: 50%">
+                <tr>
+                    <td rowspan="4" class="shupai ctitle">当<br>前<br>操<br>作<br>({{ vm.cycle}})</td>
+                    <td rowspan="2" class="shupai ctitle2">吹<br>气</td>
+                    <td class="ctitle2"> 总数</td>
+                    <td class="ctitle2" style="color:green"> 正确</td>
+                    <td class="ctitle2"  style="color:red"> 错误</td>
+
+                </tr>
+
+                <tr>
+                    <td class="ctitle2"> {{vm.cdata.blow_zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.cdata.blow_zhengque}}</td>
+                    <td class="ctitle2"  style="color:red">  {{vm.cdata.blow_cuowu}}</td>
+
+                </tr>
+                <tr>
+
+                    <td rowspan="2" class="shupai ctitle2">按<br>压</td>
+                    <td class="ctitle2"> 总数</td>
+                    <td class="ctitle2" style="color:green"> 正确</td>
+                    <td class="ctitle2"  style="color:red"> 错误</td>
+
+                </tr>
+                <tr>
+                    <td class="ctitle2"> {{vm.cdata.press_zongshu}}</td>
+                    <td class="ctitle2" style="color:green"> {{vm.cdata.press_zhengque}}</td>
+                    <td class="ctitle2"  style="color:red"> {{vm.cdata.press_cuowu}}</td>
+
+                </tr>
+
+    </table>
+            <table class="item" id="rightAutoTb" style="width: 50%">
+                <tr>
+
+                    <td class="ctitle2"> 过大</td>
+                    <td class="ctitle2"> 过小</td>
+                    <td class="ctitle2"> 多吹</td>
+                    <td class="ctitle2"> 少吹</td>
+                    <td class="ctitle2">吹气<br>进胃</td>
+                    <td class="ctitle2">气道<br>未开</td>
+                </tr>
+
+                <tr>
+
+                    <td class="ctitle2"> {{vm.cdata.blow_guoda}}</td>
+                    <td class="ctitle2"> {{vm.cdata.blow_guoxiao}}</td>
+                    <td class="ctitle2"> {{vm.cdata.blow_duochui}}</td>
+                    <td class="ctitle2"> {{vm.cdata.blow_shaochui}}</td>
+                    <td class="ctitle2">{{vm.cdata.blow_jinwei}}</td>
+                    <td class="ctitle2">{{vm.cdata.blow_qidaoweidakai}}</td>
+                </tr>
+                <tr>
+
+
+                    <td class="ctitle2"> 过大</td>
+                    <td class="ctitle2"> 过小</td>
+                    <td class="ctitle2"> 多按</td>
+                    <td class="ctitle2"> 少按</td>
+                    <td class="ctitle2"> 频率<br>错误</td>
+                    <td class="ctitle2">回弹<br>不足</td>
+                </tr>
+                <tr>
+
+                    <td class="ctitle2"> {{vm.cdata.press_guoda}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_guoxiao}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_duoan}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_shaoan}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_pinlv}}</td>
+                    <td class="ctitle2"> {{vm.cdata.press_huitanbuzu}}</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div  ng-show="!vm.showCpr">
+        <table style="width:100%">
+            <tr>
+                <td class="ctitle2">清除异物:<span style="color:{{ !vm.flow.yiwu?'red':'green'}}; padding-left: 20px">{{ !vm.flow.yiwu?"未操作":"合格"}}</span></td>
+                <td class="ctitle2">脉搏检查:<span style="color:{{ !vm.flow.maibo?'red':'green'}}; padding-left: 20px">{{ !vm.flow.maibo?"未操作":"合格"}}</span></td>
+                <td class="ctitle2">急救呼叫:<span style="color:{{ !vm.flow.hujiao?'red':'green'}}; padding-left: 20px">{{ !vm.flow.hujiao?"未操作":"合格"}}</span></td>
+            </tr>
+            <tr>
+                <td class="ctitle2"> 呼吸检查:<span style="color:{{ !vm.flow.huxi?'red':'green'}}; padding-left: 20px">{{ !vm.flow.huxi?"未操作":"合格"}}</span></td>
+                <td class="ctitle2">意识判断:<span style="color:{{ !vm.flow.yishi?'red':'green'}}; padding-left: 20px">{{ !vm.flow.yishi?"未操作":"合格"}}</span></td>
+                <td class="ctitle2"></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<link rel="stylesheet" type="text/css"  href="cpr/css/cprDataDetail.css">
+<script src="cpr/controllers/cprDataDetailController.js"></script>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_45" />
+
+            <com.rcs.nchumanity.view.CommandBar
+                android:id="@+id/toolbar"
+                toolbar:title="自愿救援"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.rcs.nchumanity.view.CommandBar>
+
+            <ImageButton
+                android:id="@+id/one"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_42" />
+
+            <ImageButton
+                android:layout_width="43dp"
+                android:layout_height="46dp"
+                android:id="@+id/sendHelp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_41" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="呼叫救护员"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/smssdk_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="3dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="13dp"
+                    android:drawableLeft="@drawable/ic_17"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="急救信息"
+                    android:textColor="#ff252525"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/ic_22" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/rootHelpView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingLeft="13dp"-->
+                    <!--android:paddingTop="13dp"-->
+                    <!--android:paddingRight="13dp">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="南昌大学求救"-->
+                        <!--android:textColor="#ff333333"-->
+                        <!--android:textSize="13sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/des"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/title"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:ellipsize="end"-->
+                        <!--android:lines="1"-->
+                        <!--android:text="2019年7月5日 15:00有人在南昌大学求救。"-->
+                        <!--android:textColor="#ff666666"-->
+                        <!--android:textSize="11sp" />-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/join"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="32dp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:background="@drawable/btn_bg"-->
+                        <!--android:text="参与救援"-->
+                        <!--android:textColor="@color/smssdk_white" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="2px"-->
+                        <!--android:layout_below="@+id/des"-->
+                        <!--android:layout_marginTop="13dp"-->
+                        <!--android:background="@drawable/ic_22" />-->
+                <!--</RelativeLayout>-->
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:text="《中华人民共和国民法总则》，其中第一百八十四条规定：因自愿实施救助行为造成的受助人损害，救助人不承担民事责任。本法自2017年10月1日起施行。这在一定意义上可以理解为中国的“好人法”。"
+                android:textColor="#ffda251d"
+                android:textSize="9sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

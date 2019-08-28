@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:paddingTop="5dp"
+        android:text="价格区间(元)" />
+
+    <LinearLayout
+        android:id="@+id/viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <!--这里的作用是用来填充对应的选择菜单-->
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="最低价"
+            android:id="@+id/startPrice"
+            android:inputType="number"
+            android:textColorHint="@color/menu_press"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/orangle"></View>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="最高价"
+            android:id="@+id/endPrice"
+            android:inputType="number"
+            android:textColorHint="@color/menu_press"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/menu_press"></View>
+
+</LinearLayout>

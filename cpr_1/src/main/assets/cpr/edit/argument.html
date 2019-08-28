@@ -1,0 +1,78 @@
+
+<select  id="chuianshunxu" style="  position:absolute; opacity: 0.0001" ng-model="vm.anchuishunxu">
+    <option>{{vm.lang.xiananhouchui}}</option>
+    <option>{{vm.lang.xianchuihouan}}</option>
+</select>
+
+
+<div class="EModulBG fontMiddleWS">
+    <div class="EeditContent">
+        <div class="EeditContentArea">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.caozuoshijian}}</div>
+            <div class="EcprTypeValueT1 fontMiddleG"><input type="number" class="input" ng-model="vm.data.time" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.miao}}</div>
+        </div>
+        <div class="EeditContentArea ">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.anyahegelv}}</div>
+            <div class="EcprTypeValueT1 fontMiddleG"><input type="number" class="input" ng-model="vm.data.anyahegelv" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">%</div>
+        </div>
+        <div class="EeditContentArea">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.anyacishu}}</div>
+            <div class="EcprTypeValueT1 fontMiddleG"><input type="number" class="input" ng-model="vm.data.anyacishu" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">次</div>
+        </div>
+
+        <div class="EeditContentArea">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.anyapinlv}}</div>
+            <div class="EcprTypeValueT2 fontMiddleG"><input type="number" class="input" ng-model="vm.data.anyapinlvMin" /></div>
+            <div class="EcprTypeHyphen">-</div>
+            <div class="EcprTypeValueT2 fontMiddleG"><input type="number" class="input" ng-model="vm.data.anyapinlvMax" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.ci}}/{{vm.lang.fenzhong}}</div>
+        </div>
+        <div class="EeditContentArea">
+            <div class="EcprTypeName" style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.anyashendu}}</div>
+            <div class="EcprTypeValueT2 fontMiddleG"><input type="number" class="input" ng-model="vm.data.anyashenduMin" /></div>
+            <div class="EcprTypeHyphen">-</div>
+            <div class="EcprTypeValueT2 fontMiddleG"><input type="number" class="input" ng-model="vm.data.anyashenduMax" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">cm</div>
+        </div>
+
+    </div>
+    <div class="EeditContent">
+        <div class="EeditContentArea">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.chuiqishunxu}}</div>
+            <div class="EcprTypeValueT1 fontMiddleG" ><input type="text" id="inputChuiqi" readonly="readonly" class="input" ng-model="vm.anchuishunxu" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;"><div class="EcprTypeUnitImg"></div></div>
+        </div>
+
+        <div class="EeditContentArea">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.chuiqihegelv}}</div>
+            <div class="EcprTypeValueT1 fontMiddleG"><input type="number" class="input" ng-model="vm.data.chuiqihegelv" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">%</div>
+        </div>
+        <div class="EeditContentArea">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.chuiqicishu}}</div>
+            <div class="EcprTypeValueT1 fontMiddleG"><input type="number" class="input" ng-model="vm.data.chuiqicishu" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.ci}}</div>
+        </div>
+        <div class="EeditContentArea">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.chuiqiliang}}</div>
+            <div class="EcprTypeValueT2 fontMiddleG"><input type="number" class="input" ng-model="vm.data.chuiqiliangMin" /></div>
+            <div class="EcprTypeHyphen">-</div>
+            <div class="EcprTypeValueT2 fontMiddleG"><input type="number" class="input" ng-model="vm.data.chuiqiliangMax" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">ml</div>
+        </div>
+        <div class="EeditContentArea">
+            <div class="EcprTypeName"style="font-size: {{vm.langNumber==1?13:''}}px;">{{vm.lang.xunhuancishu}}</div>
+            <div class="EcprTypeValueT1 fontMiddleG"><input type="number" class="input" ng-model="vm.data.xunhuancishu" /></div>
+            <div class="EcprTypeUnit"style="font-size: {{vm.langNumber==1?13:''}}px;">次</div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+

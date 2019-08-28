@@ -1,0 +1,25 @@
+
+
+
+
+AndroidStudio查看类的结构和继承关系快捷键
+查看类的结构
+方法1：
+
+    Windows： alt + 7
+    Mac：cmd + 7
+
+方法2：
+
+    Windows：ctrl + F12
+    Mac：cmd + F12
+
+查看继承关系
+
+    Windows：ctrl + h
+    Mac：control + h
+
+
+
+
+

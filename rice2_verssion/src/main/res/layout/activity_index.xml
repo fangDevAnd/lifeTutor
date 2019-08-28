@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaofangfang.rice2_verssion.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.IndexActivity">
+
+
+    <com.xiaofangfang.rice2_verssion.view.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.xiaofangfang.rice2_verssion.view.MyViewPager>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#111"></View>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingTop="4dp"
+        android:stretchColumns="1,3">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/buttonselect"
+                android:drawableTop="@drawable/ic_main"
+                android:text="主页"
+                android:textSize="12sp" />
+
+            <View />
+
+            <Button
+                android:id="@+id/tutor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonselect"
+                android:drawableTop="@drawable/ic_tutor"
+                android:text="指导"
+                android:textSize="12sp" />
+
+            <View />
+
+            <Button
+                android:id="@+id/me"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttonselect"
+                android:drawableTop="@drawable/ic_me"
+                android:text="主页"
+                android:textSize="12sp" />
+
+
+        </TableRow>
+    </TableLayout>
+
+
+</com.xiaofangfang.rice2_verssion.view.PercentLinearLayout>

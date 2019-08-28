@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<fragments>
+    <fragment>com.example.momomusic.fragment.MusicPlayFragment</fragment>
+    <fragment>com.example.momomusic.fragment.commons.CommentListFragment</fragment>
+    <fragment>com.example.momomusic.fragment.person.PersonalCenterFragment</fragment>
+    <fragment>com.example.momomusic.fragment.person.PersonalIndexPageFragment</fragment>
+    <fragment>com.example.momomusic.fragment.local.LocalMusicListFragment</fragment>
+    <fragment>com.example.momomusic.fragment.local.LocalMusicSingerFragment</fragment>
+    <fragment>com.example.momomusic.fragment.local.LocalMusicSingerZJMusicFragment</fragment>
+    <fragment>com.example.momomusic.fragment.local.LocalMusicWJJMusicFragment</fragment>
+    <fragment>com.example.momomusic.fragment.MusicMultipleSelectFragment</fragment>
+    <fragment>com.example.momomusic.fragment.ModifyMusicInfoFragment</fragment>
+</fragments>
+

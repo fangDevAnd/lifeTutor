@@ -1,0 +1,382 @@
+﻿
+input,button,select,textarea{outline:none}
+.borderColor {
+    border-color:#bbb;
+}
+.tableBottomBorder {
+    border-bottom: solid 1px #bbb;
+}
+
+.tableTopBorder {
+    border-top: 1px solid #bbb;
+}
+.tabActive {
+    border-bottom:solid 2px #5EB8DA
+}
+.titleSpacing{
+    background: #D6D7DA;
+    height: 21px;
+}
+.titleSpacingMax{
+
+    height: 95px;
+}
+
+.selectDialog{
+
+    min-width: 208px;
+    position: absolute;
+    z-index:1;
+    overflow: hidden;
+}
+.icon{
+    height: 22px;
+    background: url(image/ps-icon.png) no-repeat;
+    background-position: center;
+}
+.selectDialog .buttons {
+    border-radius: 15px;
+    background: #fff;
+    width: 208px;
+    text-align: center;
+}
+.selectDialog .buttons .item:first-child{
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.selectDialog  .buttons .item .active{
+    background: #5DAFCF;
+
+}
+.selectDialog  .buttons .item{
+    height: 80px;
+    line-height: 80px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.selectDialog  .buttons .item:hover{
+    background: #5DAFCF;
+    color:#fff;
+}
+.selectDialog  .buttons .item:last-child{
+    border-bottom: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.title {
+
+    width:100%;
+    line-height:90px;
+    height:90px;
+    background:#fff;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    text-align:center;
+}
+.titleOperation{
+    height: 90px;
+    line-height: 90px;
+    margin-top: -90px;
+}
+.red {
+    color:red;
+}
+.btn {
+    background:#5EB8DA;
+    border-radius:10px;
+
+}
+.btn:active{
+    color: #fff;
+    background:#5EB8DA;
+    box-shadow: 0px 1px 4px #53a7c1;
+}
+.textBtn{
+    color: #5eb8da;
+    text-decoration: underline;
+}
+.textBtn:active{
+    text-shadow: 0px 1px 1px #53a7c1;
+}
+.fontMax {
+    font-size: 30px;
+}
+.fontMiddle {
+    font-size:28px;
+}
+.fontSmall {
+    font-size:26px;
+}
+.borderline{
+    border: 1px solid #bbb;
+}
+tr {
+    height: 90px;
+}
+table{
+    border-collapse:collapse;
+}
+/*拼错了 实际为scroll*/
+.scorll{
+    overflow: auto;
+}
+
+.search {
+    background:url("image/search.png") no-repeat ;
+    background-position: center;
+    display:inline-block;
+    height: 90px;
+    width: 32px;
+    float: right;
+}
+.searchTitle{
+    height: 94px;
+    line-height: 94px;
+    padding:  0 35px;
+    background: #d6d7da;
+    color:#656565
+}
+.search_gray {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background:url("image/search_gray.png") no-repeat;
+    vertical-align: -5px;
+    margin-left: 15px;
+}
+
+
+.cancel_gray{
+    height: 32px;
+    width: 32px;
+    background:url("image/cancel_gray.png") no-repeat;
+}
+.cancel_red{
+    background:url("image/cancel_red.png") no-repeat;
+}
+.borderline{
+    border: 1px solid #bbb;
+}
+
+.blueArrow{
+    width: 12px;
+    height: 8px;
+    padding: 0 5px 10px 10px;
+    position: relative;
+    background: url(image/sanjiao.png) no-repeat;
+    background-position:center;
+    display: inline-block;
+}
+.garyArrow{
+    width: 12px;
+    height: 8px;
+    padding: 0 5px 10px 10px;
+    position: relative;
+    background: url(image/sanjiao_gray.png) no-repeat;
+    background-position:center;
+    display: inline-block;
+}
+
+/*勾选的方块*/
+.checkboxs{
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #999;
+}
+.checkboxs-selected{
+    background:url(image/selected-icon2.png);
+    border: 2px solid #3d882d;
+}
+
+
+.btnNormal{
+    background: #fff;
+    border-bottom: 1px solid #bbb;
+}
+
+.btnSelected{
+    background: #fff;
+    border-bottom: 3px solid #5eb8da;
+    color: #5eb8da;
+}
+
+.jia{
+    background: url("image/jia.png") no-repeat;
+    background-position:  center;
+    height:60px;
+    width: 30px;
+    padding: 0 20px;
+    display: inline-block;
+}
+.jian{
+    background: url("image/jian.png") no-repeat;
+    background-position:  center;
+    height:60px;
+    width: 30px;
+    padding: 0 20px;
+    display: inline-block;
+}
+.adjustInput {
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    height: 60px;
+    text-align: center;
+    vertical-align: 20px;
+    width: 80px;
+}
+.userIcon{
+    background-image: url("image/userIcon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    bottom: 150px;
+    height: 80px;
+    left: 40px;
+    position: absolute;
+    width: 80px;
+}
+.scroll-loading{
+    text-align: center;
+    width:100%;
+    height:118px;
+    margin-top: -118px;
+}
+
+
+.rightDialog{
+    background: #d6d7da ;
+    display: none;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 879px;
+}
+
+.rightDialog .btn {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    width: 438px;
+}
+.rightDialog .btn:active{
+    background:#5EB8DA;
+}
+.rightDialog .btns {
+    bottom: 0;
+    position: absolute;
+}
+
+.rightDialog .context {
+    margin-left: 21px;
+    margin-right: 21px;
+    padding: 0;
+    z-index: 1;
+}
+.rightDialog .btns{
+    position: absolute;
+    bottom:0;
+}
+.rightDialog .btns :first-child{
+    border-right-style: solid;
+    border-right-width: 1px ;
+}
+.fullDialog{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.back{
+    color: #5eb8da;
+
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    width: 120px;
+}
+.back .text{
+    display: inline-block;
+}
+.back .arrow{
+    width: 20px;
+    height: 30px;
+    background: url(image/arrow-icon2.png) no-repeat;
+    display: inline-block;
+    float: left;
+    margin:30px 10px 30px 30px;
+}
+
+
+
+.centerDialog{
+    display: none;
+
+    position:fixed;
+
+}
+.centerDialog center{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 25px;
+    height: 332px;
+    width: 601px;
+}
+.centerDialog .btns{
+    width: 601px;
+}
+.centerDialog .btns :first-child{
+    border-right-style: solid;
+    border-right-width: 1px ;
+}
+
+.centerDialog .btn{
+    width:300px;
+    background:#fff ;
+    text-align: center;
+    line-height: 80px;
+    height:80px;
+    border-radius: 0;
+    float: left;
+}
+.centerDialog .btn:active{
+    background:#5EB8DA;
+}
+.centerDialog .btn:first-child{
+    border-bottom-left-radius: 20px;
+}
+.centerDialog .btn:last-child{
+    border-bottom-right-radius: 20px;
+}
+.centerDialog .subTitle{
+    height: 100px;
+    line-height: 100px;
+    line-height: 100px;
+}
+.centerDialog .context{
+    width: 505px;
+    height:150px;
+    padding:0 50px;
+    line-height: 50px;
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-width: 1px ;
+}
+
+
+.BarCodes {
+    background: rgba(0, 0, 0, 0) url("image/barcodes-icon.png") repeat scroll 0 0;
+    float: right;
+    height: 52px;
+    margin: 24px 45px 14px 0;
+    width: 60px;
+}
+.eleBtn:active{
+    background-color:#f5f5f5 !important;
+
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_wode"
+            android:stateListAnimator="@drawable/status_animation"
+            android:tag="@string/select"
+            android:text="@string/is_wode" />
+
+        <Button
+            android:id="@+id/jingxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_jingxuanbiao"
+            android:stateListAnimator="@drawable/status_animation"
+            android:text="@string/is_jingxuan" />
+
+        <ImageButton
+            android:id="@+id/bofang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:elevation="10dp"
+            android:src="@drawable/ic_bofang2"
+            android:stateListAnimator="@drawable/status_animation" />
+
+        <Button
+            android:id="@+id/zhibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_shipin"
+            android:stateListAnimator="@drawable/status_animation"
+            android:text="@string/is_zhibo" />
+
+        <Button
+            android:id="@+id/shipin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_shipin1"
+            android:stateListAnimator="@drawable/status_animation"
+            android:text="@string/is_shipin" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

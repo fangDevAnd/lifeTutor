@@ -1,0 +1,45 @@
+#knowledge .cc{
+
+}
+#knowledge .item{
+    height: 40px;
+    padding: 10px 20px;
+    background: #fff;
+
+}
+#knowledge .item:nth-of-type(odd){
+    background: #ededed;
+}
+#knowledge .pic{
+     width: 40px;
+    height:40px;
+    float: left;
+    background-size:40px 40px
+}
+#knowledge .ppt{
+    background-image: url(image/PPT.png) ;
+}
+#knowledge .pptx{
+    background-image: url(image/PPT.png) ;
+}
+#knowledge .doc{
+    background-image: url(image/DOC.png) ;
+}
+
+#knowledge .docx{
+    background-image: url(image/DOC.png) ;
+}
+#knowledge .xls{
+    background-image: url(image/Excel.png) ;
+}
+#knowledge .xlsx{
+    background-image: url(image/Excel.png) ;
+}
+#knowledge .pdf{
+    background-image: url(image/PDF.png) ;
+}
+#knowledge .font{
+    line-height: 40px;
+    margin-left: 20px;
+    float: left;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="20dp"
+            android:text="@string/pinglunnanzi"
+            android:textSize="16sp" />
+
+        <View
+            style="@style/line"
+            android:layout_width="match_parent"></View>
+
+        <Button
+            android:id="@+id/huifu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_pinglun"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/holo_red_light"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/huifu" />
+
+        <View
+            style="@style/line"
+            android:layout_width="match_parent"></View>
+
+        <Button
+            android:id="@+id/fuzhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_conversation"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/holo_red_light"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/fuzhi" />
+
+
+        <View
+            style="@style/line"
+            android:layout_width="match_parent"></View>
+
+        <Button
+            android:id="@+id/jubao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_huo"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/holo_red_light"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/jubao" />
+
+        <View
+            style="@style/line"
+            android:layout_width="match_parent"></View>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

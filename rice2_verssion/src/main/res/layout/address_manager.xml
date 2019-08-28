@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+这个界面是地址管理的界面的实现,
+里面的listView的布局是 address_manager_sub_list
+
+
+-->
+
+<com.xiaofangfang.rice2_verssion.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.xiaofangfang.rice2_verssion.view.CommandBar
+        android:layout_width="match_parent"
+        android:id="@+id/commandBar"
+        android:layout_height="wrap_content"></com.xiaofangfang.rice2_verssion.view.CommandBar>
+
+
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/gray_split_10"
+        ></ListView>
+
+
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/right_bottom_radius"
+        android:text="新建地址"
+        android:textColor="@android:color/white" />
+
+
+</com.xiaofangfang.rice2_verssion.view.PercentLinearLayout>

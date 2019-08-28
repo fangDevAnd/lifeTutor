@@ -1,0 +1,12 @@
+<div id="knowledge" class="container">
+    <div class="cc">
+        <div class="item" ng-repeat="file in vm.data" ng-click="vm.openFile(file)">
+            <div class="pic {{file.type}}"></div>
+            <div class="font">{{file.path}}</div>
+        </div>
+
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css"  href="cpr/css/knowledge.css">
+<script src="cpr/controllers/knowledgeController.js"></script>

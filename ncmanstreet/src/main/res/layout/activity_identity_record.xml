@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.rcs.nchumanity.view.CommandBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themecolor"
+        toolbar:title="报名"></com.rcs.nchumanity.view.CommandBar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.rcs.nchumanity.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#f6f6f6"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:background="#ffffff">
+
+
+                <ImageView
+                    android:id="@+id/one"
+                    android:layout_width="44dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="28dp"
+                    android:src="@drawable/ic_27" />
+
+                <ImageView
+                    android:id="@+id/two"
+                    android:layout_width="44dp"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/one"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/ic_27" />
+
+                <ImageView
+                    android:id="@+id/three"
+                    android:layout_width="44dp"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/two"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/ic_27" />
+
+                <ImageView
+                    android:id="@+id/four"
+                    android:layout_width="44dp"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/three"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/ic_27" />
+
+                <ImageView
+                    android:id="@+id/five"
+                    android:layout_width="68dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="40dp"
+                    android:src="@drawable/ic_28" />
+
+                <ImageView
+                    android:layout_width="164dp"
+                    android:layout_height="8dp"
+                    android:layout_alignTop="@id/five"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/five"
+                    android:src="@drawable/ic_40" />
+
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="73dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_toRightOf="@id/four"
+                    android:src="@drawable/ic_39" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/capture"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_35" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true" />
+
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_toRightOf="@id/capture"
+                    android:src="@drawable/ic_33" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="14dp"
+                    android:text="上传一寸免冠证件照"
+                    android:textColor="#ff040404"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#f6f6f6"></View>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/nameTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="真实姓名："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/nameTag"
+                    android:background="@null"
+                    android:hint="@string/need"
+                    android:inputType="textPersonName"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/phoneTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="手机号码："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/phoneTag"
+                    android:background="@null"
+                    android:hint="@string/need"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/sixTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="真实性别："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/six"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/sixTag"
+                    android:entries="@array/sixs"
+                    android:hint="@string/need"
+                    android:paddingLeft="10dp"
+                    android:textSize="11sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/identityTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="身份证号："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/identityCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/identityTag"
+                    android:background="@null"
+                    android:entries="@array/sixs"
+                    android:hint="@string/need"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/workTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="工作单位："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/workCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/workTag"
+                    android:background="@null"
+                    android:entries="@array/sixs"
+                    android:hint="@string/need"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/eduDegTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="文化程度："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/degEduca"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/eduDegTag"
+                    android:entries="@array/degEduca"
+                    android:hint="@string/need"
+                    android:paddingLeft="10dp"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/workTimeTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="工作年限："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/workLife"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/workTimeTag"
+                    android:entries="@array/times"
+                    android:paddingLeft="10dp"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/officialCapacityTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="职务职称："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/officialCapacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/officialCapacityTag"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="选填"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/smssdk_white">
+
+                <TextView
+                    android:id="@+id/homeAddressTag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="家庭住址："
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/homeAddressTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@id/homeAddressTag1"
+                    android:drawableRight="@drawable/ic_downstep"
+                    android:gravity="center_vertical"
+                    android:textColor="#ff0c0c0c"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+            <EditText
+                android:id="@+id/homeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="13dp"
+                android:background="@color/smssdk_white"
+                android:hint="详细地址:"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/ic_22"></View>
+
+
+            <TextView
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="48dp"
+                android:text="免责声明：您应该保证您填写的信息和上传的头像与您本人真实情况一致，由于个人资料错误的问题所导致的一切后果，由您自行承担。"
+                android:textColor="#ffda251d"
+                android:textSize="12sp" />
+
+
+        </com.rcs.nchumanity.view.PercentLinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/submitSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:text="@string/qd"
+        android:textColor="@color/smssdk_white" />
+
+</LinearLayout>

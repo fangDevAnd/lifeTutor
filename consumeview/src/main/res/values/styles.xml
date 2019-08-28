@@ -1,0 +1,217 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MyListTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.DayNight">
+        <!-- 状态栏颜色，会被statusBarColor效果覆盖-->
+        <item name="android:colorPrimaryDark">@color/status_red</item>
+        <!-- 状态栏颜色，继承自colorPrimaryDark -->
+        <item name="android:statusBarColor">@color/status_red</item>
+        <!-- actionBar颜色 -->
+        <item name="android:colorPrimary">@color/action_red</item>
+        <!-- 背景颜色 -->
+        <item name="android:windowBackground">@color/window_bg</item>
+        <!-- 底部栏颜色 -->
+        <item name="android:navigationBarColor">@color/navigation_red</item>
+        <!-- ListView的分割线颜色，switch滑动区域色-->
+        <item name="android:colorForeground">@color/fg</item>
+        <!-- popMenu的背景色 -->
+        <item name="android:colorBackground">@color/bg</item>
+        <!-- 控件默认颜色 ，效果会被colorControlActivated取代  -->
+        <item name="android:colorAccent">@color/control_activated</item>
+        <!-- 控件默认时颜色  -->
+        <item name="android:colorControlNormal">@color/control_normal</item>
+        <!-- 控件按压时颜色，会影响水波纹效果，继承自colorAccent  -->
+        <item name="android:colorControlHighlight">@color/control_highlight</item>
+        <!-- 控件选中时颜色 -->
+        <item name="android:colorControlActivated">@color/control_activated_gray</item>
+        <!-- Button的默认背景 -->
+        <item name="android:colorButtonNormal">@color/button_normal</item>
+        <!-- Button，textView的文字颜色  -->
+        <item name="android:textColor">@color/white_text</item>
+        <!-- RadioButton checkbox等控件的文字 -->
+        <item name="android:textColorPrimaryDisableOnly">@color/white_text</item>
+        <!-- actionBar的标题文字颜色 -->
+        <item name="android:textColorPrimary">@color/white_text</item>
+    </style>
+
+
+    <!--<style name="AppLightTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--<item name="android:textColorPrimary">@color/colorPrimaryTextBlack</item>-->
+    <!--<item name="android:textColorSecondary">@color/colorSubTextBlack</item>-->
+    <!--<item name="android:windowBackground">@color/white</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppDarkTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">-->
+    <!--<item name="colorPrimary">@color/darkColorPrimary</item>-->
+    <!--<item name="colorAccent">@color/darkColorAccent</item>-->
+    <!--<item name="android:textColorPrimary">@color/white</item>-->
+    <!--<item name="android:textColorSecondary">@color/colorSubTextWhite</item>-->
+    <!--<item name="android:windowBackground">@color/dark_bg</item>-->
+    <!--</style>-->
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here.自定义你的主题 -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:colorControlNormal">@color/colorControlNormal</item>
+    </style>
+
+
+    <declare-styleable name="TopBar">
+        <attr name="title" format="string"></attr>
+        <attr name="titleTextSize" format="dimension"></attr>
+        <attr name="titleTextColor" format="color"></attr>
+        <attr name="leftTextColor" format="color"></attr>
+        <attr name="leftBackground" format="color|reference"></attr>
+        <attr name="leftText" format="string"></attr>
+        <attr name="rightTextColor" format="color"></attr>
+        <attr name="rightBackground" format="reference|color"></attr>
+        <attr name="rightText" format="string"></attr>
+    </declare-styleable>
+
+
+    <!--
+
+  下面我们定义一些自己的自定义属性,用来在不同的主题中使用
+    -->
+
+    <attr name="textLightColor" format="color"></attr>
+
+
+    <!--
+    android:Theme                             API 1 开始
+    -->
+    <style name="appThemeDemo" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="textLightColor">@color/text_green</item>
+    </style>
+    <!--
+    android:Theme.Holo                     API 11（android3.0） 开始
+    -->
+    <style name="appThemeDemo1" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="textLightColor">@color/text_blue</item>
+    </style>
+
+    <!--
+    android:Theme.DeviceDefault      API 14（android4.0） 开始
+    -->
+    <style name="appThemeDemo2" parent="android:Theme.DeviceDefault.Light.NoActionBar">
+        <item name="textLightColor">@color/text_yellow</item>
+    </style>
+
+    <!--
+    android:Theme.Material               API 21（android5.0） 开始
+    -->
+    <style name="appThemeDemo3" parent="android:Theme.Material">
+        <item name="textLightColor">@color/text_puple</item>
+    </style>
+
+    <!--
+    兼容标签库
+    -->
+    <style name="appThemeDemo4" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="textLightColor">@color/text_qin</item>
+    </style>
+
+
+    <style name="appThemeDemo5" parent="Theme.AppCompat.Light">
+        <item name="textLightColor">@color/text_oragle</item>
+    </style>
+
+
+    <style name="appThemeDemo6" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="textLightColor">@color/text_red</item>
+        <item name="android:colorPrimary">@color/colorAccent</item>
+    </style>
+
+
+    <!--
+    API 1:
+    android:Theme 根主题
+    android:Theme.Black 背景黑色
+    android:Theme.Light 背景白色
+    android:Theme.Wallpaper 以桌面墙纸为背景
+    android:Theme.Translucent 透明背景
+    android:Theme.Panel 平板风格
+    android:Theme.Dialog 对话框风格
+
+    API 11:
+    android:Theme.Holo Holo根主题
+    android:Theme.Holo.Black Holo黑主题
+    android:Theme.Holo.Light Holo白主题
+
+    API 14:
+    Theme.DeviceDefault 设备默认根主题
+    Theme.DeviceDefault.Black 设备默认黑主题
+    Theme.DeviceDefault.Light 设备默认白主题
+
+    API 21: (网上常说的 Android Material Design 就是要用这种主题)
+    Theme.Material Material根主题
+    Theme.Material.Light Material白主题
+
+    兼容包v7中带的主题：
+    Theme.AppCompat 兼容主题的根主题
+    Theme.AppCompat.Black 兼容主题的黑色主题
+    Theme.AppCompat.Light 兼容主题的白色主题
+    -->
+
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#111</color>
+    <color name="textColor">#DFDFDF</color>
+    <color name="colorControlNormal">#66225F</color>
+
+
+    <!--
+    下面是主题的定制
+    -->
+    <color name="status_red">#FF1A1A</color>
+    <color name="action_red">@color/status_red</color>
+    <color name="window_bg">#111</color>
+    <color name="navigation_red">@color/action_red</color>
+    <color name="fg">@android:color/transparent</color>
+    <color name="bg">#fff</color>
+    <color name="control_activated">#fff</color>
+    <color name="control_normal">@color/control_activated</color>
+    <color name="control_highlight">#ccc</color>
+    <color name="control_activated_gray">#ccc</color>
+    <color name="button_normal">@android:color/transparent</color>
+    <color name="white_text">#fff</color>
+
+
+    <color name="text_red">#FF1F1F</color>
+    <color name="text_blue">#566DFF</color>
+    <color name="text_oragle">#FF9800</color>
+    <color name="text_yellow">#dde500</color>
+    <color name="text_green">#00e510</color>
+    <color name="text_qin">#98e500</color>
+    <color name="text_puple">#bd00e5</color>
+
+
+</resources>

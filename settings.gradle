@@ -1,0 +1,2 @@
+include ':app', ':lib', ':mylibrary', ':filterrice', ':rice', ':BootStrapWebAppDemo', ':materialdesigndemo', ':opensourceframeworkdemo', ':pluginFramework', ':butterknitedemo', ':AnnotationL', ':ndkdemo', ':consumeview', ':rice2_verssion', ':animator', ':componentasystemtest', ':ndk_demo', ':pluginedopenframewok', ':codeoptimization', ':securityandroidpatform', ':momomusic', ':aidltest', ':note', ':ncmanstreet', ':cpr_1', ':JGPush', ':zxing-lib', ':jsontosql', ':canvesbitmap', ':logcatuploadmodule'
+include ':amm_sdk_sample'

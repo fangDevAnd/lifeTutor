@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script src="Scripts/jquery-1.7.1.js"></script>-->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" id="code" >
+<input type="button" value="拍照" onclick="getPhoto()">
+<form enctype="application/json" method="post" action="http://192.168.7.100/osce2/index.php/home/CommonEntity/loginQueryMsg" >
+
+    <input type="text" name="name" />
+    <input type="submit" />
+</form>
+<script>
+
+/*
+    function getPhoto(){
+
+        CameraManager.startScanner(function (code) {
+            $("#code").val(code);
+        });
+    }
+*/
+
+   var pdata = {
+        name: "admin123",
+        pwd: "1234567",
+        appType: 0
+    };
+
+    $.ajax({
+        type: 'POST',
+        url: "http://192.168.100.46:9002/osce/proxy",
+        data:"url=http://192.168.7.100/osce2/index.php/home/CommonEntity/loginQueryMsg&json="+JSON.stringify(pdata),
+        success: function (msg) {
+            if(msg.type == "1") {
+                setTimeout(function () {
+                    location.href = "Main.html";
+                },1000);
+
+            }
+        },
+        error: function () {
+            
+        },
+        dataType: "json"
+
+    });
+
+
+
+</script>
+</body>
+</html>

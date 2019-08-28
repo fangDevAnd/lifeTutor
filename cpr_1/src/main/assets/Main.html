@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+    <meta name="viewport" content="width=1920,initial-scale=0.55555, user-scalable=no,minimum-scale=0.55555; maximum-scale = 0.55555 , target-densitydpi=device-dpi"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script src="Scripts/iscroll-probe.js"></script>
+    <script src="Scripts/angular-1.39.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/jquery.transit.min.js"></script>
+    <script src="Scripts/app/config.js"></script>
+    <script src="Scripts/angular-touch.min.js"></script>
+
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/date.css" rel="stylesheet" />
+    <link href="css/tabtree.css" rel="stylesheet" />
+</head>
+
+<body class="fontMiddle"  ng-app="app">
+
+<div id="fullView"></div>
+    <div>
+      <div ng-controller="mainController">
+     <div id="main" >
+         <div class="left" style="height:{{ height }}px" >
+             <div class="menu">
+                 <div ng-click="jump($index)" ng-class="menuIndex=={{$index}}? 'item actived':'item'"  ng-repeat="x in menus"><div>{{ x.title }}</div>
+                     <span class="bubble"  ng-show="x.num>0"><span>{{ x.num }}</span></span>
+                 </div>
+             </div>
+             <div class="userIcon" ng-click="userInfo()"></div>
+         </div>
+          <div class="right" id="right" style="height:{{ height }}px" >
+              <div ng-view id="ngView"></div>
+             </div>
+         </div>
+    </div>
+    </div>
+
+
+    <script src="Scripts/manager/CameraManager.js"></script>
+    <script src="Scripts/manager/DialogManager.js"></script>
+    <script src="Scripts/manager/ScorllManager.js"></script>
+    <script src="Scripts/manager/LoadingManager.js"></script>
+    <script src="Scripts/manager/RockManager.js"></script>
+    <script src="Scripts/app/app.js"></script>
+    <script src="Scripts/app/mainController.js"></script>
+    <script src="Scripts/services/NetService.js"></script>
+    <script src="Scripts/directive/adjustInput.js"></script>
+    <script src="Scripts/directive/DialogDirective.js"></script>
+    <script src="Scripts/directive/TabTreeDirective.js"></script>
+    <script src="Scripts/directive/PopSelectorDirective.js"></script>
+    <script src="Scripts/directive/confirmBtn.js"></script>
+    <script src="Scripts/services/LanguageService.js"></script>
+    <script src="Scripts/services/LoadService.js"></script>
+    <script src="Scripts/services/FullScreenShowService.js"></script>
+    <script src="Scripts/directive/DatePicker.js"></script>
+    <script src="Scripts/directive/autograph.js"></script>
+    <script src="Scripts/filter/filter.js"></script>
+    <script src="Scripts/bower_components/signature_pad.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/yi" />
+
+    <RelativeLayout
+        android:id="@+id/musicInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/one">
+
+        <TextView
+            android:id="@+id/musicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zuihouyici" />
+
+        <TextView
+            android:id="@+id/singerAndAlbumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/musicName"
+            android:layout_alignLeft="@id/musicName"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/menu"
+            android:drawableLeft="@drawable/ic_wancheng"
+            android:drawablePadding="3dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/sunbin" />
+
+        <CheckBox
+            android:id="@id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/check_status"
+            android:clickable="false"
+            android:focusable="false"
+            android:tint="@color/gray_dark" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_below="@id/musicInfo"
+        android:layout_marginTop="5dp"></View>
+
+
+</RelativeLayout>

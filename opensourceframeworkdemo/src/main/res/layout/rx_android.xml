@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click"
+        android:text="create 方法"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/createTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickTwo"
+        android:text="create"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/createThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickThree"
+        android:text="from"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/just"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickFour"
+        android:text="just"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickFive"
+        android:text="filter方法"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

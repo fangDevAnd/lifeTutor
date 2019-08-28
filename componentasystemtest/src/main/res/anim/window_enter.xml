@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!---
+    这里我们应该测试一下100%与100%p的区别
+    猜测：  如果不加p代表的是本身  ，那么这个100%就代表的是当前view的x，y的bottom或者right的位置
+    加p,代表的是父布局的位置  因为这个是dialog，所以父布局就是屏幕的大小
+    -->
+
+    <translate
+        android:fromYDelta="100%"
+        android:toYDelta="0"></translate>
+
+</set>

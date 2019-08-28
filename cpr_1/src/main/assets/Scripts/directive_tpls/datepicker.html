@@ -1,0 +1,40 @@
+<div class="dateContainer">
+		<div class="dateBtn fontMax ">
+			<div class="dateBtnCancel btn" ng-click="date.cancel()">取消</div>
+			<div class="dateBtnEnter btn" ng-click="date.enter()">确定</div>
+			<div class="clbth"></div>
+		</div>	
+		<div class="dateMain">
+			<div class="dateBlock">
+				<div class="dateRow fontMax">
+					<div class="dateContent">{{date.tempYear}}年</div>
+					<div class="dateContent">{{date.tempMonth}}月</div>
+					<div class="dateContent">{{date.tempDay}}日</div>
+				</div>
+			</div>
+
+			<div class="dateBlock2 fontSmall">
+				<div class="dateColumn dateContent" id="year">
+					<!--<div><a>2017年</a><div class="selectedIcon unselected"></div></div>-->
+					<div>
+					 <div ng-repeat="year in date.yearArray" ><a ng-click="date.YearSelected(year)">{{year.value}}年</a><div class="{{ year.value==date.tempYear?'selectedIcon unselected':'unselected'}}"></div></div>
+						<div style="height: 80px"></div>
+					</div>
+				</div>
+				<div class="dateColumn dateContent" id="month">
+					<!--<div><a>01月</a><div class="selectedIcon unselected"></div></div>-->
+					<div>
+					<div ng-repeat="month in date.monthArray" ><a ng-click="date.MonthSelected(month)">{{month.value}}月</a><div class="{{ month.value==date.tempMonth?'selectedIcon unselected':'unselected'}}"></div></div>
+						<div style="height: 80px"></div>
+					</div>
+				</div>
+				<div class="dateColumn dateContent" id="day">
+					<!--<div><a>01日</a><div class="selectedIcon unselected"></div></div>-->
+					<div>
+					<div ng-repeat="day in date.dayArray"><a  ng-click="date.DaySelected(day)">{{day.value}}日</a><div class="{{ day.value==date.tempDay?'selectedIcon unselected':'unselected'}}"></div></div>
+						<div style="height: 80px"></div>
+					</div>
+				</div>
+			</div>		
+		</div>
+</div>

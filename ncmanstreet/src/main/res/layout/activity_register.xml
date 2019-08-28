@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rcs.nchumanity.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.rcs.nchumanity.view.CommandBar
+        android:id="@+id/commandBar"
+        app:title="输入账号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.rcs.nchumanity.view.CommandBar>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_01"
+        app:layout_aspectRatio="100%"
+        app:layout_widthPercent="60%" />
+
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_shoujihao"
+        android:drawablePadding="5dp"
+        android:hint="@string/sjhm"
+        android:inputType="phone"
+        android:maxLines="11"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/ic_22"></View>
+
+    <Button
+        android:id="@+id/registerSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/login_button_radius"
+        android:text="提交"
+        android:textColor="#FFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:stretchColumns="0,4">
+
+            <TableRow>
+
+                <View></View>
+
+                <TextView
+                    android:text="@string/wyyd"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/userProtocol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yhxy"
+                    android:textColor="#DA251D"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:text="@string/h"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/privacyClause"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yszc"
+                    android:textColor="#DA251D"
+                    android:textSize="11sp" />
+
+                <View />
+            </TableRow>
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+
+</com.rcs.nchumanity.view.PercentLinearLayout>

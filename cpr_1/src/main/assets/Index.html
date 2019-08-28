@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+    <meta name="viewport" content="width=1920,initial-scale=0.6666666666, user-scalable=no,minimum-scale=0.6666666666; maximum-scale = 0.6666666666 , target-densitydpi=device-dpi"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script src="Scripts/iscroll-probe.js"></script>
+    <script src="Scripts/angular-1.39.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/jquery.transit.min.js"></script>
+    <script src="Scripts/app/config.js"></script>
+    <script src="Scripts/angular-touch.min.js"></script>
+    <link href="css/base.css" />
+    <link href="css/date.css" rel="stylesheet" />
+    <link href="css/tabtree.css" rel="stylesheet" />
+
+    <link href="cpr/css/base.css" rel="stylesheet" />
+    <link href="cpr/css/index.css" rel="stylesheet" />
+</head>
+<!--cpr-->
+<body class="fontMiddle"  ng-app="app">
+
+<div id="fullView"></div>
+<div>
+    <div ng-view id="ngView"></div>
+    <div ng-controller="indexController">
+
+        <div class="container" id="index">
+
+            <div class="InCenterMain">
+                <div class="InCenterBlock">
+                    <div class="InBlock"></div>
+                    <div class="InModulBG">
+                        <div class="InModulImage"></div>
+                    </div>
+                    <div class="InBlock fontMiddleW">{{vm.selected_menu.description}}</div>
+                    <div class="InBlockBottom">
+                        <div class="InTabLine fontMaxW">
+                            <div ng-class="{true: 'InTabLineModule InTabLineModuleS', false: 'InTabLineModule'}[menu.selected]" ng-repeat="menu in vm.menus" ng-click="vm.onMenuSelected(menu)"><a>{{menu.title}}</a></div>
+                        </div>
+                        <div class="InEnterBtn fontMaxW" ng-click="vm.onStartModel()">进入</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="Scripts/manager/DialogManager.js"></script>
+<script src="Scripts/manager/ScorllManager.js"></script>
+<script src="Scripts/manager/LoadingManager.js"></script>
+<script src="Scripts/manager/RockManager.js"></script>
+<script src="Scripts/manager/DBManager.js"></script>
+<script src="Scripts/app/app.js"></script>
+<script src="Scripts/app/indexController.js"></script>
+<script src="Scripts/services/NetService.js"></script>
+<script src="Scripts/directive/adjustInput.js"></script>
+<script src="Scripts/directive/DialogDirective.js"></script>
+<script src="Scripts/directive/confirmBtn.js"></script>
+<script src="Scripts/services/LoadService.js"></script>
+<script src="Scripts/services/FullScreenShowService.js"></script>
+<script src="Scripts/directive/DatePicker.js"></script>
+<script src="Scripts/filter/filter.js"></script>
+
+</body>
+</html>

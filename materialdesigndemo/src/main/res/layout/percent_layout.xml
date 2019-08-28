@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaofangfang.materialdesigndemo.percentLinearlayout.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".percentLinearlayout.PercentLienarLayoutActivity">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="设置显示"
+        app:layout_widthPercent="30%" />
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="设置"
+            app:layout_widthPercent="20%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="过滤"
+            app:layout_marginRightPercent="5%" />
+
+
+        <androidx.percentlayout.widget.PercentFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="50%">
+
+
+        </androidx.percentlayout.widget.PercentFrameLayout>
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+</com.xiaofangfang.materialdesigndemo.percentLinearlayout.PercentLinearLayout>

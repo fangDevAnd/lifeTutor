@@ -1,0 +1,140 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
+
+    <!--  顶部-->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/logo2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="南昌人道"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28px"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+
+            <ImageButton
+                android:id="@+id/modelstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/modelstatex"
+                android:onClick="onClick"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/printstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@id/one"
+                android:background="@drawable/printstatex"
+                android:onClick="onClick" />
+
+            <RelativeLayout
+                android:id="@+id/one"
+                android:layout_width="40dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/setting"
+                android:background="@drawable/battery">
+
+                <View
+                    android:id="@+id/battery"
+                    android:layout_width="22px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="2px"
+                    android:layout_marginTop="2.48px"
+                    android:layout_marginBottom="2px"
+                    android:background="#0CFF6F" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@id/language"
+                android:background="@drawable/setting"
+                android:onClick="onClick" />
+
+            <ImageButton
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/cn"
+                android:onClick="onClick" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--  内容区 -->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top">
+
+    </RelativeLayout>
+
+    <!--
+    版本信息取消不要
+    -->
+
+    <!--<AbsoluteLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/content"-->
+    <!--android:layout_centerHorizontal="true">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/version"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=""-->
+    <!--android:textColor="#fff"-->
+    <!--android:textSize="24sp" />-->
+
+    <!--</AbsoluteLayout>-->
+
+</RelativeLayout>

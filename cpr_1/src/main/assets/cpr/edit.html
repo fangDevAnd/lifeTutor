@@ -1,0 +1,31 @@
+﻿
+
+<div id="edit" class="container">
+
+
+    <div class="ECenterMain">
+        <div class="ECenterBlock">
+            <div class="EBlock">
+                <div class="ETabLine fontMaxW">
+                    <div class="ETabLineModule {{vm.currentIndex==0?'ETabLineModuleS':''}}" ng-click="vm.currentIndex=0"><a>{{vm.lang.CPR+vm.lang.bianji}}</a></div>
+                    <div class="ETabLineModule {{vm.currentIndex==1?'ETabLineModuleS':''}}" ng-click="vm.currentIndex=1"><a>{{vm.lang.pingugxiangqing+vm.lang.bianji}}</a></div>
+                    <div class="ETabLineModule {{vm.currentIndex==2?'ETabLineModuleS':''}}" ng-click="vm.currentIndex=2"><a>{{vm.lang.mima+vm.lang.bianji}}</a></div>
+                </div>
+            </div>
+
+
+                <div ng-include="'cpr/edit/argument.html'" ng-show="vm.currentIndex==0" ></div><!--参数编辑-->
+                <div ng-include="'cpr/edit/flow.html'" ng-show="vm.currentIndex==1" ></div><!--流程编辑-->
+                <div ng-include="'cpr/edit/password.html'" ng-show="vm.currentIndex==2" ></div><!--密码修改-->
+            </div>
+
+        </div>
+    <div class="RTabLineBtn">
+        <div class="RPrintScoreBtn fontMaxW" style="margin-top:-120px" ng-click="vm.save()">{{vm.lang.baocun}}</div>
+    </div>
+    </div>
+
+
+
+<link rel="stylesheet" type="text/css"  href="cpr/css/edit.css">
+<script src="cpr/controllers/editController.js"></script>

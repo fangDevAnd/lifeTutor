@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="13dp"
+    android:paddingTop="13dp"
+    android:paddingRight="13dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="南昌大学求救"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginRight="10dp"
+        android:layout_alignLeft="@id/title"
+        android:layout_toLeftOf="@id/join"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="2019年7月5日 15:00有人在南昌大学求救。"
+        android:textColor="#ff666666"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_bg"
+        android:text="参与救援"
+        android:textColor="@color/smssdk_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/des"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/ic_22" />
+</RelativeLayout>

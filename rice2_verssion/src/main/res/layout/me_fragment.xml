@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaofangfang.rice2_verssion.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/person_bg"
+        app:layout_heightPercent="20%">
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13077995907"
+                android:textColor="#111"
+                android:textSize="21sp"
+                app:layout_marginLeftPercent="10%"
+                app:layout_marginTopPercent="10%" />
+
+            <TextView
+                android:id="@+id/userClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/user"
+                android:layout_below="@id/user"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="普通用户"
+                android:textColor="#585858"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@id/userClass"
+                android:layout_toRightOf="@+id/userClass"
+                android:src="@drawable/ic_head_icon"
+                app:layout_marginLeftPercent="5%" />
+
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_head"
+            app:layout_aspectRatio="100%"
+            app:layout_heightPercent="50%"
+            app:layout_marginRightPercent="10%" />
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/splitLine_little"></View>
+
+    <RelativeLayout
+        android:id="@+id/userCenter"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonselect"
+            android:drawableLeft="@drawable/ic_geren"
+            android:drawablePadding="10dp"
+            android:drawableTint="#ADFF4E"
+            android:gravity="center"
+            android:text="个人中心"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_downstep"
+            android:tint="@color/splitLine" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/splitLine_little"></View>
+
+    <RelativeLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonselect"
+            android:drawableLeft="@drawable/ic_setting"
+            android:drawablePadding="10dp"
+            android:drawableTint="#E384A5"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_downstep"
+            android:tint="@color/splitLine" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="40dp"
+        android:background="@color/splitLine_little"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonselect"
+            android:drawableLeft="@drawable/ic_guanyu"
+            android:drawablePadding="10dp"
+            android:drawableTint="#E384A5"
+            android:gravity="center"
+            android:text="关于软件"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_downstep"
+            android:tint="@color/splitLine" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/splitLine_little"></View>
+
+    <RelativeLayout
+        android:id="@+id/addva"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonselect"
+            android:drawableLeft="@drawable/ic_yijian"
+            android:drawablePadding="10dp"
+            android:drawableTint="#566CE8"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_downstep"
+            android:tint="@color/splitLine" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="40dp"
+        android:background="@color/splitLine_little"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/verUpg"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/versionUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonselect"
+            android:drawableLeft="@drawable/ic_shenji"
+            android:drawablePadding="10dp"
+            android:drawableTint="#566CE8"
+            android:gravity="center"
+            android:text="版本更新"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_downstep"
+            android:tint="@color/splitLine" />
+
+    </RelativeLayout>
+
+
+</com.xiaofangfang.rice2_verssion.view.PercentLinearLayout>

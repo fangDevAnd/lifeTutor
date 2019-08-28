@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.momomusic.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="?attr/bgColor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_xiaoxi"
+        android:drawableRight="@drawable/ic_downstep"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/wodexiaoxi"
+        android:textColor="@color/lightMainTextColor" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_qiandao"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/meiriqiandao"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="@string/qiandao" />
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_fuli1"
+        android:drawableRight="@drawable/ic_downstep"
+        android:drawablePadding="10dp"
+        android:drawableTint="@android:color/holo_red_light"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/fulizhuanqu"
+        android:textColor="@color/lightMainTextColor" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_huiyuan"
+            android:drawableRight="@drawable/ic_downstep"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/holo_orange_dark"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/huiyuanzhongxin"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="25dp"
+            android:text="@string/huiyuantishi" />
+
+
+    </FrameLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_hongbao"
+        android:drawableRight="@drawable/ic_downstep"
+        android:drawablePadding="10dp"
+        android:drawableTint="@android:color/holo_red_dark"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/qianhongbao"
+        android:textColor="@color/lightMainTextColor" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_jiangli"
+            android:drawableRight="@drawable/ic_downstep"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/holo_red_dark"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/xiaomishengqiangou"
+            android:textColor="@color/lightMainTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="25dp"
+            android:drawableLeft="@drawable/ic_fuli1"
+            android:drawablePadding="10dp"
+            android:drawableTint="#FA0C0C"
+            android:gravity="center"
+            android:text="@string/kuailailingjiang" />
+
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_yijian"
+        android:drawableRight="@drawable/ic_downstep"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/yijianfankui"
+        android:textColor="@color/lightMainTextColor" />
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_cibiaoquanyi"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/zhuomiangeci"
+            android:textColor="@color/lightMainTextColor" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_liuliang"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/holo_blue_dark"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/liuliangbofang"
+            android:textColor="@color/lightMainTextColor" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_zuijinyuedu"
+        android:drawableRight="@drawable/ic_downstep"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/shuimianmoshi"
+        android:textColor="@color/lightMainTextColor" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_yinle1"
+        android:drawableRight="@drawable/ic_downstep"
+        android:drawablePadding="10dp"
+        android:drawableTint="@android:color/holo_red_dark"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/tingeshiqu"
+        android:textColor="@color/lightMainTextColor" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="20dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_set"
+                android:drawablePadding="10dp"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/shezhi"
+                android:textColor="@color/lightMainTextColor" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</com.example.momomusic.view.PercentLinearLayout>

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale-1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--<script rel="script" src="js/bootstrap.min.js"></script>-->
+    <!--<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">-->
+    <!---->
+
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+
+<!--<div class="container-fluid">-->
+<!--<h1>你好世界</h1>-->
+<!--<button class="btn btn-primary">你好</button>-->
+<!--</div>-->
+
+
+<!--<div class="container-fluid">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-1">col-md-1</div>-->
+<!--<div class="col-md-1 col-lg-1">col-md-1</div>-->
+<!--<div class="col-md-1 col-lg-1">col-md-1</div>-->
+<!--<div class="col-md-1">col-md-1</div>-->
+<!--<div class="col-md-1">col-md-1</div>-->
+<!--<div class="col-md-1">col-md-1</div>-->
+<!--<div class="col-md-1">col-md-1</div>-->
+<!--<div class="col-md-1">col-md-1</div>-->
+<!--<div class="col-md-1">col-md-1</div>-->
+<!--<div class="col-md-1">col-md-1</div>-->
+<!--<div class="col-md-1">col-md-1</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-md-8">col-md-8</div>-->
+<!--<div class="col-md-4">col=md-4</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-xs-12 col-md-8">大大的</div>-->
+<!--<div class="col-xs-6 col-md-4">中等的</div>-->
+<!--</div>-->
+
+<!--</div>-->
+
+
+<!--<div class="container">-->
+
+<!--&lt;!&ndash; Stack the columns on mobile by making one full-width and the other half-width &ndash;&gt;-->
+<!--<div class="row">-->
+<!--<div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>-->
+<!--<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop &ndash;&gt;-->
+<!--<div class="row">-->
+<!--<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>-->
+<!--<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>-->
+<!--<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Columns are always 50% wide, on mobile and desktop &ndash;&gt;-->
+<!--<div class="row">-->
+<!--<div class="col-xs-6 col-md-offset-3">.col-xs-6</div>-->
+<!--<div class="col-xs-6">.col-xs-6</div>-->
+<!--</div>-->
+
+
+<!--<h1>h1. Bootstrap heading</h1>-->
+<!--<h2>h2. Bootstrap heading</h2>-->
+<!--<h3>h3. Bootstrap heading</h3>-->
+<!--<h4>h4. Bootstrap heading</h4>-->
+<!--<h5>h5. Bootstrap heading</h5>-->
+<!--<h6>h6. Bootstrap heading</h6>-->
+
+
+<!--<h1>你好-->
+<!--<small>方志月</small>-->
+<!--</h1>-->
+<!--<h2>你好-->
+<!--<small>方志月</small>-->
+<!--</h2>-->
+<!--<h3>你好-->
+<!--<small>方志月</small>-->
+<!--</h3>-->
+<!--<h4>你好-->
+<!--<small>方志月</small>-->
+<!--</h4>-->
+<!--<h5>你好-->
+<!--<small>方志月</small>-->
+<!--</h5>-->
+<!--<h6>你好-->
+<!--<small>方志月</small>-->
+<!--</h6>-->
+
+
+<!--<div id="divBox" style="width:20rem;height:10rem;background-color:#ccc">这是一个div</div>-->
+
+
+<!--<p class="lead">-->
+<!--Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis-->
+<!--dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.-->
+<!--</p>-->
+<!--<p>Nullam-->
+<!--<make>quis</make>-->
+<!--risus eget urna mollis ornare-->
+<!--<del>vel</del>-->
+<!--eu leo. Cum sociis <s>natoque</s> penatibus et magnis dis-->
+<!--parturient montes, nascetur ridiculus mus.，-->
+<!--<ins>agwgqg</ins>-->
+<!--Nullam id dolor id nibh ultricies vehicula.-->
+<!--</p>-->
+
+<!--<ins>agwgqg</ins>-->
+
+<!--<button class="btn btn-primary small">-->
+<!--你好-->
+<!--</button>-->
+
+<!--<button class="btn btn-primary">-->
+<!--你好-->
+<!--</button>-->
+
+
+<!--<b>afqwwgagq好看的电影</b>-->
+
+
+<!--<p class="text-left">left text</p>-->
+<!--<p class="text-center">center text</p>-->
+<!--<p class="text-right">right text</p>-->
+
+<!--<p class="text-center text-uppercase">snfiiewnwe</p>-->
+<!--<p class="text-right text-lowercase"></p>-->
+<!--<p class="text-center text-capitalize">asftqg</p>-->
+
+
+<!--<p class="text-center">-->
+<!--你好十几万萨芬vaef<abbr title="attribute">atwegw</abbr>-->
+<!--</p>-->
+
+<!--<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>-->
+
+
+<!--<address>-->
+<!--<strong>Twitter, Inc.</strong><br>-->
+<!--1355 Market Street, Suite 900<br>-->
+<!--San Francisco, CA 94103<br>-->
+<!--<abbr title="Phone">P:</abbr> (123) 456-7890-->
+<!--</address>-->
+
+<!--<address>-->
+<!--<strong>Full Name</strong><br>-->
+<!--<a href="mailto:#">first.last@example.com</a>-->
+<!--</address>-->
+
+<!--<address>-->
+<!--<strong>方志月</strong><br>-->
+<!--江西服装学院学生<br/>-->
+<!--计算机专业<br>-->
+<!--<abbr title="Phone">P:</abbr>13077995907-->
+<!--</address>-->
+
+<!--<address>-->
+<!--<strong> Full Name</strong>-->
+<!--<a href="mailto:#">fangzhiyue@outlook.com</a>-->
+<!--</address>-->
+
+
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>-->
+<!--<blockquote>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>-->
+<!--</blockquote>-->
+
+
+<!--<blockquote>-->
+<!--<p>不努力，你拿什么支撑你的生活，梦想？</p>-->
+<!--<footer>来源<cite>方志月</cite></footer>-->
+<!--</blockquote>-->
+
+
+<!--<blockquote class="blockquote-reverse">-->
+<!--<p>啥事都应该去尝试</p>-->
+<!--<footer>来源<cite>方志月</cite></footer>-->
+<!--</blockquote>-->
+
+
+<!--<ul class="list-unstyled">-->
+<!--<li>生活</li>-->
+<!--<li>生活</li>-->
+<!--<li>生活</li>-->
+<!--<li>生活</li>-->
+<!--<li>生活</li>-->
+<!--</ul>-->
+
+<!--<ul>-->
+<!--<li>经济</li>-->
+<!--<li>经济</li>-->
+<!--<li>经济</li>-->
+<!--<li>经济</li>-->
+<!--<li>经济</li>-->
+<!--</ul>-->
+
+<!--<ul class="list-inline">-->
+<!--<li>教育</li>-->
+<!--<li>教育</li>-->
+<!--<li>教育</li>-->
+<!--<li>教育</li>-->
+<!--<li>教育</li>-->
+<!--</ul>-->
+
+<!--<ul>-->
+<!--<li>家庭</li>-->
+<!--</ul>-->
+
+
+<!--<dl class="dl-horizontal">-->
+<!--<dt>你好世界</dt>-->
+<!--<dd>编程的技术</dd>-->
+<!--</dl>-->
+
+
+<!--For example,<code>&lt;section&gt;</code>should be wrapper as line-->
+<!--For example,<code>&lt;section&gt;-->
+<!--</code>should be wrapper as line-->
+
+
+<!--To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>-->
+<!--To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>-->
+
+
+<!--<pre>-->
+<!--&lt;p&gt;这是一个段落&lt;/p&gt;-->
+
+<!--</pre>-->
+
+
+<!--<var>y</var>=<var>x</var>+<var>z</var>-->
+
+<!--<samp>这是一个输出的效果</samp>-->
+
+
+<!--<table class="table table-bordered table-hover table-condensed">-->
+<!--<thead>-->
+<!--<tr class="table-active">-->
+<!--<th>First Name</th>-->
+<!--<th>Last Name</th>-->
+<!--<th>User Name</th>-->
+<!--</tr>-->
+<!--</thead>-->
+<!--<tbody>-->
+<!--<tr class="table-success">-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--<tr class="table-info">-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--<tr class="table-warning">-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--<tr class="table-danger">-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--</tbody>-->
+<!--</table>-->
+
+
+<!--<div class="table-responsive">-->
+<!--<table class="table table-bordered table-hover table-condensed">-->
+<!--<thead>-->
+<!--<tr class="table-active">-->
+<!--<th>First Name</th>-->
+<!--<th>Last Name</th>-->
+<!--<th>User Name</th>-->
+<!--</tr>-->
+<!--</thead>-->
+<!--<tbody>-->
+<!--<tr class="table-success">-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--<tr class="table-info">-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--<tr class="table-warning">-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--<tr class="table-danger">-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash;如果直接使用table，表格会按照-->
+<!--从左到右的顺序布局，并不会自动使用适应-->
+<!--&ndash;&gt;-->
+<!--<table>-->
+<!--<tr>-->
+<!--<th>First Name</th>-->
+<!--<th>Last Name</th>-->
+<!--<th>User Name</th>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</tr>-->
+<!--<td>Mark</td>-->
+<!--<td>Otto</td>-->
+<!--<td>@mdo</td>-->
+<!--</table>-->
+
+
+<!--<form>-->
+<!--<div class="form-group">-->
+<!--<label for="exampleInputEmail1">Email Address</label>-->
+<!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label for="exampleInputName">User Name</label>-->
+<!--<input class="form-control" type="text"-->
+<!--placeholder="User Name" id="exampleInputName">-->
+<!--</div>-->
+
+<!--<div class="form-group">-->
+<!--<label for="exampleInputFile" class="sr-only" aria-label="文件输入">File Input</label>-->
+<!--<input type="file" placeholder="File" id="exampleInputFile">-->
+<!--<p class="help-block"></p>-->
+<!--</div>-->
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox"> Check me out-->
+<!--</label>-->
+<!--</div>-->
+<!--<button type="submit" class="btn btn-primary">Submit</button>-->
+<!--</form>-->
+
+
+<!--<form class="form-inline">-->
+<!--<div class="form-group">-->
+<!--<label for="exampleInputName2">Name</label>-->
+<!--<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label for="exampleInputEmail2">Email</label>-->
+<!--<input type="email" class="form-control" id="exampleInputEmail2"-->
+<!--placeholder="jane.doe@example.com">-->
+<!--</div>-->
+<!--<button type="submit" class="btn btn-info">Send invitation</button>-->
+<!--</form>-->
+
+
+<!--<form>-->
+<!--<div class="form-group">-->
+<!--<label for="UserName" class="for-only">UserName</label>-->
+<!--<div class="input-group">-->
+<!--<div class="input-group-addon">$</div>-->
+<!--<input class="form-control" id="UserName" placeholder="UserName">-->
+<!--<div class="input-group-addon">.00</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<button class="btn btn-warning" type="button">提交</button>-->
+<!--</form>-->
+
+
+<!--<form class="form-horizontal">-->
+<!--<div class="form-group">-->
+<!--<label for="Email" class="col-xs-2 control-label">Email</label>-->
+<!--<div class="col-xs-10">-->
+<!--<input class="form-control" id="Email" type="email">-->
+<!--</div>-->
+<!--</div>-->
+<!--</form>-->
+
+
+<!--<form class="form-horizontal">-->
+<!--<div class="form-group">-->
+<!--<label for="inputEmail3" class="col-sm-2 control-label">Email</label>-->
+<!--<div class="col-sm-10">-->
+<!--<input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label for="inputPassword3" class="col-sm-2 control-label">Password</label>-->
+<!--<div class="col-sm-10">-->
+<!--<input type="password" class="form-control" id="inputPassword3"-->
+<!--placeholder="Password">-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<div class="col-sm-offset-2 col-sm-10">-->
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox"> Remember me-->
+<!--</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<div class="col-sm-offset-2 col-sm-10">-->
+<!--<button type="submit" class="btn btn-default">Sign in</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</form>-->
+
+
+<!--<input type="text" class="form-control" placeholder="Text input">-->
+
+<!--<div class="form-group">-->
+<!--<textarea class="form-control" rows="3"></textarea>-->
+<!--</div>-->
+
+
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox" value="">-->
+<!--Option one is this and that&mdash;be sure to include why it's great-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="checkbox disabled">-->
+<!--<label>-->
+<!--<input type="checkbox" value="" disabled>-->
+<!--Option two is disabled-->
+<!--</label>-->
+<!--</div>-->
+
+<!--<div class="radio">-->
+<!--<label>-->
+<!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
+<!--Option one is this and that&mdash;be sure to include why it's great-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="radio">-->
+<!--<label>-->
+<!--<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">-->
+<!--Option two can be something else and selecting it will deselect option one-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="radio disabled">-->
+<!--<label>-->
+<!--<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>-->
+<!--Option three is disabled-->
+<!--</label>-->
+<!--</div>-->
+
+
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox" value="">-->
+<!--OPetionaag aaf q wfq ffgq wgwe geegq asfqwq-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="checkbox disabled">-->
+<!--<label>-->
+<!--<input type="checkbox" value="">-->
+<!--this checkbox disabled-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="radio">-->
+<!--<label>-->
+<!--<input type="radio" name="sex" id="optionRadios" value="男" checked>-->
+<!--this is sex man-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="radio">-->
+<!--<label>-->
+<!--<input type="radio" name="sex" id="optionRadios1" value="女">-->
+<!--this is sex woman-->
+<!--</label>-->
+<!--</div>-->
+
+
+<!--<div class="checkbox">-->
+<!--<label class="checkbox-inline">-->
+<!--<input type="checkbox" value="eat">-->
+<!--this is hobby-->
+<!--</label>-->
+<!--</div>-->
+
+<!--<div class="checkbox">-->
+<!--<label class="checkbox-inline">-->
+<!--<input type="checkbox" value="eat">-->
+<!--this is hobby-->
+<!--</label>-->
+<!--</div>-->
+
+
+<!--<div class="checkbox">-->
+<!--<label class="checkbox-inline">-->
+<!--<input type="checkbox" value="eat">-->
+<!--</label>-->
+<!--</div>-->
+
+
+<!--<select class="form-control">-->
+<!--<option>1</option>-->
+<!--<option>2</option>-->
+<!--<option>3</option>-->
+<!--<option>4</option>-->
+<!--<option>5</option>-->
+<!--</select>-->
+
+
+<!--<select class="form-control" multiple>-->
+<!--<option>1</option>-->
+<!--<option>2</option>-->
+<!--<option>3</option>-->
+<!--<option>4</option>-->
+<!--<option>5</option>-->
+<!--</select>-->
+
+
+<!--<form class="form-horizontal">-->
+<!--<div class="form-group">-->
+<!--<label class="col-sm-2 control-label">Email</label>-->
+<!--<div class="col-sm-10">-->
+<!--<p class="form-control-static">fangzhiiyue@outlook.com</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</form>-->
+
+
+<!--<form class="form">-->
+<!--<div class="form-group">-->
+<!--<label class="control-label"></label>-->
+<!--<input type="text" class="form-control">-->
+<!--</div>-->
+
+<!--</form>-->
+
+
+<!--<form class="form">-->
+<!--<div class="form-group">-->
+<!--<label class="control-label"></label>-->
+<!--<input type="text" class="form-control" disabled>-->
+<!--</div>-->
+<!--</form>-->
+
+<!--<fieldset disabled>-->
+<!--<div class="form-group">-->
+<!--<label class="control-label"></label>-->
+<!--<input type="text" class="form-control">-->
+<!--</div>-->
+<!--</fieldset>-->
+
+
+<!--<input class="form-control" placeholder="afafqfeg" readonly>-->
+
+<!--<form class="form">-->
+<!--<div class="form-group has-success">-->
+<!--<label class="sr-only" for="inputHelpBlock">Input with help text</label>-->
+<!--<input type="text" id="inputHelpBlock" class="form-control"-->
+<!--aria-describedby="helpBlock">-->
+<!--...-->
+<!--<span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+<!--</div>-->
+<!--</form>-->
+
+
+<!--<div class="form-group has-success">-->
+<!--<label class="control-label" for="inputSuccess1">Input with success</label>-->
+<!--<input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">-->
+<!--<span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+<!--</div>-->
+<!--<div class="form-group has-warning">-->
+<!--<label class="control-label" for="inputWarning1">Input with warning</label>-->
+<!--<input type="text" class="form-control" id="inputWarning1">-->
+<!--</div>-->
+<!--<div class="form-group has-error">-->
+<!--<label class="control-label" for="inputError1">Input with error</label>-->
+<!--<input type="text" class="form-control" id="inputError1">-->
+<!--</div>-->
+<!--<div class="has-success">-->
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox" id="checkboxSuccess" value="option1">-->
+<!--Checkbox with success-->
+<!--</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="has-warning">-->
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox" id="checkboxWarning" value="option1">-->
+<!--Checkbox with warning-->
+<!--</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="has-error">-->
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox" id="checkboxError" value="option1">-->
+<!--Checkbox with error-->
+<!--</label>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<form class="form">-->
+<!--<fieldset>-->
+<!--<div class="form-group has-warning">-->
+<!--<label class="control-label" for="User">User</label>-->
+<!--<input type="text" class="form-control" id="User">-->
+<!--<span class="help-block">input your name</span>-->
+<!--<span class="glyphicon glyphicon-ok form-control-feedback"-->
+<!--aria-hidden="true"></span>-->
+<!--</div>-->
+<!--</fieldset>-->
+
+<!--</form>-->
+
+
+<!--<input class="form-control input-lg" type="text" placeholder="input_lg">-->
+<!--<input class="form-control input-sm" type="text" placeholder="sm">-->
+<!--<select class="form-control input-lg">-->
+<!--<option>1</option>-->
+<!--<option>1</option>-->
+<!--<option>1</option>-->
+<!--<option>1</option>-->
+<!--<option>1</option>-->
+<!--</select>-->
+
+<!--<select class="form-control input-sm">-->
+<!--<option>1</option>-->
+<!--<option>1</option>-->
+<!--<option>1</option>-->
+<!--<option>1</option>-->
+<!--<option>1</option>-->
+<!--</select>-->
+
+<!--<form class="form-horizontal">-->
+<!--<div class="form-group form-group-lg">-->
+<!--<label class="col-sm-2 control-label" for="User1">User</label>-->
+<!--<input class="form-control" placeholder="User" id="User1">-->
+<!--</div>-->
+<!--</form>-->
+
+
+<!--<div class="row">-->
+<!--<div class="col-xs-2">-->
+<!--<input type="text" class="form-control" placeholder=".col-xs-2">-->
+<!--</div>-->
+<!--<div class="col-xs-3">-->
+<!--<input type="text" class="form-control" placeholder=".col-xs-3">-->
+<!--</div>-->
+<!--<div class="col-xs-4">-->
+<!--<input type="text" class="form-control" placeholder=".col-xs-4">-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--<a class="btn btn-info" href="#" role="button">按钮</a>-->
+<!--<button class="btn btn-warning" type="submit">button</button>-->
+<!--<input class="btn btn-primary" type="button" value="Input">-->
+<!--<input class="btn btn-primary" type="submit" value="Submit">-->
+
+
+<!--<button class="btn btn-primary">首选</button>-->
+<!--<button class="btn btn-success">首选</button>-->
+<!--<button class="btn btn-info">首选</button>-->
+<!--<button class="btn">首选</button>-->
+<!--<button class="btn btn-warning">危险</button>-->
+<!--<button class="btn btn-danger">危险</button>-->
+<!--<button class="btn btn-link">危险</button>-->
+
+<!--<button class="btn btn-danger btn-lg">危险</button>-->
+<!--<button class="btn btn-danger btn-sm">危险</button>-->
+<!--<button class="btn btn-danger btn-xs">危险</button>-->
+
+
+<!--<button class="btn btn-primary btn-lg btn-block">块级元素</button>-->
+<!--<button class="btn btn-info btn-block">块级元素</button>-->
+
+
+<!--<a class="btn btn-info active" aria-pressed="true">激活</a>-->
+
+
+<!--<button class="btn btn-primary btn-lg btn-block">块级元素</button>-->
+<!--<button class="btn btn-info btn-block" style="background:opacity">块级元素</button>-->
+
+
+<!--<button class="btn btn-primary btn-lg btn-block" disabled="disabled">块级元素</button>-->
+
+
+<!--<a class="btn btn-info disabled" aria-pressed="true">不可用</a>-->
+
+
+<!--&lt;!&ndash;这个图片会将手机的界面撑大，可以进行滚动的状态&ndash;&gt;-->
+<!--&lt;!&ndash;<img src="imgs/1.jpeg" class="img-responsive">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;<img src="imgs/1.jpeg" alt="..." class="img-rounded">&ndash;&gt;-->
+<!--&lt;!&ndash;<img src="imgs/1.jpeg" alt="..." class="img-circle img-thumbnail">&ndash;&gt;-->
+<!--&lt;!&ndash;<img src="imgs/1.jpeg" alt="..." class="img-thumbnail">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;<img src="imgs/1.jpeg" alt="" class="img-rounded">&ndash;&gt;-->
+<!--&lt;!&ndash;<img src="imgs/1.jpeg" alt="" class="img-circle">&ndash;&gt;-->
+
+<!--&lt;!&ndash;缩略图&ndash;&gt;-->
+<!--<img src="imgs/1.jpeg" alt="" class="img-thumbnail">-->
+
+
+<!--<p class="text-muted">通过颜色来展示意图</p>-->
+<!--<p class="text-primary">通过颜色来展示意图</p>-->
+<!--<p class="text-success">通过颜色来展示意图</p>-->
+<!--<p class="text-info">通过颜色来展示意图</p>-->
+<!--<p class="text-warning">通过颜色来展示意图</p>-->
+<!--<p class="text-danger">通过颜色来展示意图</p>-->
+
+
+<!--<p class="text-mutedd">通过颜色来展示意图</p>-->
+<!--<p class="text-danger"></p>-->
+<!--<p class="text-success"></p>-->
+<!--<p class="text-info"></p>-->
+<!--<p class="text-warning"></p>-->
+<!--<p class="text-primary"></p>-->
+
+
+<!--<p class="bg-primary">主要的背景</p>-->
+<!--<p class="bg-success">主对方说拜拜</p>-->
+<!--<p class="bg-success">主对方说拜拜</p>-->
+
+
+<!--<button type="button" class="close" aria-label="Close">-->
+<!--<span aria-hidden="true">&times;</span>-->
+<!--</button>-->
+
+
+<!--<button type="button" class="btn btn-info">-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+
+
+<!--<span class="caret"></span>-->
+
+
+<!--<div class="pull-left" style="height:20rem;width:20rem;background:#ccc;">...</div>-->
+<!--<div class="pull-right" style="height:20rem;width:20rem;background:#464;">...</div>-->
+
+
+<!--<div class="clearfix">...</div>-->
+
+<!--<div class="center-block">..asfgfqeg.</div>-->
+
+
+<!--<div class="text-center" style="text-align:center">..是对方为各位.</div>-->
+<!--<div class="hidden sr-only">..峰.</div>-->
+
+
+<!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+<!--<span class="glyphicon glyphicon-plus"></span>-->
+
+
+<!--<button type="button" class="btn btn-info" aria-label="Left Align">-->
+
+<!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>-->
+
+<!--</button>-->
+
+<!--<button type="button" class="btn btn-danger">-->
+<!--start-->
+<!--<span class="glyphicon glyphicon-plus"></span>-->
+<!--</button>-->
+
+<!--<button type="button" class="btn btn-danger">-->
+<!--<span class="glyphicon glyphicon-plus"></span>-->
+<!--错误-->
+<!--</button>-->
+
+
+<!--<div class="alert alert-danger" role="alert">-->
+<!--<span class="glyphicon glyphicon-exclamation-sign"></span>-->
+<!--<span class="sr-only">Error:</span>-->
+<!--Enter a valid email address-->
+<!--</div>-->
+
+
+<!--<div class="alert alert-danger" role="alert">-->
+<!--<span class="glyphicon glyphicon-exclamation-sign"></span>-->
+<!--Enter a valid email address-->
+<!--</div>-->
+
+
+<!--<div class="dropdown">-->
+<!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"-->
+<!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+<!--Dropdown-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Another action</a></li>-->
+<!--<li><a href="#">Something else here</a></li>-->
+<!--<li role="separator" class="divider"></li>-->
+<!--<li><a href="#">Separated link</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+
+<!--<div class="dropdown">-->
+<!--<button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2"-->
+<!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"-->
+<!--&gt;-->
+<!--Dropup-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">-->
+<!--<li class="dropdown-header">Dropdown header</li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li role="separator" class="divider"></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li class="disabled"><a href="#">Action</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+
+<!--<div class="btn-group">-->
+<!--<button type="button" class="btn btn-default dropdown-toggle"-->
+<!--data-toggle="dropdown">-->
+<!--默认 <span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu" role="menu">-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">另一个功能</a></li>-->
+<!--<li><a href="#">其他</a></li>-->
+<!--<li class="divider"></li>-->
+<!--<li><a href="#">分离的链接</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+
+<!--<div class="btn-group">-->
+<!--<button type="button"-->
+<!--class="btn btn-primary dropdown-toggle"-->
+<!--aria-expanded="true"-->
+<!--data-toggle="dropdown">原始-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu" role="menu">-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">另一个功能</a></li>-->
+<!--<li><a href="#">其他</a></li>-->
+<!--<li class="divider"></li>-->
+<!--<li><a href="#">分离的链接</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<!--<button type="button" class="btn btn-default btn-lg">-->
+<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star-->
+<!--</button>-->
+
+
+<!--<button type="button" class="btn btn-default btn-lg">-->
+<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star-->
+<!--</button>-->
+
+
+<!--<button type="button" class="btn btn-default btn-lg">-->
+<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star-->
+<!--</button>-->
+
+
+<!--<div class="dropdown">-->
+<!--<button type="button" class="btn btn-info dropdown-toggle" aria-expanded="false"-->
+<!--data-toggle="dropdown">-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu" role="menu">-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+
+<!--</ul>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash;最简单的写法&ndash;&gt;-->
+<!--<div class="dropdown">-->
+<!--<button type="button" class="btn btn-info dropdown-toggle"-->
+<!--data-toggle="dropdown">-->
+<!--开始-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu" role="menu">-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<!--<div class="btn-group" role="group" aria-label="...">-->
+<!--<button type="button" class="btn btn-default">Left</button>-->
+<!--<button type="button" class="btn btn-default">middle</button>-->
+<!--<button type="button" class="btn btn-default">Right</button>-->
+<!--</div>-->
+
+
+<!--<div class="btn-toolbar" role="toolbar" aria-label="...">-->
+<!--<div class="btn-group">-->
+<!--<button class="btn btn-default">首页</button>-->
+<!--<button class="btn btn-info">联系我</button>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--<div style="width:1rem;height:1rem;background:#ccc;margin-bottom:1rem">你好</div>-->
+<!--<div style="width:2rem;height:2rem;background:#ccc;margin-bottom:2rem">你好</div>-->
+<!--<div style="width:3rem;height:3rem;background:#ccc;margin-bottom:3rem">你好</div>-->
+<!--<div style="width:4rem;height:4rem;background:#ccc;margin-bottom:4rem">你好</div>-->
+
+
+<!--<div class="btn-group">-->
+<!--<button class="btn btn-default">1</button>-->
+<!--<button class="btn btn-default">2</button>-->
+<!--<div class="btn-group">-->
+<!--<button type="button" class="btn btn-info dropdown-toggle"-->
+<!--data-toggle="dropdown">-->
+<!--开始-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu" role="menu">-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--<li><a href="#">功能</a></li>-->
+<!--</ul>-->
+
+<!--</div>-->
+<!--</div>-->
+
+
+<!--<div class="btn-group-vertical">-->
+
+<!--<button class="btn btn-default">菜单</button>-->
+<!--<button class="btn btn-info">显示</button>-->
+<!--<button class="btn btn-warning">功能</button>-->
+<!--</div>-->
+
+
+<!--<div class="btn-group btn-group-justified">-->
+
+<!--<button class="btn btn-default">菜单</button>-->
+<!--<button class="btn btn-info">显示</button>-->
+<!--<button class="btn btn-warning">功能</button>-->
+<!--</div>-->
+
+<!--<div class="btn-group">-->
+<!--<a role="button" href="#" class="btn btn-info">设置</a>-->
+<!--<a role="button" href="#" class="btn btn-info">设置</a>-->
+<!--<a role="button" href="#" class="btn btn-info">设置</a>-->
+<!--<a role="button" href="#" class="btn btn-info">设置</a>-->
+<!--</div>-->
+
+
+<!--<div class="btn-group btn-group-justified">-->
+<!--<div class="btn-group">-->
+<!--<button class="btn btn-default">菜单</button>-->
+<!--</div>-->
+<!--<div class="btn-group">-->
+<!--<button class="btn btn-info">显示</button>-->
+<!--</div>-->
+<!--<div class="btn-group">-->
+<!--<button class="btn btn-warning">功能</button>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash; Single button &ndash;&gt;-->
+<!--<div class="btn-group">-->
+<!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"-->
+<!--aria-haspopup="true" aria-expanded="false">-->
+<!--Action <span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu">-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Another action</a></li>-->
+<!--<li><a href="#">Something else here</a></li>-->
+<!--<li role="separator" class="divider"></li>-->
+<!--<li><a href="#">Separated link</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+
+<!--<div class="btn-group">-->
+<!--<button class="btn btn-info btn-lg">设置</button>-->
+<!--<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">-->
+<!--<span class="caret"></span>-->
+<!--<span class="sr-only"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu">-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+
+<!--<div class="btn-group dropup">-->
+<!--<button type="button" class="btn btn-default">-->
+<!--Action-->
+<!--</button>-->
+<!--<button class="btn -btn-default dropdown-toggle" data-toggle="dropdown">-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu">-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+
+<!--<div class="input-group input-group-lg">-->
+<!--<span class="input-group-addon">@</span>-->
+<!--<input type="text" placeholder="User" class="form-control">-->
+<!--<span class="input-group-addon">demo</span>-->
+<!--</div>-->
+
+
+<!--<div class="input-group input-group-sm">-->
+<!--<span class="input-group-addon">@</span>-->
+<!--<input type="text" placeholder="User" class="form-control">-->
+<!--<span class="input-group-addon">demo</span>-->
+<!--</div>-->
+
+<!--<div class="input-group input-group-ls">-->
+<!--<span class="input-group-addon">@</span>-->
+<!--<input type="text" placeholder="User" class="form-control">-->
+<!--<span class="input-group-addon">demo</span>-->
+<!--</div>-->
+
+
+<!--<div class="row">-->
+<!--<div class="col-lg-6 col-ls-6 col-sm-6">-->
+<!--<div class="input-group">-->
+<!--<span class="input-group-addon">@</span>-->
+<!--<input type="text" placeholder="User" class="form-control">-->
+<!--<span class="input-group-addon">demo</span>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--</div>-->
+
+
+<!--</div>-->
+
+
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-6">-->
+<!--<div class="input-group">-->
+<!--<span class="input-group-addon">-->
+<!--<input type="checkbox" checked class="from-control">-->
+<!--</span>-->
+<!--<input class="form-control" placeholder="User" type="text">-->
+<!--<span class="input-group-addon">demo</span>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="col-lg-6">-->
+<!--<div class="input-group">-->
+<!--<span class="input-group-addon">-->
+<!--<input type="radio" aria-label="...">-->
+<!--</span>-->
+<!--<input type="text" class="form-control" aria-label="...">-->
+<!--<span class="input-group-addon">demo</span>-->
+<!--</div>&lt;!&ndash; /input-group &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.col-lg-6 &ndash;&gt;-->
+
+
+<!--<div class="input-group">-->
+<!--<span class="input-group-btn">-->
+<!--<button class="btn btn-default">Go!</button>-->
+<!--</span>-->
+<!--<input type="text" class="form-control" placeholder="Search">-->
+<!--<span class="input-group-btn">-->
+<!--<button type="submit" value="Submit" class="btn btn-danger">Submit</button>-->
+<!--</span>-->
+<!--</div>-->
+
+
+<!--<div class="input-group">-->
+<!--<span class="input-group-btn">-->
+<!--<div class="dropdown">-->
+<!--<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Go!-->
+<!--<span class="caret"></span>-->
+<!--</button>-->
+<!--<ul class="dropdown-menu">-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--<li><a href="#">Action</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</span>-->
+<!--<input class="form-control" placeholder="Search" type="text">-->
+<!--</div>-->
+
+
+<!--<div class="input-group">-->
+<!--<span class="input-group-btn">-->
+<!--<div class="btn-group">-->
+<!--<button class="btn btn-default" type="button">Go</button>-->
+<!--<button class="btn btn-info" type="button">Go</button>-->
+<!--<button class="btn btn-danger" type="button">Go</button>-->
+<!--<button class="btn btn-primary" type="button">Go</button>-->
+<!--</div>-->
+<!--</span>-->
+<!--</div>-->
+
+<!--<nav role="navigation">-->
+<!--<ul class="nav nav-tabs">-->
+<!--<li role="presentation" class="active"><a href="#">Home</a></li>-->
+<!--<li role="presentation" class=""><a href="#">Profile</a></li>-->
+<!--<li role="presentation" class=""><a href="#">Messages</a></li>-->
+<!--</ul>-->
+<!--</nav>-->
+
+<nav role="navigation">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation" class=""><a href="#">Profile</a></li>
+        <li role="presentation" class=""><a href="#">Messages</a></li>
+    </ul>
+</nav>
+
+<nav role="navigation">
+    <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="#">Goto</a></li>
+        <li role="presentation" class=""><a href="#">To</a></li>
+    </ul>
+</nav>
+
+<nav>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="disabled"><a href="#">Diaables link</a></li>
+        <li role="presentation" class="active"><a href="#">Diaables link</a></li>
+        <li role="presentation" class="active"><a href="#">Diaables link</a></li>
+    </ul>
+</nav>
+
+
+<nav role="navigation">
+
+    <ul class="nav nav-pills nav-justified">
+        <li role="presentation" class="active"><a href="#"> HOME</a></li>
+        <li role="presentation">
+            <a href="#">
+                Contact</a></li>
+        <li role="presentation" class="dropdown">
+            <a class="dropdown-topple btn btn-info" data-toggle="dropdown" href="#">
+                Drop
+                <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a href="#">设置</a></li>
+                <li><a href="#">选择</a></li>
+                <li><a href="#">选择</a></li>
+                <li><a href="#">选择</a></li>
+                <li><a href="#">选择</a></li>
+            </ul>
+
+        </li>
+    </ul>
+</nav>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Dropdown <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Dropdown <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="nav-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    aria-expanded="false"
+                    data-target="#bs-example-navbar-collapse-1">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<div class="jumbotron">
+    <h1>Hello, world!</h1>
+    <p>你好啊覅偶鞥被问及改为<br>
+        各位哥问你我仍然为何物
+    </p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+
+
+<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default">Launch
+    modal
+</button>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+</div>
+
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello world</h1>
+        <p>点击获取更多的资讯,请关注一下吧</p>
+        <p>
+            <a href="#" class="btn btn-info" role="button">learn me</a>
+        </p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+</script>
+
+</body>
+</html>

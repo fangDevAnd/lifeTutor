@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/smssdk_white"
+    android:orientation="vertical"
+  >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:background="@drawable/ic_22"></View>
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="急救标题"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/one"
+        android:text="2019、10/12 07:00"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="急救内容："
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/two"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/two"
+        android:text="南昌大学（前湖校区）培训基地（VR）"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/two"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="急救用户："
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/three"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/three"
+        android:text="30人"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/three"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="响应次数："
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/four"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/four"
+        android:text="3次"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body div{
+            width: 300px;
+            height:299px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+
+
+    </style>
+
+    <script>
+
+    function demo1(){
+        alert("你好，傻逼");
+    }
+
+/**
+不知道为啥，这里的通信实现方案不行，点击没有反应
+如果代码编写正常的情况下，可能是高版本的行为变更
+*/
+    function callHello(){
+
+          demo1.showToast("你执行了js对android的调用");
+          alert("点击了");
+    }
+
+/**
+html点击执行的js函数，通过更改文档的url，这会在android被
+shouldOverrideUrlLoading()方法拦截到，通过拦截里面对url进行解析，就能判断是否是我们执行了函数调用
+
+*/
+    function callHello1(){
+
+        document.location="js://webview?argc=1";
+
+    }
+
+
+/**
+这个方法是在android中调用的，参数是android端传递过去的操作
+*/
+    function returnResult(result){
+
+            alert("接收到方法的返回");
+
+
+    }
+
+
+    function callHello2(){
+
+      var result=prompt("js://demo?arg1=111&arg2=222");
+
+    }
+
+    </script>
+</head>
+<body>
+<div></div>
+
+<button id="btn" class="btn" onclick="callHello(this)">关系映射调用java代码</button>
+
+<button id="btn1" class="btn" onclick="callHello(this)">拦截url处理</button>
+
+<button id="btn3" class="btn" onclick="callHello2(this)">拦截url处理</button>
+</body>
+</html>

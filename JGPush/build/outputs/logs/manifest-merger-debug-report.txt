@@ -1,0 +1,381 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:2:1-197:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:2:1-197:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:2:1-197:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:2:1-197:12
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:2:1-197:12
+	package
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:3:5-33
+	android:versionName
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:5:5-32
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+	xmlns:android
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:4:5-30
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+permission#com.rcs.nchumanity.permission.JPUSH_MESSAGE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:9:5-11:47
+	android:protectionLevel
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:11:9-44
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:10:9-67
+uses-permission#com.rcs.nchumanity.permission.JPUSH_MESSAGE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:14:5-83
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:14:22-80
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:15:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:16:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:17:5-75
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:17:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:18:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:19:22-77
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:20:5-73
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:20:22-70
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:21:5-84
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:21:22-81
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:22:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:23:5-76
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:23:22-73
+uses-permission#android.permission.VIBRATE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:28:5-66
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:28:22-63
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:29:5-78
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:29:22-75
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:30:5-81
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:30:22-78
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:31:5-76
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:31:22-73
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:32:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:33:5-89
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:33:22-86
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:34:5-79
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:34:22-76
+uses-permission#android.permission.GET_TASKS
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:35:5-68
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:35:22-65
+application
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:37:5-196:19
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:40:9-41
+	android:icon
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:38:9-45
+	android:allowBackup
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:39:9-36
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:41:9-64
+activity#com.example.jpushdemo.MainActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:44:9-51:20
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:46:13-45
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:45:13-62
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:47:13-50:29
+action#android.intent.action.MAIN
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:48:17-69
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:48:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:49:17-77
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:49:27-74
+activity#com.example.jpushdemo.PushSetActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:53:8-115
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:53:71-103
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:53:18-70
+activity#com.example.jpushdemo.SettingActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:55:8-115
+	android:label
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:55:71-103
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:55:18-70
+activity#com.example.jpushdemo.TestActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:57:9-62:20
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:57:69-93
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:57:19-68
+intent-filter#action:name:jpush.testAction+category:name:jpush.testCategory
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:58:13-61:29
+action#jpush.testAction
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:59:17-59
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:59:25-56
+category#jpush.testCategory
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:60:17-63
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:60:27-60
+activity#cn.jpush.android.ui.PopWinActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:65:9-69:20
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:68:13-37
+	android:theme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:67:13-49
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:66:13-62
+activity#cn.jpush.android.ui.PushActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:72:9-82:20
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:76:13-37
+	android:configChanges
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:74:13-63
+	android:theme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:75:13-60
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:73:13-60
+intent-filter#action:name:cn.jpush.android.ui.PushActivity+category:name:android.intent.category.DEFAULT+category:name:com.rcs.nchumanity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:77:13-81:29
+action#cn.jpush.android.ui.PushActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:78:17-75
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:78:25-72
+category#android.intent.category.DEFAULT
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:79:17-76
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:79:27-73
+category#com.rcs.nchumanity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:80:17-63
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:80:27-60
+service#cn.jpush.android.service.PushService
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:86:9-96:19
+	android:process
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:88:13-40
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:89:13-37
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:87:13-64
+intent-filter#action:name:cn.jpush.android.intent.PUSH_TIME+action:name:cn.jpush.android.intent.PushService+action:name:cn.jpush.android.intent.REGISTER+action:name:cn.jpush.android.intent.REPORT
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:90:13-95:29
+action#cn.jpush.android.intent.REGISTER
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:91:17-75
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:91:25-72
+action#cn.jpush.android.intent.REPORT
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:92:17-73
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:92:25-70
+action#cn.jpush.android.intent.PushService
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:93:17-78
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:93:25-75
+action#cn.jpush.android.intent.PUSH_TIME
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:94:17-76
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:94:25-73
+provider#cn.jpush.android.service.DataProvider
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:98:9-103:11
+	android:process
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:101:13-40
+	android:authorities
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:99:13-66
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:102:13-37
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:100:13-65
+service#cn.jpush.android.service.DaemonService
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:107:9-116:19
+	android:enabled
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:109:13-35
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:110:13-36
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:108:13-66
+intent-filter#action:name:cn.jpush.android.intent.DaemonService+category:name:com.rcs.nchumanity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:111:13-114:29
+action#cn.jpush.android.intent.DaemonService
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:112:17-80
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:112:25-77
+provider#cn.jpush.android.service.DownloadProvider
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:118:9-122:11
+	android:authorities
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:119:13-70
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:121:13-36
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:120:13-69
+receiver#cn.jpush.android.service.PushReceiver
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:124:9-143:20
+	android:enabled
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:126:13-35
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:127:13-37
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:125:13-65
+intent-filter#action:name:cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+category:name:com.rcs.nchumanity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:128:13-131:29
+	android:priority
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:128:28-51
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:129:17-94
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:129:25-91
+intent-filter#action:name:android.intent.action.USER_PRESENT+action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:132:13-135:29
+action#android.intent.action.USER_PRESENT
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:133:17-77
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:133:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:134:17-79
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:134:25-76
+intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:137:13-142:29
+action#android.intent.action.PACKAGE_ADDED
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:138:17-78
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:138:25-75
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:139:17-80
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:139:25-77
+data
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:141:17-50
+	android:scheme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:141:23-47
+receiver#cn.jpush.android.service.AlarmReceiver
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:146:9-99
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:146:73-97
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:146:19-72
+activity#cn.jpush.android.service.JNotifyActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:149:9-158:20
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:151:13-36
+	android:theme
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:153:13-72
+	android:taskAffinity
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:152:13-48
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:150:13-68
+intent-filter#action:name:cn.jpush.android.intent.JNotifyActivity+category:name:com.rcs.nchumanity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:154:13-157:29
+action#cn.jpush.android.intent.JNotifyActivity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:155:17-82
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:155:25-79
+service#com.example.jpushdemo.PushService
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:162:10-167:20
+	android:process
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:163:18-45
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:162:19-67
+intent-filter#action:name:cn.jiguang.user.service.action
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:164:18-166:34
+action#cn.jiguang.user.service.action
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:165:22-78
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:165:30-75
+receiver#com.example.jpushdemo.MyReceiver
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:171:9-183:20
+	android:enabled
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:174:13-35
+	android:exported
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:173:13-37
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:172:13-60
+intent-filter#action:name:cn.jpush.android.intent.CONNECTION+action:name:cn.jpush.android.intent.MESSAGE_RECEIVED+action:name:cn.jpush.android.intent.NOTIFICATION_OPENED+action:name:cn.jpush.android.intent.NOTIFICATION_RECEIVED+action:name:cn.jpush.android.intent.REGISTRATION+category:name:com.rcs.nchumanity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:175:13-182:29
+action#cn.jpush.android.intent.REGISTRATION
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:176:17-79
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:176:25-76
+action#cn.jpush.android.intent.MESSAGE_RECEIVED
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:177:17-83
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:177:25-80
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:178:17-88
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:178:25-85
+action#cn.jpush.android.intent.NOTIFICATION_OPENED
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:179:17-86
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:179:25-83
+action#cn.jpush.android.intent.CONNECTION
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:180:17-77
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:180:25-74
+receiver#com.example.jpushdemo.MyJPushMessageReceiver
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:186:9-191:20
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:186:19-78
+intent-filter#action:name:cn.jpush.android.intent.RECEIVE_MESSAGE+category:name:com.rcs.nchumanity
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:187:13-190:29
+action#cn.jpush.android.intent.RECEIVE_MESSAGE
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:188:17-82
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:188:25-79
+meta-data#JPUSH_CHANNEL
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:193:9-84
+	android:value
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:193:49-82
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:193:20-48
+meta-data#JPUSH_APPKEY
+ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:194:9-91
+	android:value
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:194:48-88
+	android:name
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml:194:20-47
+uses-sdk
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+		ADDED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml
+		INJECTED from /media/fang/codeAndNote/developer/androidNew/androidProject/android/lifeTutor/JGPush/AndroidManifest.xml

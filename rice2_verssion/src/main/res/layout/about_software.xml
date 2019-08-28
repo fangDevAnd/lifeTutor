@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaofangfang.rice2_verssion.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.xiaofangfang.rice2_verssion.view.CommandBar
+        android:layout_width="match_parent"
+        android:id="@+id/commandBar"
+        android:layout_height="wrap_content"></com.xiaofangfang.rice2_verssion.view.CommandBar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/splitLine"></View>
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp">
+
+
+        <ImageView
+            android:id="@+id/softwareIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rice"
+            app:layout_aspectRatio="100%"
+            app:layout_marginTopPercent="5%"
+            app:layout_widthPercent="25%" />
+
+
+        <TextView
+            android:id="@+id/softwareNameEng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/softwareIcon"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:textColor="#111"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/softwareName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/softwareNameEng"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_name_eng"
+            android:textColor="#111"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/softwareDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/softwareName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/adddes"
+            android:textColor="@color/splitLine_dark"
+            android:textSize="14sp" />
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/checkUpdate"
+        android:background="@drawable/buttonselect"
+        android:drawableLeft="@drawable/ic_upg"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_downstep"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="检查更新"
+        android:textColor="#111"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/splitLine"></View>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonselect"
+        android:drawableLeft="@drawable/ic_weibo"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_downstep"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/weibo"
+        android:text="官方微博"
+        android:textColor="#111"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/splitLine"></View>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonselect"
+        android:drawableLeft="@drawable/ic_weichat"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_downstep"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="官方微信"
+        android:id="@+id/wechat"
+        android:textColor="#111"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/splitLine"></View>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonselect"
+        android:drawableLeft="@drawable/ic_social_qq"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_downstep"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="官方QQ"
+        android:id="@+id/qq"
+        android:textColor="#111"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/leagel"
+            android:layout_centerHorizontal="true"
+            android:text="File Rice Developer"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/leagel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:text="隐私设置及法律条款"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+
+</com.xiaofangfang.rice2_verssion.view.PercentLinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shangxuan" />
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"></View>
+
+    <Button
+        android:id="@+id/downOne"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_bofang"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="@string/xiayisou" />
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"></View>
+
+    <Button
+        android:id="@+id/addMusicSheet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_tianjiajiahaowubiankuang"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="@string/tianjiagean" />
+
+    <View
+
+        style="@style/line"
+        android:layout_width="match_parent"></View>
+
+    <Button
+        android:id="@+id/collect"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_aixin"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="@string/shoucang" />
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"></View>
+
+
+    <Button
+
+        android:id="@+id/setRing"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_lingsheng"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="@string/lingsheng" />
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"></View>
+
+    <Button
+        android:id="@+id/updateMusicInfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_weibiaoti2010104"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="@string/xiugaigequ" />
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"></View>
+
+
+    <Button
+        android:id="@+id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_geshou"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="@string/is_geshou" />
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"></View>
+
+
+    <Button
+        android:id="@+id/album"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_album"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="@string/zhuanji" />
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"></View>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/deleteMusic"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_shanchu"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="@string/deleteMusic" />
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"></View>
+
+
+</LinearLayout>

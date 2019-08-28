@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+
+</head>
+<body ng-app="app">
+
+
+<div ng-controller='AppController'>
+    <div ng-app="data" ng-controller='AppController'>
+        <p>Selected: {{ ar[0] }}</p>
+        <input ng-model="vm.ar[0]">
+        <li data-ng-repeat="x in data">
+            <custom-tag  model="vm.ar[0]" />
+        </li>
+    </div>
+    <a fast-a="" href="#/admin/recovery">dddd</a>
+    <input type="button" value="show value" ng-click="showValue()">
+</div>
+
+
+<script>
+    var app=angular.module('app', []);
+ index=0;
+    app.directive("fastA",['$location', function ($location) {
+
+        return {
+            restrict: "ECMA",
+            link: function (scope, element, attrs) {
+                 var url=attrs["href"];
+
+                 element.removeAttr("href");
+                 element.bind('click', function ($event) {
+
+                    $location.url("/"+url);
+
+                });
+            }
+        };
+
+    }]);
+            app.directive("customTag", function ($location) {
+                return {
+                    restrict: "ECMA",
+
+                    template: "<span class='jia' style='padding: 20px'>-</span><input type='text' ng-model='model' /><span  style='padding: 20px' class='jian'>+</span>",
+                    scope: {
+                        model:'='
+                    },
+
+                    link: function (scope, element, attrs) {
+
+
+                        element= element.append("<span>2344</span>");
+                        var children= $(element).children();
+
+                            children.eq(0).bind ('touchstart click', function ($event) {
+
+                                $event.stopPropagation();
+                                scope.model -= 1;
+
+                                scope.$apply();
+                            });
+                            children.eq(2).bind('touchstart click', function ($event) {
+
+                                $event.stopPropagation();
+                                scope.model += 1;
+
+                                scope.$apply();
+                            })
+
+
+                    }
+                };
+            });
+
+
+    app.controller("AppController",function($scope) {
+        $scope.vm=new Object();
+        $scope.vm.showValue=function(){
+
+
+        };
+        $scope.selected ="old";
+        $scope.vm.ar=new Array();
+        $scope.vm.ar[0]="test";
+        $scope.data=[{name:1},{name:2}];
+    });
+
+</script>
+</body>
+</html>

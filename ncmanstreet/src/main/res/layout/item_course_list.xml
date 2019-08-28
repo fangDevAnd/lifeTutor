@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/hszhydjbzs"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/notComplete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/downStep"
+        android:background="@drawable/bg_frame_gray_circle"
+        android:gravity="center"
+        android:text="@string/wxx"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/complete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/downStep"
+        android:background="@drawable/bg_frame_red_circle1"
+        android:gravity="center"
+        android:text="@string/ywc"
+        android:visibility="invisible"
+        android:textColor="@color/themecolor"
+        android:textSize="12sp"
+       />
+
+
+    <ImageView
+        android:id="@+id/downStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_downstep" />
+
+
+</RelativeLayout>

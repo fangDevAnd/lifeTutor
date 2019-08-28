@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/phonePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+    <!--返回按钮-->
+    <ImageButton
+        android:id="@+id/backupPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle_gray_bg"
+        android:backgroundTint="@color/themecolor"
+        android:padding="4dp"
+        android:src="@drawable/ic_menu_back"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/phone_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle_gray_bg"
+        android:backgroundTint="@color/themecolor"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_menu_phone"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/radius_flip_border"
+        android:backgroundTint="@color/themecolor"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="2dp"
+        android:text="图片"
+        android:textColor="@android:color/white" />
+
+
+    <!--图片的指示器-->
+    <TextView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/radius_flip_border"
+        android:backgroundTint="@color/themecolor"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="2dp"
+        android:text="1/5"
+        android:textColor="@android:color/white" />
+
+
+</FrameLayout>

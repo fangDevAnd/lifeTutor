@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <com.xiaofangfang.rice2_verssion.view.CommandBar
+        android:id="@+id/commandBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.xiaofangfang.rice2_verssion.view.CommandBar>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/person_bg" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text=""
+                android:textColor="#6b6b6b"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/nikeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userId"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="昵称:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/nikeName"
+                android:layout_toRightOf="@id/nikeName"
+                android:background="@android:color/transparent"
+                android:paddingLeft="10dp"
+                android:id="@+id/nikeNameEdit"
+                android:paddingRight="15dp" />
+
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nikeName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="性别:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/sex"
+                android:layout_toRightOf="@id/sex"
+                android:id="@+id/sexEdit"
+                android:background="@android:color/transparent"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp" />
+
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sex"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="地区:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/area"
+                android:layout_toRightOf="@id/area"
+                android:background="@android:color/transparent"
+                android:paddingLeft="10dp"
+                android:id="@+id/areaEdit"
+                android:paddingRight="15dp" />
+
+
+            <TextView
+                android:id="@+id/autograph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/area"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="签名:" />
+
+            <EditText
+                android:id="@+id/mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/autograph"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/autograph"
+                android:background="@drawable/border_gray"
+                android:gravity="start"
+                android:maxLength="200"
+                android:minHeight="70dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="个性签名"
+                android:textColor="@color/smssdk_gray"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/mark"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gradient_orangle_bg_radius"
+                android:text="修改或提交"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_head" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

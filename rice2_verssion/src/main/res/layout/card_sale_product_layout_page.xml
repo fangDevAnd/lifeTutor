@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageContainer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="5dp">
+
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner1" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/cardDestribute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageContainer"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="[热卖 冰神卡]-- 全国流量王自有畅玩 超百款App免流量首充60送50元 每月加送1G流量"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/realPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cardDestribute"
+        android:layout_below="@+id/cardDestribute"
+        android:layout_marginTop="5dp"
+        android:text="月费低至17元"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/realPrice"
+        android:layout_below="@+id/realPrice"
+        android:layout_marginTop="10dp"
+        android:text="￥ 35"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/price"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/price"
+        android:text="点击进入详情界面 >"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/imageContainer"
+        android:layout_marginTop="15dp"
+        android:background="@color/menu_press"></View>
+
+
+</RelativeLayout>

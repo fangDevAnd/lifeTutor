@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.rcs.nchumanity.view.CommandBar
+        android:id="@+id/toolbar"
+        toolbar:title="培训"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.rcs.nchumanity.view.CommandBar>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.rcs.nchumanity.fragment.JYPXFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+
+</LinearLayout>

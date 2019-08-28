@@ -1,0 +1,118 @@
+.tabTreeContainer{
+	margin: 0;
+	font-weight: 700;
+	background: #fff;
+	overflow: hidden;
+	position: absolute;
+	color: #333;
+	width: 100%;
+	top:400px;
+	display: none;
+}
+
+.toolTypeBtn{
+	color:#5eb8da;
+	text-align: center;
+	width: 100%;
+	line-height: 79px;
+	border-bottom: 1px solid #ccc;
+	margin:0px auto;
+}
+.toolTypeBtnCancel{
+	width:50%;
+	height: 79px;
+	float: left;
+	background: #fff none repeat scroll 0 0;
+	border-radius: 0;
+	border-right: 1px solid #ccc;	
+}
+.toolTypeBtnEnter{	
+	height: 79px;
+	background: #fff none repeat scroll 0 0;
+	border-radius: 0;
+}
+.clbth{
+	clear: both;
+}
+.toolTypeMain{
+	width: 97%;
+	height: 598px;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	margin:0px auto;
+
+}
+.toolTypeBlock{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+
+}
+.toolTypeBlock2{
+	width: 100%;
+	margin: 0px auto;
+	height:598px;
+	overflow: hidden;
+}
+.toolTypeRow{
+	width: 100%;
+	margin:0px auto;
+	color: #333;
+	text-align: left;
+	height: 80px;
+	overflow-y: hidden;
+}
+.toolTypeRow:after{
+	content: "";
+	width: 100%;
+	height: 0px;
+	display: inline-block;
+	float: left;
+	
+}
+.toolTypeContent{
+	height: 80px;
+	display: inline-block;
+	text-decoration: center;
+	line-height: 80px;
+	padding: 1px auto;
+	white-space:nowrap;
+}
+.levelBottomSelected{
+	border-bottom: 3px solid #5EB8DA;
+}
+.tooltypeLevel{
+	padding: 24px 20px 22px 20px;	
+}
+.tooltypeArrowIcon{
+	width: 15px;
+	height: 19px;
+	margin-left: 25px;
+	display: inline-block;
+	background: url(image/arrow-icon3.png);
+}
+
+.toolTypeColumn{
+	padding: 0px 20px;
+	width: 100%;
+	color: #666;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	text-align: left;
+}
+.toolTypeselectedIcon{
+	margin-top: 32px;
+	margin-left: 1%;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(image/selected-icon.png);
+	background-repeat: no-repeat;
+}
+.toolTypeUnselected{
+	margin-left: 1%;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
